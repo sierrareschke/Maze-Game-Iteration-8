@@ -1,0 +1,81 @@
+plugins {
+    id 'java'
+    id 'groovy'
+
+    id 'org.springframework.boot' version '3.3.5'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'csci.ooad'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = 21
+    targetCompatibility = 21
+    withJavadocJar()
+    withSourcesJar()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Utilities
+    implementation 'ch.qos.logback:logback-classic:1.4.14'
+    implementation 'commons-cli:commons-cli:1.6.0'
+
+    // Maze display
+    implementation files('libs/csci4448.gameLayout-2.0.0.jar')
+
+    // Spring Boot Service
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'javax.servlet.jsp:jsp-api:2.1'
+    implementation 'javax.servlet:jstl:1.2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // library to speak strings: Free Text-To-Speech
+    implementation 'net.sf.sociaal:freetts:1.2.2'
+
+    // JUnit testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // BDD testing libraries
+    testImplementation 'io.cucumber:cucumber-picocontainer:7.20.1'
+    testImplementation 'io.cucumber:cucumber-java:7.20.1'
+    testImplementation 'io.cucumber:cucumber-junit-platform-engine:7.20.1'
+    testImplementation 'io.cucumber:cucumber-groovy:6.10.4'
+    testImplementation 'org.apache.groovy:groovy:4.0.23'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+tasks.register('cucumberCli') {
+    dependsOn assemble, testClasses
+    doLast {
+        println("Running cucumberCli...")
+        javaexec {
+            mainClass = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--snippets', 'camelcase',
+                    '--plugin', 'html:build/reports/cucumber-report.html',
+                    '--glue', 'csci.ooad.polymorphia.stepdefs',
+                    'src/test/resources/features'
+            ]
+        }
+    }
+}

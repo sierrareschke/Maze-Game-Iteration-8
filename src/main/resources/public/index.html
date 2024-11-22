@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Polymorphia Server</title>
+    <script src="maze.js"></script>
+    <script src="mazeDrawing.js"></script>
+    <link rel="stylesheet" href="maze.css">
+    <style>
+        .gameArea {
+        }
+    </style>
+</head>
+
+<body onload="loadDefaultData()">
+
+<h1>Polymorphia Server</h1>
+
+<div class="topControls">
+    <div id="gameSelectAndStatusPanel">
+        <div id="selectAndPlayGamePanel">
+            <label for="gameDropDown">Select Game to View:</label>
+            <select datatype="string" id="gameDropDown" name="gameDropDown" onchange="getGame()">
+            </select>
+        </div>
+        <label for="statusMessage">Game Status:</label>
+        <div id="statusMessage"></div>
+    </div>
+
+    <div class="automaticPlay">
+        <label for="playAutomatically">Play Automatically:</label>
+        <input type="checkbox" id="playAutomatically" name="playAutomatically" value="false"
+               onclick="updateAutomatically()"/>
+        <label for="secondBetweenTurns">Seconds between turns:</label>
+        <input class="secondsBetweenTurnsInput" id="secondBetweenTurns" maxlength="1" name="secondBetweenTurns" type="number"
+               value="2"><br>
+    </div>
+</div>
+
+<div id="gameArea" class="gameArea">
+    <div id="gameAreaLeft">
+        <div class="commandChoiceSection" id="commandChoiceSection">
+            <h2>Select Command</h2>
+            <label for="commandChoice">Select Command</label>
+            <select id="commandChoice" name="commandChoice" size="5">
+                <option value="move">Move</option>
+                <option value="fight">Fight</option>
+                <option value="eat">Eat</option>
+                <option value="wear">Wear Armor</option>
+            </select>
+            <button class="polymorphiaButton" onclick="playTurn()">Play Turn</button>
+        </div>
+
+        <div class="centerOnPage" id="createGamePanel">
+            <h2>Create a New Game</h2>
+            <table>
+                <tr>
+                    <td><label for="name">Name of Game:</label></td>
+                    <td><input id="name" name="name" size="10" type="text" value="API"></td>
+                </tr>
+                <tr>
+                    <td><label for="playerName">Player's Name:</label></td>
+                    <td><input id="playerName" name="playerName" size="10" type="text" value="Professor"></td>
+                </tr>
+                <tr>
+                    <td><label for="numRooms"># of Rooms:</label></td>
+                    <td><input id="numRooms" name="numRooms" size="3" type="text" value="9"></td>
+                </tr>
+                <tr>
+                    <td><label for="numAdventurers"># of Adventurers:</label></td>
+                    <td><input id="numAdventurers" name="numAdventurers" size="3" type="text" value="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="numKnights"># of Knights:</label></td>
+                    <td><input id="numKnights" name="numKnights" size="3" type="text" value="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="numCowards"># of Cowards:</label></td>
+                    <td><input id="numCowards" name="numCowards" size="3" type="text" value="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="numGluttons"># of Gluttons:</label></td>
+                    <td><input id="numGluttons" name="numGluttons" size="3" type="text" value="2"></td>
+                </tr>
+                <tr>
+                    <td><label for="numCreatures"># of Creatures:</label></td>
+                    <td><input id="numCreatures" name="numCreatures" size="3" type="text" value="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="numDemons"># of Demons:</label></td>
+                    <td><input id="numDemons" name="numDemons" size="3" type="text" value="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="numFood"># of Food Items:</label></td>
+                    <td><input id="numFood" name="numFood" size="3" type="text" value="7"></td>
+                </tr>
+                <tr>
+                    <td><label for="numArmor"># of Armor Suits:</label></td>
+                    <td><input id="numArmor" name="numArmor" size="3" type="text" value="2"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="polymorphiaButton" onclick="createGame()">Create Game</button>
+                    </td>
+                    <td id="newGameStatus"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <svg height="800" id="maze" width="800">
+        Sorry, your browser does not support inline SVG.
+    </svg>
+</div>
+
+
+</body>
+</html>
