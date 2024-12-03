@@ -19,6 +19,30 @@ public class PolymorphiaController {
     // TODO: UNSURE ABOUT THIS
     private Map<String,Polymorphia> games = new HashMap<>();
 
+    public PolymorphiaController() {
+        // Create a default game
+        logger.info("Initializing default game...");
+        Maze.Builder mazeBuilder = Maze.getNewBuilder()
+                .createConnectedRooms(1, 5)
+                .createAndAddAdventurers(2)
+                .createAndAddCreatures(2)
+                .createAndAddKnights(1)
+                .createAndAddCowards(1)
+                .createAndAddGluttons(0)
+                .createAndAddDemons(1)
+                .createAndAddFoodItems(3)
+                .createAndAddArmor(1);
+
+        Maze maze = mazeBuilder.build();
+        Polymorphia defaultGame = new Polymorphia("DefaultGame", maze);
+
+        // Add to games map
+        games.put("DefaultGame", defaultGame);
+
+        logger.info("Default game initialized: {}", defaultGame);
+    }
+
+
     @GetMapping("/api/games")
     public ResponseEntity<?> getGames() {
         List<String> gameNames = new ArrayList<>(games.keySet());
@@ -75,6 +99,7 @@ public class PolymorphiaController {
 
     @PutMapping("/api/game/{gameId}/playTurn/{command}")
     public ResponseEntity<?> playTurn(@PathVariable(name = "gameId") String gameId, @PathVariable(name = "command") String command) {
+        logger.info("Received request to play turn with command: {}", command);
         return new ResponseEntity<>("Game not found!", HttpStatus.NOT_FOUND);
     }
 
