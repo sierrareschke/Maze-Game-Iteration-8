@@ -178,6 +178,8 @@ public class Polymorphia implements IMazeSubject, IObservable {
         return new MazeAdapter(maze);
     }
 
+    public Maze getThisMaze() {return this.maze;}
+
     public int getTurnNumber() {
         return turnCount;
     }
