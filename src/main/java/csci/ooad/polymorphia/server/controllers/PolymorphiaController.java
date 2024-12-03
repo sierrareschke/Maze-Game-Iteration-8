@@ -29,6 +29,7 @@ public class PolymorphiaController {
 
     @PostMapping("/api/game/create")
     public ResponseEntity<?> createGame(@Validated @RequestBody PolymorphiaParameters params) {
+        logger.info("Received request to create a game with parameters: {}", params);
         return new ResponseEntity<>("Failed to create game", HttpStatus.METHOD_NOT_ALLOWED);
     }
 
