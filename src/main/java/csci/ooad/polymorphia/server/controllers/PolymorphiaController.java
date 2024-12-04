@@ -15,7 +15,6 @@ import java.util.*;
 @RestController
 public class PolymorphiaController {
     private static final Logger logger = LoggerFactory.getLogger(PolymorphiaController.class);
-    private ArrayList<Polymorphia> games = new ArrayList<>();
 
     // TODO: UNSURE ABOUT THIS
     private Map<String,Polymorphia> games = new HashMap<>();
@@ -24,7 +23,7 @@ public class PolymorphiaController {
         // Create a default game
         logger.info("Initializing default game...");
         Maze.Builder mazeBuilder = Maze.getNewBuilder()
-                .createConnectedRooms(1, 5)
+                .createFullyConnectedRooms(4)
                 .createAndAddAdventurers(2)
                 .createAndAddCreatures(2)
                 .createAndAddKnights(1)
@@ -75,7 +74,7 @@ public class PolymorphiaController {
         }
 
         Maze.Builder mazeBuilder = Maze.getNewBuilder()
-                .createConnectedRooms(1, params.numRooms())
+                .createFullyConnectedRooms(params.numRooms())
                 .createAndAddAdventurers(params.numCreatures())
                 .createAndAddCreatures(params.numCreatures())
                 .createAndAddKnights(params.numKnights())
@@ -83,6 +82,7 @@ public class PolymorphiaController {
                 .createAndAddGluttons(params.numGluttons())
                 .createAndAddDemons(params.numDemons())
                 .createAndAddFoodItems(params.numFood())
+                .createAndAddAPIPlayer(params.playerName())
                 .createAndAddArmor(params.numArmor());
 
         Maze maze = mazeBuilder.build();
@@ -101,7 +101,15 @@ public class PolymorphiaController {
     @PutMapping("/api/game/{gameId}/playTurn/{command}")
     public ResponseEntity<?> playTurn(@PathVariable(name = "gameId") String gameId, @PathVariable(name = "command") String command) {
         logger.info("Received request to play turn with command: {}", command);
-        return new ResponseEntity<>("Game not found!", HttpStatus.NOT_FOUND);
+        try {
+            Polymorphia foundGame = games.get(gameId.trim());
+            foundGame.playTurn();
+            PolymorphiaJsonAdaptor adaptor = new PolymorphiaJsonAdaptor(gameId, foundGame);
+            return new ResponseEntity<>(adaptor, HttpStatus.OK);
+        }
+        catch(Exception e) {
+            return new ResponseEntity<>("Game not found!", HttpStatus.NOT_FOUND);
+        }
     }
 
 }
