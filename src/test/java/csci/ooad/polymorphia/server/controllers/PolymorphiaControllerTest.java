@@ -25,6 +25,7 @@ class PolymorphiaControllerTest {
     public void contextLoads() {
     }
 
+
     @Test
     void getGames() {
         ResponseEntity<?> response = polymorphiaController.getGames();
@@ -35,6 +36,7 @@ class PolymorphiaControllerTest {
     @Test
     void createGame() {
         String playerName = "Professor";
+
         PolymorphiaParameters arcaneParameters = new PolymorphiaParameters(DEFAULT_GAME_ID, playerName,
                 2, 2, 7, 1,
                 2, 2, 2, 10, 2);
@@ -45,7 +47,6 @@ class PolymorphiaControllerTest {
         assert jsonAdaptor != null;
         // TODO: Add more assertions
     }
-
     @Test
     void getGame() {
         createGame();

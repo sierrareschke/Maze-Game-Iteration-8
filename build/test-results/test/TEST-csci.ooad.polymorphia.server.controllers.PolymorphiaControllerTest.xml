@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2024-12-05T03:25:54" hostname="Sierras-MacBook-Pro-2.local" time="1.389">
+  <properties/>
+  <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="1.28"/>
+  <testcase name="getGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.04"/>
+  <testcase name="contextLoads()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.006"/>
+  <testcase name="playTurnWithHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.004"/>
+  <testcase name="createGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.026">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;201 CREATED&gt; but was: &lt;409 CONFLICT&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;201 CREATED&gt; but was: &lt;409 CONFLICT&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at app//csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest.createGame(PolymorphiaControllerTest.java:43)
+	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="getGames()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.018"/>
+  <system-out><![CDATA[ ___          _                                          _
+(  _`\       (_ )                                       ( )     _
+| |_) )  _    | |  _   _   ___ ___     _    _ __  _ _   | |__  (_)   _ _
+| ,__/'/'_`\  | | ( ) ( )/' _ ` _ `\ /'_`\ ( '__)( '_`\ |  _ `\| | /'_` )
+| |   ( (_) ) | | | (_) || ( ) ( ) |( (_) )| |   | (_) )| | | || |( (_| |
+(_)   `\___/'(___)`\__, |(_) (_) (_)`\___/'(_)   | ,__/'(_) (_)(_)`\__,_)
+                  ( )_| |                        | |
+                  `\___/'                        (_)
+Polymorphia: An Object-Oriented Adventure Game 0.1
+Powered by Spring Boot 3.3.5
+?[33mStarting PolymorphiaControllerTest using Java 21.0.4 with PID 54023 (started by sierrareschke in /Users/sierrareschke/Documents/Grad_School/Fall2024/CSCI5448/csci-4448-5448-fall-2024-homework-9-sierra-grace)
+?[0;39m?[33mNo active profile set, falling back to 1 default profile: "default"
+?[0;39m?[33mInitializing default game...
+?[0;39m?[33mDefault game initialized: Polymorphia DefaultGame after turn 0
+Live adventurers(4): Frodo,Sir Lancelot,Arwen,Sir Robin
+Live creatures(3): Dragon,Satan,Ogre
+	Chamber of Secrets:
+		Frodo(health: 5.00)
+		Dragon(health: 3.00)
+		cupcake(2.0)
+		apple(1.9)
+		banana(1.2)
+		leather-Armor
+
+	Room of Doom:
+		Sir Lancelot(health: 8.00)
+
+	Room of Gloom:
+		Arwen(health: 5.00)
+		Satan(health: 15.00)
+
+	Titan's Lair:
+		Ogre(health: 3.00)
+		Sir Robin(health: 5.00)
+?[0;39m?[33mStarted PolymorphiaControllerTest in 3.551 seconds (process running for 5.882)
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: MyGame
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCurrent games: [DefaultGame, MyGame]
+?[0;39m]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/sierrareschke/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
