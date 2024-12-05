@@ -30,8 +30,11 @@ public class PolymorphiaJsonAdaptor {
 
         gameOver = polymorphia.isOver();
 
-        // TODO: COME BACK AND FIX THIS
-        statusMessage = "Status message not implemented";
+        if(polymorphia.isOver()){
+            statusMessage = polymorphia.getEndOfGameStatus();
+        }else{
+            statusMessage = "Turn " + polymorphia.getTurnNumber();
+        }
 
         livingAdventurers = polymorphia.getLivingAdventurers()
                 .stream()
