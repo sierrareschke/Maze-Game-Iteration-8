@@ -71,9 +71,11 @@ public class PolymorphiaController {
 
         String gameName = params.name();
 
+        if(gameName == null) {
+            return new ResponseEntity<>("Game name cannot be null!",HttpStatus.BAD_REQUEST);
+        }
+
         if(games.containsKey(gameName)) {
-//            gameName = gameName + Integer.toString(sameName);
-//            sameName++;
             return new ResponseEntity<>("Game with this name already exists!",HttpStatus.CONFLICT);
         }
 

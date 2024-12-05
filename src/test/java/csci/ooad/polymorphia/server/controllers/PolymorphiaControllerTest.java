@@ -31,11 +31,12 @@ class PolymorphiaControllerTest {
     void getGames() {
         ResponseEntity<?> response = polymorphiaController.getGames();
         assertTrue(response.getStatusCode().is2xxSuccessful());
-        // TODO: Add more assertions
+        assertEquals(HttpStatusCode.valueOf(200), response.getStatusCode());
 
         // Assert that the returned body is a list of game names
         assertNotNull(response.getBody());
         List<?> gameNames = (List<?>) response.getBody();
+        assertFalse(gameNames.isEmpty(), "Game list should not be empty");
         assertTrue(gameNames.contains("DefaultGame"), "DefaultGame should be present in the list of games");
     }
 
@@ -56,6 +57,7 @@ class PolymorphiaControllerTest {
 
         assertEquals(newGameName, jsonAdaptor.getName(), "Game ID should match the one provided");
 
+        // Try to create duplicate game
         ResponseEntity<?> secondResponse = polymorphiaController.createGame(arcaneParameters);
         assertEquals(HttpStatusCode.valueOf(409), secondResponse.getStatusCode(), "Trying to create second game with same name should error");
 
@@ -63,22 +65,33 @@ class PolymorphiaControllerTest {
         assertNotNull(getGamesResponse.getBody());
         List<?> gameNames = (List<?>) getGamesResponse.getBody();
         assertTrue(gameNames.contains("NewGame"), "NewGame should be present in the list of games");
+
+        // Test invalid input: null name
+        PolymorphiaParameters invalidParameters = new PolymorphiaParameters(null, playerName, 2, 2, 7, 1, 2, 2, 2, 10, 2);
+        ResponseEntity<?> invalidResponse = polymorphiaController.createGame(invalidParameters);
+        assertEquals(HttpStatusCode.valueOf(400), invalidResponse.getStatusCode(), "Response code should be 400 BAD REQUEST for null game name");
     }
+
     @Test
     void getGame() {
-        String gameName = "getGameTestGameName";
+        String gameName = DEFAULT_GAME_ID;
         String playerName = "getGameTestPlayer";
         PolymorphiaParameters arcaneParameters = new PolymorphiaParameters(gameName, playerName,
                 2, 2, 7, 1,
                 2, 2, 2, 10, 2);
         ResponseEntity<?> response = polymorphiaController.createGame(arcaneParameters);
 
-        ResponseEntity<?> getGameResponse = polymorphiaController.getGame("getGameTestGameName");
+        ResponseEntity<?> getGameResponse = polymorphiaController.getGame(DEFAULT_GAME_ID);
         assertEquals(HttpStatusCode.valueOf(200), getGameResponse.getStatusCode());
 
         PolymorphiaJsonAdaptor jsonAdaptor = (PolymorphiaJsonAdaptor) response.getBody();
         assert jsonAdaptor != null;
-        // TODO: Add more assertions
+
+        assertEquals(gameName, jsonAdaptor.getName(), "Game ID should match the one created");
+
+        // Test invalid input: non-existent game
+        ResponseEntity<?> invalidGameResponse = polymorphiaController.getGame("NonExistentGame");
+        assertEquals(HttpStatusCode.valueOf(404), invalidGameResponse.getStatusCode(), "Response code should be 404 NOT FOUND for non-existent game");
     }
 
     @Test
