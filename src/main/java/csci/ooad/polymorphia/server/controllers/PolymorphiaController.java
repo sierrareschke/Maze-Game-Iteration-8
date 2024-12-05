@@ -106,7 +106,11 @@ public class PolymorphiaController {
             Polymorphia foundGame = games.get(gameId.trim());
             foundGame.setSelectedOption(command);
             logger.info("selected option is " + command);
-            foundGame.playTurn();
+            if(foundGame.isInMiddleOfTurn() && command.equals("NULL")){
+                logger.info("awaiting API player response");
+            } else {
+                foundGame.playTurn();
+            }
 
             PolymorphiaJsonAdaptor adaptor = new PolymorphiaJsonAdaptor(gameId, foundGame);
             return new ResponseEntity<>(adaptor, HttpStatus.OK);

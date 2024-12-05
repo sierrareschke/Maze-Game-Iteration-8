@@ -51,6 +51,8 @@ public class Polymorphia implements IMazeSubject, IObservable {
         return name;
     }
 
+    public boolean isInMiddleOfTurn(){return this.inMiddleOfTurn;}
+
     @Override
     public String toString() {
         return String.join("\n", status()) + "\n" + maze.toString();
@@ -105,14 +107,20 @@ public class Polymorphia implements IMazeSubject, IObservable {
         }
 
 
+
         logger.info("play turn called");
-        turnCount += 1;
+        if(!this.inMiddleOfTurn){
+            turnCount += 1;
+        }
+
 
         // Process all the characters in random order
         logger.info("Starting turn " + turnCount + "...");
         List<Character> remainingCharactersToExecuteTurn = getLivingCharacters();
 
-        //remainingCharactersToExecuteTurn.stream().map(set)
+        for(Character character: remainingCharactersToExecuteTurn){
+            character.setTurnPending(true);
+        }
 
         while (!remainingCharactersToExecuteTurn.isEmpty()) {
             int index = rand.nextInt(remainingCharactersToExecuteTurn.size());
@@ -124,6 +132,11 @@ public class Polymorphia implements IMazeSubject, IObservable {
                 Command command;
 
                 if(currentPlayer instanceof APIPlayer){
+                    if(selectedOption.equals("NULL")){
+                        logger.info("current player is API player and selected option is NULL");
+                        inMiddleOfTurn = true;
+                        return;
+                    }
                     APIPlayer apiPlayer = (APIPlayer) currentPlayer;
                     HumanStrategy humanStrategy = (HumanStrategy) apiPlayer.getStrategy();
                     command = humanStrategy.generateSelectedCommand(apiPlayer,selectedOption);
@@ -131,12 +144,14 @@ public class Polymorphia implements IMazeSubject, IObservable {
                     command = currentPlayer.getAction();
                 }
                 command.execute();
+                currentPlayer.setTurnPending(false);
                 logger.info("Turn " + turnCount + ": " + currentPlayer.getName() + " executed " + command.getName());
             }
             remainingCharactersToExecuteTurn.remove(currentPlayer);
             notifyObservers(status());
         }
 
+        this.inMiddleOfTurn = false;
         this.selectedOption = null;
     }
 

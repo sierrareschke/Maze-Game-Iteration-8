@@ -38,11 +38,8 @@ public class HumanStrategy implements Strategy {
                 return CommandOption.WEAR_ARMOR;
             case "FIGHT":
                 return CommandOption.FIGHT;
-            case null:
-                logger.info("command string was null");
-                return CommandOption.DO_NOTHING;
             case "NULL":
-                logger.info("command string was NULL");
+                logger.error("Error: Command string was NULL and should have been handled in playTurn");
                 return CommandOption.DO_NOTHING;
             default:
                 return CommandOption.DO_NOTHING;

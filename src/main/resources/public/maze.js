@@ -76,7 +76,7 @@ function clearCommandChoices() {
 }
 
 function playTurn() {
-    let url = getGameUrlPrefix() + "/playTurn/"
+    let url = getGameUrlPrefix() + "/playTurn/";
 
     const commandChoice = document.getElementById("commandChoice");
     if (commandChoice.value) {
@@ -84,22 +84,39 @@ function playTurn() {
     } else {
         url += "NULL";
     }
+
     const xhr = new XMLHttpRequest();
     xhr.open("PUT", url, true);
     xhr.onload = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
+            // Log the raw response to the console
+            console.log("Raw Response:", xhr.responseText);
+
+            // Parse and log the JSON response
             const game = JSON.parse(xhr.responseText);
+            console.log("Parsed Game Object:", game);
+
+            // Call other functions to handle the response
             drawGame(game);
             populateCommandChoices(game.availableCommands);
             setStatusMessage(game.statusMessage);
+
             if (game.gameOver) {
                 window.clearInterval(intervalId);
                 clearCommandChoices();
             }
+        } else {
+            console.error("Failed to play turn. Status:", xhr.status, "Response:", xhr.responseText);
         }
     };
+
+    xhr.onerror = function () {
+        console.error("Network error occurred during playTurn request.");
+    };
+
     xhr.send();
 }
+
 
 
 function populateCommandChoices(choices) {

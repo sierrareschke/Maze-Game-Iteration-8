@@ -27,7 +27,7 @@ public class PolymorphiaJsonAdaptor {
         turn = polymorphia.getTurnNumber();
 
         // TODO: COMEBACK AND FIX THIS
-        inMiddleOfTurn = false;
+        inMiddleOfTurn = polymorphia.isInMiddleOfTurn();
 
         gameOver = polymorphia.isOver();
 
