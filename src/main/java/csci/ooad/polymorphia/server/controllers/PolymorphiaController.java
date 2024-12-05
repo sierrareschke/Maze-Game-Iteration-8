@@ -16,6 +16,7 @@ import java.util.*;
 @RestController
 public class PolymorphiaController {
     private static final Logger logger = LoggerFactory.getLogger(PolymorphiaController.class);
+    private static int sameName = 1;
 
     // TODO: UNSURE ABOUT THIS
     private Map<String,Polymorphia> games = new HashMap<>();
@@ -71,6 +72,8 @@ public class PolymorphiaController {
         String gameName = params.name();
 
         if(games.containsKey(gameName)) {
+//            gameName = gameName + Integer.toString(sameName);
+//            sameName++;
             return new ResponseEntity<>("Game with this name already exists!",HttpStatus.CONFLICT);
         }
 

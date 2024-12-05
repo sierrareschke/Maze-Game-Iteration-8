@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="1" errors="0" timestamp="2024-12-05T01:16:21" hostname="engr2-2-68-104-dhcp.int.colorado.edu" time="0.687">
   <properties/>
   <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.642"/>
@@ -20,6 +21,16 @@
 </failure>
   </testcase>
   <testcase name="getGames()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.002"/>
+=======
+<testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-05T17:17:49" hostname="Sierras-MacBook-Pro-2.local" time="1.11">
+  <properties/>
+  <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="1.047"/>
+  <testcase name="getGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.034"/>
+  <testcase name="contextLoads()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.003"/>
+  <testcase name="playTurnWithHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.004"/>
+  <testcase name="createGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.008"/>
+  <testcase name="getGames()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.003"/>
+>>>>>>> 838d8ff7551f24c0b422592b6767ea37e1f0454b
   <system-out><![CDATA[ ___          _                                          _
 (  _`\       (_ )                                       ( )     _
 | |_) )  _    | |  _   _   ___ ___     _    _ __  _ _   | |__  (_)   _ _
@@ -30,6 +41,7 @@
                   `\___/'                        (_)
 Polymorphia: An Object-Oriented Adventure Game 0.1
 Powered by Spring Boot 3.3.5
+<<<<<<< HEAD
 ?[33mStarting PolymorphiaControllerTest using Java 21.0.5 with PID 36048 (started by graceohlsen in /Users/graceohlsen/Developer/csci-4448/csci-4448-5448-fall-2024-homework-9-sierra-grace)
 ?[0;39m?[33mNo active profile set, falling back to 1 default profile: "default"
 ?[0;39m?[33mInitializing default game...
@@ -61,6 +73,43 @@ Live creatures(3): Ogre,Dragon,Satan
 ?[0;39m?[33mCurrent games: [DefaultGame, MyGame]
 ?[0;39m]]></system-out>
   <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/graceohlsen/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+=======
+?[33mStarting PolymorphiaControllerTest using Java 21.0.4 with PID 64628 (started by sierrareschke in /Users/sierrareschke/Documents/Grad_School/Fall2024/CSCI5448/csci-4448-5448-fall-2024-homework-9-sierra-grace)
+?[0;39m?[33mNo active profile set, falling back to 1 default profile: "default"
+?[0;39m?[33mInitializing default game...
+?[0;39m?[33mDefault game initialized: Polymorphia DefaultGame after turn 0
+Live adventurers(4): Frodo,Arwen,Sir Robin,Sir Lancelot
+Live creatures(3): Dragon,Ogre,Satan
+	Room of Horrors:
+		Frodo(health: 5.00)
+		Dragon(health: 3.00)
+		Ogre(health: 3.00)
+
+	Misty Mountains:
+		Arwen(health: 5.00)
+		Sir Robin(health: 5.00)
+		Satan(health: 15.00)
+		banana(1.8)
+
+	Shire:
+		cupcake(1.3)
+		apple(1.1)
+		leather-Armor
+
+	Hobbiton:
+		Sir Lancelot(health: 8.00)
+?[0;39m?[33mStarted PolymorphiaControllerTest in 3.792 seconds (process running for 5.067)
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=getGameTestGameName, playerName=getGameTestPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: getGameTestGameName
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame]
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: NewGame
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame, NewGame]
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame, NewGame]
+?[0;39m]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/sierrareschke/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+>>>>>>> 838d8ff7551f24c0b422592b6767ea37e1f0454b
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
 WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
