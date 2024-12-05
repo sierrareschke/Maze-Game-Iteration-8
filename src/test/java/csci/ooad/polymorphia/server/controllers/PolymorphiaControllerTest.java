@@ -7,8 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = {PolymorphiaServerApplication.class, PolymorphiaController.class})
 class PolymorphiaControllerTest {
@@ -31,13 +32,20 @@ class PolymorphiaControllerTest {
         ResponseEntity<?> response = polymorphiaController.getGames();
         assertTrue(response.getStatusCode().is2xxSuccessful());
         // TODO: Add more assertions
+
+        // Assert that the returned body is a list of game names
+        assertNotNull(response.getBody());
+        List<?> gameNames = (List<?>) response.getBody();
+        assertTrue(gameNames.contains("DefaultGame"), "DefaultGame should be present in the list of games");
     }
 
     @Test
     void createGame() {
         String playerName = "Professor";
+        String newGameName = "NewGame";
+        ResponseEntity<?> getGamesResponseInitial = polymorphiaController.getGames();
 
-        PolymorphiaParameters arcaneParameters = new PolymorphiaParameters(DEFAULT_GAME_ID, playerName,
+        PolymorphiaParameters arcaneParameters = new PolymorphiaParameters(newGameName, playerName,
                 2, 2, 7, 1,
                 2, 2, 2, 10, 2);
         ResponseEntity<?> response = polymorphiaController.createGame(arcaneParameters);
@@ -45,14 +53,28 @@ class PolymorphiaControllerTest {
 
         PolymorphiaJsonAdaptor jsonAdaptor = (PolymorphiaJsonAdaptor) response.getBody();
         assert jsonAdaptor != null;
-        // TODO: Add more assertions
+
+        assertEquals(newGameName, jsonAdaptor.getName(), "Game ID should match the one provided");
+
+        ResponseEntity<?> secondResponse = polymorphiaController.createGame(arcaneParameters);
+        assertEquals(HttpStatusCode.valueOf(409), secondResponse.getStatusCode(), "Trying to create second game with same name should error");
+
+        ResponseEntity<?> getGamesResponse = polymorphiaController.getGames();
+        assertNotNull(getGamesResponse.getBody());
+        List<?> gameNames = (List<?>) getGamesResponse.getBody();
+        assertTrue(gameNames.contains("NewGame"), "NewGame should be present in the list of games");
     }
     @Test
     void getGame() {
-        createGame();
+        String gameName = "getGameTestGameName";
+        String playerName = "getGameTestPlayer";
+        PolymorphiaParameters arcaneParameters = new PolymorphiaParameters(gameName, playerName,
+                2, 2, 7, 1,
+                2, 2, 2, 10, 2);
+        ResponseEntity<?> response = polymorphiaController.createGame(arcaneParameters);
 
-        ResponseEntity<?> response = polymorphiaController.getGame(DEFAULT_GAME_ID);
-        assertEquals(HttpStatusCode.valueOf(200), response.getStatusCode());
+        ResponseEntity<?> getGameResponse = polymorphiaController.getGame("getGameTestGameName");
+        assertEquals(HttpStatusCode.valueOf(200), getGameResponse.getStatusCode());
 
         PolymorphiaJsonAdaptor jsonAdaptor = (PolymorphiaJsonAdaptor) response.getBody();
         assert jsonAdaptor != null;

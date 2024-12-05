@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.374s</div>
+<div class="counter">1.099s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">83%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,40 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="createGame()"></a>
-<h3 class="failures">createGame()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: expected: &lt;201 CREATED&gt; but was: &lt;409 CONFLICT&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at app//csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest.createGame(PolymorphiaControllerTest.java:43)
-	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -106,22 +82,22 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.006s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">createGame()</td>
-<td class="failures">0.026s</td>
-<td class="failures">failed</td>
+<td class="success">createGame()</td>
+<td class="success">0.008s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getGame()</td>
-<td class="success">0.040s</td>
+<td class="success">0.034s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getGames()</td>
-<td class="success">0.018s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -131,12 +107,12 @@
 </tr>
 <tr>
 <td class="success">playTurnWithNoHumanPlayer()</td>
-<td class="success">1.280s</td>
+<td class="success">1.047s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre> ___          _                                          _
@@ -149,39 +125,43 @@
                   `\___/'                        (_)
 Polymorphia: An Object-Oriented Adventure Game 0.1
 Powered by Spring Boot 3.3.5
-?[33mStarting PolymorphiaControllerTest using Java 21.0.4 with PID 54023 (started by sierrareschke in /Users/sierrareschke/Documents/Grad_School/Fall2024/CSCI5448/csci-4448-5448-fall-2024-homework-9-sierra-grace)
+?[33mStarting PolymorphiaControllerTest using Java 21.0.4 with PID 64628 (started by sierrareschke in /Users/sierrareschke/Documents/Grad_School/Fall2024/CSCI5448/csci-4448-5448-fall-2024-homework-9-sierra-grace)
 ?[0;39m?[33mNo active profile set, falling back to 1 default profile: &quot;default&quot;
 ?[0;39m?[33mInitializing default game...
 ?[0;39m?[33mDefault game initialized: Polymorphia DefaultGame after turn 0
-Live adventurers(4): Frodo,Sir Lancelot,Arwen,Sir Robin
-Live creatures(3): Dragon,Satan,Ogre
-	Chamber of Secrets:
+Live adventurers(4): Frodo,Arwen,Sir Robin,Sir Lancelot
+Live creatures(3): Dragon,Ogre,Satan
+	Room of Horrors:
 		Frodo(health: 5.00)
 		Dragon(health: 3.00)
-		cupcake(2.0)
-		apple(1.9)
-		banana(1.2)
+		Ogre(health: 3.00)
+
+	Misty Mountains:
+		Arwen(health: 5.00)
+		Sir Robin(health: 5.00)
+		Satan(health: 15.00)
+		banana(1.8)
+
+	Shire:
+		cupcake(1.3)
+		apple(1.1)
 		leather-Armor
 
-	Room of Doom:
+	Hobbiton:
 		Sir Lancelot(health: 8.00)
-
-	Room of Gloom:
-		Arwen(health: 5.00)
-		Satan(health: 15.00)
-
-	Titan's Lair:
-		Ogre(health: 3.00)
-		Sir Robin(health: 5.00)
-?[0;39m?[33mStarted PolymorphiaControllerTest in 3.551 seconds (process running for 5.882)
-?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
-?[0;39m?[33mCreated new game: MyGame
-?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
-?[0;39m?[33mCurrent games: [DefaultGame, MyGame]
+?[0;39m?[33mStarted PolymorphiaControllerTest in 3.792 seconds (process running for 5.067)
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=getGameTestGameName, playerName=getGameTestPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: getGameTestGameName
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame]
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: NewGame
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame, NewGame]
+?[0;39m?[33mCurrent games: [getGameTestGameName, DefaultGame, NewGame]
 ?[0;39m</pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>WARNING: A Java agent has been loaded dynamically (/Users/sierrareschke/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
@@ -199,7 +179,7 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at Dec 4, 2024, 8:25:55 PM</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at Dec 5, 2024, 10:17:50 AM</p>
 </div>
 </div>
 </body>

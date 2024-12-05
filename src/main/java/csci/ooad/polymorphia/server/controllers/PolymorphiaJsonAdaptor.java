@@ -63,4 +63,7 @@ public class PolymorphiaJsonAdaptor {
                 .collect(Collectors.toList());
     }
 
+    public String getName() {
+        return this.name;
+    }
 }
