@@ -2,10 +2,8 @@ package csci.ooad.polymorphia.server.controllers;
 
 import csci.ooad.polymorphia.Maze.Room;
 import csci.ooad.polymorphia.Polymorphia;
-import csci.ooad.polymorphia.characters.Adventurer;
+import csci.ooad.polymorphia.characters.*;
 import csci.ooad.polymorphia.characters.Character;
-import csci.ooad.polymorphia.characters.Creature;
-import csci.ooad.polymorphia.characters.PolymorphiaCommand;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,7 +53,15 @@ public class PolymorphiaJsonAdaptor {
                 ))
                 .collect(Collectors.toList());
 
-        availableCommands = new ArrayList<>();
+        availableCommands = polymorphia.getLivingCharacters().stream()
+                .filter(character -> character.getStrategy() instanceof HumanStrategy) // Filter human players
+                .flatMap(character -> {
+                    HumanStrategy strategy = (HumanStrategy) character.getStrategy();
+                    List<HumanStrategy.CommandOption> options = strategy.availableCommandOptions(character);
+                    return options.stream().map(Enum::name); // Convert to string names
+                })
+                .distinct()
+                .collect(Collectors.toList());
     }
 
 }

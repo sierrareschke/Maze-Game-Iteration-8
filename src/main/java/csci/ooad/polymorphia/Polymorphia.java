@@ -3,10 +3,8 @@ package csci.ooad.polymorphia;
 import csci.ooad.layout.intf.IMaze;
 import csci.ooad.layout.intf.IMazeObserver;
 import csci.ooad.layout.intf.IMazeSubject;
-import csci.ooad.polymorphia.characters.Adventurer;
+import csci.ooad.polymorphia.characters.*;
 import csci.ooad.polymorphia.characters.Character;
-import csci.ooad.polymorphia.characters.Command;
-import csci.ooad.polymorphia.characters.Creature;
 import csci.ooad.polymorphia.observer.MazeAdapter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +34,8 @@ public class Polymorphia implements IMazeSubject, IObservable {
     private final Maze maze;
     private Integer turnCount = 0;
     private final Random rand = new Random();
+    private String selectedOption;
+    private boolean inMiddleOfTurn = false;
 
     public Polymorphia(Maze maze) {
         this("Polymorphia Game " + gameNumber, maze);
@@ -91,6 +91,10 @@ public class Polymorphia implements IMazeSubject, IObservable {
         return maze.hasLivingAdventurers();
     }
 
+    public void setSelectedOption(String selectedCommand){
+        this.selectedOption = selectedCommand;
+    }
+
     public void playTurn() {
         if (isOver()) {
             return;
@@ -99,11 +103,16 @@ public class Polymorphia implements IMazeSubject, IObservable {
         if (turnCount == 0) {
             logger.info("Starting play...");
         }
+
+
+        logger.info("play turn called");
         turnCount += 1;
 
         // Process all the characters in random order
         logger.info("Starting turn " + turnCount + "...");
         List<Character> remainingCharactersToExecuteTurn = getLivingCharacters();
+
+        //remainingCharactersToExecuteTurn.stream().map(set)
 
         while (!remainingCharactersToExecuteTurn.isEmpty()) {
             int index = rand.nextInt(remainingCharactersToExecuteTurn.size());
@@ -111,13 +120,24 @@ public class Polymorphia implements IMazeSubject, IObservable {
 
             // Make sure currentPlayer is still alive. It might have fought a Demon
             if (currentPlayer.isAlive()) {
-                Command command = currentPlayer.getAction();
+
+                Command command;
+
+                if(currentPlayer instanceof APIPlayer){
+                    APIPlayer apiPlayer = (APIPlayer) currentPlayer;
+                    HumanStrategy humanStrategy = (HumanStrategy) apiPlayer.getStrategy();
+                    command = humanStrategy.generateSelectedCommand(apiPlayer,selectedOption);
+                }else {
+                    command = currentPlayer.getAction();
+                }
                 command.execute();
                 logger.info("Turn " + turnCount + ": " + currentPlayer.getName() + " executed " + command.getName());
             }
             remainingCharactersToExecuteTurn.remove(currentPlayer);
             notifyObservers(status());
         }
+
+        this.selectedOption = null;
     }
 
     public List<Character> getLivingCharacters() {

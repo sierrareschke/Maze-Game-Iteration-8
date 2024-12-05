@@ -28,7 +28,7 @@ public class ArmoredCharacter extends Adventurer {
         return character.getHealth();
     }
 
-    Strategy getStrategy() {
+    public Strategy getStrategy() {
         return character.getStrategy();
     }
 

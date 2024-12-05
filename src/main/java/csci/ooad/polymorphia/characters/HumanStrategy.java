@@ -2,6 +2,8 @@ package csci.ooad.polymorphia.characters;
 
 import csci.ooad.polymorphia.Food;
 import csci.ooad.polymorphia.Maze;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -9,6 +11,7 @@ public class HumanStrategy implements Strategy {
     public enum CommandOption {EAT, FIGHT, MOVE, WEAR_ARMOR, DO_NOTHING}
 
     final CommandFactory commandFactory = new CommandFactory();
+    private static final Logger logger = LoggerFactory.getLogger(HumanStrategy.class);
 
     @Override
     public Command generateCommand(Character character) {
@@ -17,6 +20,35 @@ public class HumanStrategy implements Strategy {
         CommandOption choice = getTopLevelChoice(availableCommands, character);
         return getCommand(character, choice);
     }
+
+    public Command generateSelectedCommand(Character character, String commandString){
+        CommandOption selectedCommand = getCommandOption(commandString);
+        return getCommand(character,selectedCommand);
+    }
+
+    private CommandOption getCommandOption(String commandString) {
+        switch(commandString){
+            case "DO_NOTHING":
+                return CommandOption.DO_NOTHING;
+            case "MOVE":
+                return CommandOption.MOVE;
+            case "EAT":
+                return CommandOption.EAT;
+            case "WEAR_ARMOR":
+                return CommandOption.WEAR_ARMOR;
+            case "FIGHT":
+                return CommandOption.FIGHT;
+            case null:
+                logger.info("command string was null");
+                return CommandOption.DO_NOTHING;
+            case "NULL":
+                logger.info("command string was NULL");
+                return CommandOption.DO_NOTHING;
+            default:
+                return CommandOption.DO_NOTHING;
+        }
+    }
+
 
     Command getCommand(Character character, CommandOption choice) {
         Maze.Room currentRoom = character.getCurrentLocation();
@@ -38,7 +70,7 @@ public class HumanStrategy implements Strategy {
         }
     }
 
-    List<CommandOption> availableCommandOptions(Character character) {
+    public List<CommandOption> availableCommandOptions(Character character) {
         Maze.Room currentRoom = character.getCurrentLocation();
 
         List<CommandOption> options = new ArrayList<>();

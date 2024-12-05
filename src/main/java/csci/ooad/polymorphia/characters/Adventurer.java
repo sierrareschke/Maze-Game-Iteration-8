@@ -27,4 +27,5 @@ public class Adventurer extends Character {
         return true;
     }
 
+
 }

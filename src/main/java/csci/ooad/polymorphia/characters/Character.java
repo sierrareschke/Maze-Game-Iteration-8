@@ -22,9 +22,14 @@ public abstract class Character implements Comparable<Character> {
 
     protected final String name;
     private Double health;
+    private boolean turnPending = true;
 
     private Maze.Room currentLocation;
     private final Strategy strategy;
+
+    public void setTurnPending(boolean isPending){
+        this.turnPending = isPending;
+    }
 
     public Maze.Room getCurrentLocation() {
         return currentLocation;
@@ -44,7 +49,7 @@ public abstract class Character implements Comparable<Character> {
         this.strategy = strategy;
     }
 
-    Strategy getStrategy() {
+    public Strategy getStrategy() {
         return strategy;
     }
 
@@ -120,9 +125,12 @@ public abstract class Character implements Comparable<Character> {
         return false;
     }
 
+
+
     public Command getAction() {
         return this.strategy.generateCommand(this);
     }
+
 
     public void move(Maze.Room nextLocation) {
         loseMovingHealth(HEALTH_LOST_IN_MOVING_ROOMS);

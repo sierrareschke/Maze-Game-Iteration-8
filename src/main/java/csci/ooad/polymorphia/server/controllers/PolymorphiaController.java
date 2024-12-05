@@ -2,6 +2,7 @@ package csci.ooad.polymorphia.server.controllers;
 
 import csci.ooad.polymorphia.Maze;
 import csci.ooad.polymorphia.Polymorphia;
+import csci.ooad.polymorphia.characters.Adventurer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -103,7 +104,10 @@ public class PolymorphiaController {
         logger.info("Received request to play turn with command: {}", command);
         try {
             Polymorphia foundGame = games.get(gameId.trim());
+            foundGame.setSelectedOption(command);
+            logger.info("selected option is " + command);
             foundGame.playTurn();
+
             PolymorphiaJsonAdaptor adaptor = new PolymorphiaJsonAdaptor(gameId, foundGame);
             return new ResponseEntity<>(adaptor, HttpStatus.OK);
         }
