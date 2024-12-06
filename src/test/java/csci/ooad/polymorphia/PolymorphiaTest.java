@@ -1,13 +1,16 @@
 package csci.ooad.polymorphia;
 
 import csci.ooad.polymorphia.characters.Adventurer;
+import csci.ooad.polymorphia.characters.Character;
 import csci.ooad.polymorphia.characters.CharacterFactory;
 import csci.ooad.polymorphia.characters.Creature;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PolymorphiaTest {
     static final String STARTING_ROOM_NAME = "Starting Room";
@@ -59,8 +62,37 @@ public class PolymorphiaTest {
         // Act
         game.play();
 
+        // Test end of game play
+        Character winner = game.getWinner();
+
         // Assert
+        assertNotNull(winner);
         assert game.isOver();
+    }
+
+    @Test
+    public void testHasLivingCharacters() {
+        Maze threeByThreeMaze = Maze.getNewBuilder()
+                .create3x3Grid()
+                .createAndAddAdventurers("Frodo")
+                .createAndAddCreatures("Ogre")
+                .build();
+        Polymorphia game = new Polymorphia("test3x3Game", threeByThreeMaze);
+        List<Character> livingCharacters = game.getLivingCharacters();
+        assertEquals(2,livingCharacters.size());
+    }
+
+    @Test
+    public void testGetMaze(){
+        Maze threeByThreeMaze = Maze.getNewBuilder()
+                .create3x3Grid()
+                .createAndAddAdventurers("Frodo")
+                .createAndAddCreatures("Ogre")
+                .build();
+        Polymorphia game = new Polymorphia("test3x3Game", threeByThreeMaze);
+        Maze maze = (Maze) game.getMaze();
+        assert maze != null;
+        assertEquals(9, maze.getRooms().size());
     }
 
     @Disabled

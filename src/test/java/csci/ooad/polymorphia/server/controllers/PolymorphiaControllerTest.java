@@ -96,12 +96,58 @@ class PolymorphiaControllerTest {
 
     @Test
     void playTurnWithNoHumanPlayer() {
-        // TODO: Implement this test
+        String gameName = "NoHumanPlayerGame";
+        String playerName = "AIPlayer";
+        PolymorphiaParameters parameters = new PolymorphiaParameters(gameName, playerName,
+                2, 2, 7, 1,
+                2, 2, 2, 10, 2);
+
+        // Create the game
+        ResponseEntity<?> createResponse = polymorphiaController.createGame(parameters);
+        assertEquals(HttpStatusCode.valueOf(201), createResponse.getStatusCode(), "Game creation should succeed");
+
+        // Simulate a turn with no human player and a valid command
+        String command = "AUTO_TURN";
+        ResponseEntity<?> playTurnResponse = polymorphiaController.playTurn(gameName, command);
+        assertEquals(HttpStatusCode.valueOf(200), playTurnResponse.getStatusCode(), "Playing a turn should return 200 OK");
+
+        // Verify the game state
+        PolymorphiaJsonAdaptor gameState = (PolymorphiaJsonAdaptor) playTurnResponse.getBody();
+        assertNotNull(gameState, "Game state should not be null");
+        assertEquals(gameName, gameState.getName(), "Game name should match");
     }
 
     @Test
     void playTurnWithHumanPlayer() {
-        // TODO: Implement this test
+        String gameName = "HumanPlayerGame";
+        String playerName = "HumanPlayer";
+        PolymorphiaParameters parameters = new PolymorphiaParameters(gameName, playerName,
+                2, 2, 7, 1,
+                2, 2, 2, 10, 2);
+
+        // Create the game
+        ResponseEntity<?> createResponse = polymorphiaController.createGame(parameters);
+        assertEquals(HttpStatusCode.valueOf(201), createResponse.getStatusCode(), "Game creation should succeed");
+
+        // Simulate a turn with a human player and a valid command
+        String command = "HUMAN_MOVE";
+        ResponseEntity<?> playTurnResponse = polymorphiaController.playTurn(gameName, command);
+        assertEquals(HttpStatusCode.valueOf(200), playTurnResponse.getStatusCode(), "Playing a turn should return 200 OK");
+
+        // Verify the game state
+        PolymorphiaJsonAdaptor gameState = (PolymorphiaJsonAdaptor) playTurnResponse.getBody();
+        assertNotNull(gameState, "Game state should not be null");
+        assertEquals(gameName, gameState.getName(), "Game name should match");
+
+        // Simulate a null command while in the middle of a turn
+        String nullCommand = "NULL";
+        ResponseEntity<?> nullTurnResponse = polymorphiaController.playTurn(gameName, nullCommand);
+        assertEquals(HttpStatusCode.valueOf(200), nullTurnResponse.getStatusCode(), "Null command while in the middle of a turn should return 200 OK");
+
+        // Test for a non-existent game
+        String nonExistentGame = "NonExistentGame";
+        ResponseEntity<?> invalidGameResponse = polymorphiaController.playTurn(nonExistentGame, command);
+        assertEquals(HttpStatusCode.valueOf(404), invalidGameResponse.getStatusCode(), "Non-existent game should return 404 NOT FOUND");
     }
 
 }
