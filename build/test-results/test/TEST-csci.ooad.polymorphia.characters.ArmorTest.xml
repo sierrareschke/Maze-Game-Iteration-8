@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.characters.ArmorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.031">
+<testsuite name="csci.ooad.polymorphia.characters.ArmorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T23:21:03" hostname="UCB-HYFY92NCM6" time="0.008">
   <properties/>
-  <testcase name="testFindingArmorAndFighting()" classname="csci.ooad.polymorphia.characters.ArmorTest" time="0.03"/>
+  <testcase name="testFindingArmorAndFighting()" classname="csci.ooad.polymorphia.characters.ArmorTest" time="0.006"/>
   <testcase name="testIAmHealthiestInRoom()" classname="csci.ooad.polymorphia.characters.ArmorTest" time="0.001"/>
   <system-out><![CDATA[?[33mBilbo put on Bronze-Armor
 ?[0;39marmoredBilbo: Bronze-Armored Bilbo(health: 5.00)
@@ -11,13 +11,13 @@
 ?[0;39m?[33mBronze-Armored Bilbo put on Steel-Armor
 ?[0;39mdoublyArmoredBilbo: Steel-Armored Bronze-Armored Bilbo(health: 4.65)
 ?[33mSteel-Armored Bronze-Armored Bilbo is fighting Ogre(health: 3.00)
-?[0;39m?[33mSteel-Armored Bronze-Armored Bilbo rolled 3
-?[0;39m?[33mOgre(health: 3.00) rolled 4
+?[0;39m?[33mSteel-Armored Bronze-Armored Bilbo rolled 1
+?[0;39m?[33mOgre(health: 3.00) rolled 3
 ?[0;39m?[33mFightOutcome: Ogre won a battle against Steel-Armored Bronze-Armored Bilbo
 ?[0;39m?[33mSteel-Armor absorbed 1.0 damage
 ?[0;39m?[33mBronze-Armor absorbed 1.0 damage
 ?[0;39m?[33mBilbo put on Steel-Armor
-?[0;39mstrategy: csci.ooad.polymorphia.characters.BaseStrategy@6c758c74
+?[0;39mstrategy: csci.ooad.polymorphia.characters.BaseStrategy@7acb8e6b
 ?[33mBilbo gained health: 6.00
 ?[0;39m?[33mBilbo gained health: 9.00
 ?[0;39m?[33mSteel-Armor absorbed 1.0 damage

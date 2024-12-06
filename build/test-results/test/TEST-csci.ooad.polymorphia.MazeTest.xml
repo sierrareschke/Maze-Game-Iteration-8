@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.MazeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.04">
+<testsuite name="csci.ooad.polymorphia.MazeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-12-06T23:21:03" hostname="UCB-HYFY92NCM6" time="0.024">
   <properties/>
-  <testcase name="testUseOfFactories()" classname="csci.ooad.polymorphia.MazeTest" time="0.025"/>
-  <testcase name="testNoSuchRoom()" classname="csci.ooad.polymorphia.MazeTest" time="0.005"/>
-  <testcase name="testHasLivingCreatures()" classname="csci.ooad.polymorphia.MazeTest" time="0.001"/>
-  <testcase name="testToString()" classname="csci.ooad.polymorphia.MazeTest" time="0.003"/>
-  <testcase name="testSequentialDistribution()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
+  <testcase name="testUseOfFactories()" classname="csci.ooad.polymorphia.MazeTest" time="0.005"/>
+  <testcase name="testNoSuchRoom()" classname="csci.ooad.polymorphia.MazeTest" time="0.002"/>
+  <testcase name="testHasLivingCreatures()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
+  <testcase name="testToString()" classname="csci.ooad.polymorphia.MazeTest" time="0.005"/>
+  <testcase name="testSequentialDistribution()" classname="csci.ooad.polymorphia.MazeTest" time="0.001"/>
   <testcase name="testRandomDistribution()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
   <testcase name="testCreationViaNumber()" classname="csci.ooad.polymorphia.MazeTest" time="0.001"/>
   <testcase name="testIndividualRoomCreation()" classname="csci.ooad.polymorphia.MazeTest" time="0.001"/>
   <testcase name="testRoomsWithNConnections()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
-  <testcase name="testHasLivingAdventurers()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
-  <testcase name="test2x2GridCreation()" classname="csci.ooad.polymorphia.MazeTest" time="0.001"/>
+  <testcase name="testHasLivingAdventurers()" classname="csci.ooad.polymorphia.MazeTest" time="0.002"/>
+  <testcase name="test2x2GridCreation()" classname="csci.ooad.polymorphia.MazeTest" time="0.0"/>
   <system-out><![CDATA[?[36m	Northwest:
-		
-
-	Northeast:
 		Ogre(health: 3.00)
 
-	Southwest:
+	Northeast:
 		Frodo(health: 5.00)
+
+	Southwest:
+		
 
 	Southeast:
 		?[0;39m]]></system-out>

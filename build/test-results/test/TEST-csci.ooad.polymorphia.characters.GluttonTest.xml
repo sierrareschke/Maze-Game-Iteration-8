@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.characters.GluttonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.001">
+<testsuite name="csci.ooad.polymorphia.characters.GluttonTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T23:21:03" hostname="UCB-HYFY92NCM6" time="0.001">
   <properties/>
   <testcase name="testFighting()" classname="csci.ooad.polymorphia.characters.GluttonTest" time="0.0"/>
-  <testcase name="testEating()" classname="csci.ooad.polymorphia.characters.GluttonTest" time="0.001"/>
+  <testcase name="testEating()" classname="csci.ooad.polymorphia.characters.GluttonTest" time="0.0"/>
   <system-out><![CDATA[?[33mSatan is fighting Glutton(health: 5.00)
-?[0;39m?[33mSatan rolled 4
-?[0;39m?[33mGlutton(health: 5.00) rolled 6
-?[0;39m?[33mFightOutcome: Glutton won a battle against Satan
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mGlutton(health: 5.00) rolled 2
+?[0;39m?[33mFightOutcome: Satan won a battle against Glutton
 ?[0;39m?[33mGlutton gained health: 6.00
 ?[0;39m]]></system-out>
   <system-err><![CDATA[]]></system-err>

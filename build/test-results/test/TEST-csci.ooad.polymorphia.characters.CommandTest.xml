@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.characters.CommandTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.001">
+<testsuite name="csci.ooad.polymorphia.characters.CommandTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T23:21:03" hostname="UCB-HYFY92NCM6" time="0.0">
   <properties/>
   <testcase name="testMoveCommandCreation()" classname="csci.ooad.polymorphia.characters.CommandTest" time="0.0"/>
   <testcase name="testMoveCommand()" classname="csci.ooad.polymorphia.characters.CommandTest" time="0.0"/>

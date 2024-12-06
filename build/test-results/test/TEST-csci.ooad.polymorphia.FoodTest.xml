@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.FoodTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.004">
+<testsuite name="csci.ooad.polymorphia.FoodTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-06T23:21:02" hostname="UCB-HYFY92NCM6" time="0.004">
   <properties/>
   <testcase name="testToString()" classname="csci.ooad.polymorphia.FoodTest" time="0.003"/>
   <testcase name="testSettingHealthValue()" classname="csci.ooad.polymorphia.FoodTest" time="0.0"/>
