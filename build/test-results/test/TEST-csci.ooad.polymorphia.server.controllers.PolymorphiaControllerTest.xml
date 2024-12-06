@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:38" hostname="UCB-HYFY92NCM6" time="0.512">
+  <properties/>
+  <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.5"/>
+  <testcase name="getGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.002"/>
+  <testcase name="contextLoads()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
+  <testcase name="playTurnWithHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.004"/>
+  <testcase name="createGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.002"/>
+  <testcase name="getGames()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
+  <system-out><![CDATA[ ___          _                                          _
+(  _`\       (_ )                                       ( )     _
+| |_) )  _    | |  _   _   ___ ___     _    _ __  _ _   | |__  (_)   _ _
+| ,__/'/'_`\  | | ( ) ( )/' _ ` _ `\ /'_`\ ( '__)( '_`\ |  _ `\| | /'_` )
+| |   ( (_) ) | | | (_) || ( ) ( ) |( (_) )| |   | (_) )| | | || |( (_| |
+(_)   `\___/'(___)`\__, |(_) (_) (_)`\___/'(_)   | ,__/'(_) (_)(_)`\__,_)
+                  ( )_| |                        | |
+                  `\___/'                        (_)
+Polymorphia: An Object-Oriented Adventure Game 0.1
+Powered by Spring Boot 3.3.5
+?[33mStarting PolymorphiaControllerTest using Java 21.0.5 with PID 64977 (started by nobr3541 in /Users/nobr3541/Library/CloudStorage/OneDrive-UCB-O365/Desktop/PhD/Courses/Fall-2024/OOP/homework_9)
+?[0;39m?[33mNo active profile set, falling back to 1 default profile: "default"
+?[0;39m?[33mInitializing default game...
+?[0;39m?[33mDefault game initialized: Polymorphia DefaultGame after turn 0
+Live adventurers(4): Sir Robin,Frodo,Arwen,Sir Lancelot
+Live creatures(3): Dragon,Ogre,Satan
+	Sanctuary:
+		Dragon(health: 3.00)
+		Ogre(health: 3.00)
+		Sir Robin(health: 5.00)
+
+	Den of Souls:
+		Satan(health: 15.00)
+		banana(1.0)
+
+	Map Room:
+		cupcake(1.2)
+		apple(1.4)
+		leather-Armor
+
+	Fangorn Forest:
+		Frodo(health: 5.00)
+		Arwen(health: 5.00)
+		Sir Lancelot(health: 8.00)
+?[0;39m?[33mStarted PolymorphiaControllerTest in 1.174 seconds (process running for 2.357)
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NoHumanPlayerGame, playerName=AIPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: NoHumanPlayerGame
+?[0;39m?[33mReceived request to play turn with command: AUTO_TURN
+?[0;39m?[33mselected option is AUTO_TURN
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mSir Robin gained health: 6.15
+?[0;39m?[33mTurn 1: Sir Robin executed EAT
+?[0;39m?[33mNikhil gained health: 6.67
+?[0;39m?[33mTurn 1: Nikhil executed EAT
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mFran gained health: 6.71
+?[0;39m?[33mTurn 1: Fran executed EAT
+?[0;39m?[33mSir Gobbles gained health: 6.82
+?[0;39m?[33mTurn 1: Sir Gobbles executed EAT
+?[0;39m?[33mSierra gained health: 6.46
+?[0;39m?[33mTurn 1: Sierra executed EAT
+?[0;39m?[33mArwen gained health: 6.41
+?[0;39m?[33mTurn 1: Arwen executed EAT
+?[0;39m?[33mTurn 1: Troll executed DO NOTHING
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 1: Orc executed DO NOTHING
+?[0;39m?[33mFrodo gained health: 6.08
+?[0;39m?[33mTurn 1: Frodo executed EAT
+?[0;39m?[33mMatt gained health: 6.53
+?[0;39m?[33mTurn 1: Matt executed EAT
+?[0;39m?[33mSir Eats-a-lot gained health: 6.04
+?[0;39m?[33mTurn 1: Sir Eats-a-lot executed EAT
+?[0;39m?[33mTurn 1: AIPlayer executed DO NOTHING
+?[0;39m?[33mSir Scaredy Cat gained health: 6.68
+?[0;39m?[33mTurn 1: Sir Scaredy Cat executed EAT
+?[0;39m?[33mTurn 1: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 1: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mSatan is fighting Sir Lancelot(health: 8.00)
+?[0;39m?[33mSatan rolled 6
+?[0;39m?[33mSir Lancelot(health: 8.00) rolled 3
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mFrodo moved from Pool of Lava to Crystal Palace
+?[0;39m?[33mMoved: Frodo moved from Pool of Lava to Crystal Palace
+?[0;39m?[33mTurn 1: Frodo executed MOVE
+?[0;39m?[33mSir Lancelot put on chainmail-Armor
+?[0;39m?[33mTurn 1: Sir Lancelot executed WEAR ARMOR
+?[0;39m?[33mBeelzebub is fighting Sir Gobbles(health: 6.82)
+?[0;39m?[33mBeelzebub rolled 3
+?[0;39m?[33mSir Gobbles(health: 6.82) rolled 1
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Gobbles
+?[0;39m?[33mTurn 1: Beelzebub executed FIGHT
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=getGameTestPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: MyGame
+?[0;39m?[33mGame not found
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=HumanPlayerGame, playerName=HumanPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: HumanPlayerGame
+?[0;39m?[33mReceived request to play turn with command: HUMAN_MOVE
+?[0;39m?[33mselected option is HUMAN_MOVE
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mFrodo gained health: 6.30
+?[0;39m?[33mTurn 1: Frodo executed EAT
+?[0;39m?[33mTurn 1: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 1: Orc executed DO NOTHING
+?[0;39m?[33mSir Lancelot put on leather-Armor
+?[0;39m?[33mTurn 1: Sir Lancelot executed WEAR ARMOR
+?[0;39m?[33mSir Robin gained health: 6.26
+?[0;39m?[33mTurn 1: Sir Robin executed EAT
+?[0;39m?[33mBeelzebub is fighting leather-Armored Sir Lancelot(health: 8.00)
+?[0;39m?[33mBeelzebub rolled 3
+?[0;39m?[33mleather-Armored Sir Lancelot(health: 8.00) rolled 4
+?[0;39m?[33mFightOutcome: leather-Armored Sir Lancelot won a battle against Beelzebub
+?[0;39m?[33mTurn 1: Beelzebub executed FIGHT
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mMatt gained health: 6.54
+?[0;39m?[33mTurn 1: Matt executed EAT
+?[0;39m?[33mSir Gobbles gained health: 6.76
+?[0;39m?[33mTurn 1: Sir Gobbles executed EAT
+?[0;39m?[33mTurn 1: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSatan is fighting leather-Armored Sir Lancelot(health: 8.00)
+?[0;39m?[33mSatan rolled 1
+?[0;39m?[33mleather-Armored Sir Lancelot(health: 8.00) rolled 6
+?[0;39m?[33mFightOutcome: leather-Armored Sir Lancelot won a battle against Satan
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mSir Eats-a-lot gained health: 6.67
+?[0;39m?[33mTurn 1: Sir Eats-a-lot executed EAT
+?[0;39m?[33mSierra gained health: 6.92
+?[0;39m?[33mTurn 1: Sierra executed EAT
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 1: HumanPlayer executed DO NOTHING
+?[0;39m?[33mTurn 1: Troll executed DO NOTHING
+?[0;39m?[33mArwen moved from Sanctuary to Den of Souls
+?[0;39m?[33mMoved: Arwen moved from Sanctuary to Den of Souls
+?[0;39m?[33mTurn 1: Arwen executed MOVE
+?[0;39m?[33mNikhil moved from Sanctuary to Den of Souls
+?[0;39m?[33mMoved: Nikhil moved from Sanctuary to Den of Souls
+?[0;39m?[33mTurn 1: Nikhil executed MOVE
+?[0;39m?[33mSir Scaredy Cat moved from Sanctuary to Den of Souls
+?[0;39m?[33mMoved: Sir Scaredy Cat moved from Sanctuary to Den of Souls
+?[0;39m?[33mTurn 1: Sir Scaredy Cat executed MOVE
+?[0;39m?[33mFran moved from Sanctuary to Den of Souls
+?[0;39m?[33mMoved: Fran moved from Sanctuary to Den of Souls
+?[0;39m?[33mTurn 1: Fran executed MOVE
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mFrodo gained health: 6.40
+?[0;39m?[33mTurn 1: Frodo executed EAT
+?[0;39m?[33mReceived request to play turn with command: NULL
+?[0;39m?[33mselected option is NULL
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mcurrent player is API player and selected option is NULL
+?[0;39m?[33mReceived request to play turn with command: HUMAN_MOVE
+?[0;39m?[33mCurrent games: [NoHumanPlayerGame, HumanPlayerGame, DefaultGame, MyGame]
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCreated new game: NewGame
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=NewGame, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCurrent games: [NoHumanPlayerGame, HumanPlayerGame, DefaultGame, NewGame, MyGame]
+?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=null, playerName=Professor, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
+?[0;39m?[33mCurrent games: [NoHumanPlayerGame, HumanPlayerGame, DefaultGame, NewGame, MyGame]
+?[0;39m]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/nobr3541/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

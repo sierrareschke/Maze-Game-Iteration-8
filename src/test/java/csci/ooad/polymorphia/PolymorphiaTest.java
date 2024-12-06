@@ -1,5 +1,6 @@
 package csci.ooad.polymorphia;
 
+import csci.ooad.layout.intf.IMaze;
 import csci.ooad.polymorphia.characters.Adventurer;
 import csci.ooad.polymorphia.characters.Character;
 import csci.ooad.polymorphia.characters.CharacterFactory;
@@ -90,9 +91,10 @@ public class PolymorphiaTest {
                 .createAndAddCreatures("Ogre")
                 .build();
         Polymorphia game = new Polymorphia("test3x3Game", threeByThreeMaze);
-        Maze maze = (Maze) game.getMaze();
+        IMaze maze = game.getMaze();
         assert maze != null;
-        assertEquals(9, maze.getRooms().size());
+        int rooms = maze.getRoomNames().size();
+        assertEquals(9, rooms);
     }
 
     @Disabled

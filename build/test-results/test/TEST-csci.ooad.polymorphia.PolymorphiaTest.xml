@@ -1,14 +1,1602 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.PolymorphiaTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-12-06T22:34:01" hostname="UCB-HYFY92NCM6" time="0.083">
+<testsuite name="csci.ooad.polymorphia.PolymorphiaTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:49:37" hostname="UCB-HYFY92NCM6" time="0.113">
   <properties/>
-  <testcase name="testGetMaze()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.083">
-    <failure message="java.lang.ClassCastException: class csci.ooad.polymorphia.observer.MazeAdapter cannot be cast to class csci.ooad.polymorphia.Maze (csci.ooad.polymorphia.observer.MazeAdapter and csci.ooad.polymorphia.Maze are in unnamed module of loader 'app')" type="java.lang.ClassCastException">java.lang.ClassCastException: class csci.ooad.polymorphia.observer.MazeAdapter cannot be cast to class csci.ooad.polymorphia.Maze (csci.ooad.polymorphia.observer.MazeAdapter and csci.ooad.polymorphia.Maze are in unnamed module of loader 'app')
-	at csci.ooad.polymorphia.PolymorphiaTest.testGetMaze(PolymorphiaTest.java:93)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testUseOfFactories()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
+  <testcase name="testHasLivingCharacters()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.001"/>
+  <testcase name="testOneRoom()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.029"/>
+  <testcase name="test2x2Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.005"/>
+  <testcase name="testSequentialDistribution()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
+  <testcase name="test3x3Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.021"/>
+  <testcase name="testRandomDistribution()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
+  <testcase name="testGetMaze()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.003"/>
+  <testcase name="testCreationViaNumber()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
+  <testcase name="testIndividualRoomCreation()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.001"/>
+  <testcase name="testWithEverything()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.047"/>
+  <testcase name="testRoomsWithNConnections()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
+  <system-out><![CDATA[?[33mPolymorphia testOneRoom after turn 0
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Starting Room:
+		Frodo(health: 5.00)
+		Ogre(health: 3.00)
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
+?[0;39m?[33mFrodo rolled 4
+?[0;39m?[33mOgre(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mTurn 1: Frodo executed FIGHT
+?[0;39m?[33mPolymorphia testOneRoom after turn 1
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Starting Room:
+		Frodo(health: 4.50)
+		Ogre(health: 1.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.50)
+?[0;39m?[33mFrodo rolled 1
+?[0;39m?[33mOgre(health: 1.50) rolled 1
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
+?[0;39m?[33mTurn 2: Frodo executed FIGHT
+?[0;39m?[33mPolymorphia testOneRoom after turn 2
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Starting Room:
+		Frodo(health: 4.00)
+		Ogre(health: 1.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 3...
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.00)
+?[0;39m?[33mFrodo rolled 4
+?[0;39m?[33mOgre(health: 1.00) rolled 5
+?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
+?[0;39m?[33mTurn 3: Frodo executed FIGHT
+?[0;39m?[33mPolymorphia testOneRoom after turn 3
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Starting Room:
+		Frodo(health: 2.50)
+		Ogre(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mFrodo is fighting Ogre(health: 0.50)
+?[0;39m?[33mFrodo rolled 6
+?[0;39m?[33mOgre(health: 0.50) rolled 2
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 4 turns.
+The adventurers won! Left standing are:
+Frodo(health: 2.00)
+
+?[0;39m?[33mPolymorphia test2x2Game after turn 0
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		Frodo(health: 5.00)
+		Ogre(health: 3.00)
+
+	Southeast:
+		
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
+?[0;39m?[33mFrodo rolled 6
+?[0;39m?[33mOgre(health: 3.00) rolled 6
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
+?[0;39m?[33mTurn 1: Frodo executed FIGHT
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test2x2Game after turn 1
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		Frodo(health: 4.50)
+		Ogre(health: 2.50)
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mFrodo is fighting Ogre(health: 2.50)
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mOgre(health: 2.50) rolled 1
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mTurn 2: Frodo executed FIGHT
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test2x2Game after turn 2
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		Frodo(health: 4.00)
+		Ogre(health: 1.00)
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 3...
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.00)
+?[0;39m?[33mFrodo rolled 1
+?[0;39m?[33mOgre(health: 1.00) rolled 4
+?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
+?[0;39m?[33mTurn 3: Frodo executed FIGHT
+?[0;39m?[33mPolymorphia test2x2Game after turn 3
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		Frodo(health: 0.50)
+		Ogre(health: 0.50)
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 0.50)
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mOgre(health: 0.50) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 4 turns.
+No team won! Everyone died!
+
+?[0;39m?[33mPolymorphia test3x3Game after turn 0
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		Frodo(health: 5.00)
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from Northwest to North
+?[0;39m?[33mMoved: Frodo moved from Northwest to North
+?[0;39m?[33mTurn 1: Frodo executed MOVE
+?[0;39m?[33mPolymorphia test3x3Game after turn 1
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		Frodo(health: 4.75)
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mFrodo moved from North to Center
+?[0;39m?[33mMoved: Frodo moved from North to Center
+?[0;39m?[33mTurn 2: Frodo executed MOVE
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 2
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		Frodo(health: 4.50)
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 3...
+?[0;39m?[33mFrodo moved from Center to East
+?[0;39m?[33mMoved: Frodo moved from Center to East
+?[0;39m?[33mTurn 3: Frodo executed MOVE
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 3
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		Frodo(health: 4.25)
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mFrodo moved from East to Center
+?[0;39m?[33mMoved: Frodo moved from East to Center
+?[0;39m?[33mTurn 4: Frodo executed MOVE
+?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 4
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		Frodo(health: 4.00)
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 5...
+?[0;39m?[33mFrodo moved from Center to East
+?[0;39m?[33mMoved: Frodo moved from Center to East
+?[0;39m?[33mTurn 5: Frodo executed MOVE
+?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 5
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		Frodo(health: 3.75)
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 6...
+?[0;39m?[33mFrodo moved from East to Southeast
+?[0;39m?[33mMoved: Frodo moved from East to Southeast
+?[0;39m?[33mTurn 6: Frodo executed MOVE
+?[0;39m?[33mTurn 6: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 6
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		Frodo(health: 3.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 7...
+?[0;39m?[33mFrodo moved from Southeast to East
+?[0;39m?[33mMoved: Frodo moved from Southeast to East
+?[0;39m?[33mTurn 7: Frodo executed MOVE
+?[0;39m?[33mTurn 7: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 7
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		Frodo(health: 3.25)
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 8...
+?[0;39m?[33mFrodo moved from East to Northeast
+?[0;39m?[33mMoved: Frodo moved from East to Northeast
+?[0;39m?[33mTurn 8: Frodo executed MOVE
+?[0;39m?[33mTurn 8: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 8
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		Frodo(health: 3.00)
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 9...
+?[0;39m?[33mFrodo moved from Northeast to East
+?[0;39m?[33mMoved: Frodo moved from Northeast to East
+?[0;39m?[33mTurn 9: Frodo executed MOVE
+?[0;39m?[33mTurn 9: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 9
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		Frodo(health: 2.75)
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 10...
+?[0;39m?[33mTurn 10: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from East to Center
+?[0;39m?[33mMoved: Frodo moved from East to Center
+?[0;39m?[33mTurn 10: Frodo executed MOVE
+?[0;39m?[33mPolymorphia test3x3Game after turn 10
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		Frodo(health: 2.50)
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 11...
+?[0;39m?[33mTurn 11: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from Center to South
+?[0;39m?[33mMoved: Frodo moved from Center to South
+?[0;39m?[33mTurn 11: Frodo executed MOVE
+?[0;39m?[33mPolymorphia test3x3Game after turn 11
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		Frodo(health: 2.25)
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 12...
+?[0;39m?[33mFrodo moved from South to Center
+?[0;39m?[33mMoved: Frodo moved from South to Center
+?[0;39m?[33mTurn 12: Frodo executed MOVE
+?[0;39m?[33mTurn 12: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 12
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		Frodo(health: 2.00)
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 13...
+?[0;39m?[33mFrodo moved from Center to North
+?[0;39m?[33mMoved: Frodo moved from Center to North
+?[0;39m?[33mTurn 13: Frodo executed MOVE
+?[0;39m?[33mTurn 13: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 13
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		Frodo(health: 1.75)
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 14...
+?[0;39m?[33mFrodo moved from North to Northwest
+?[0;39m?[33mMoved: Frodo moved from North to Northwest
+?[0;39m?[33mTurn 14: Frodo executed MOVE
+?[0;39m?[33mTurn 14: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 14
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		Frodo(health: 1.50)
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 15...
+?[0;39m?[33mFrodo moved from Northwest to West
+?[0;39m?[33mMoved: Frodo moved from Northwest to West
+?[0;39m?[33mTurn 15: Frodo executed MOVE
+?[0;39m?[33mTurn 15: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 15
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 3.00)
+		Frodo(health: 1.25)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 16...
+?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mOgre(health: 3.00) rolled 5
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
+?[0;39m?[33mTurn 16: Frodo executed FIGHT
+?[0;39m?[33mTurn 16: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test3x3Game after turn 16
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	North:
+		
+
+	Northeast:
+		
+
+	West:
+		Ogre(health: 2.50)
+		Frodo(health: 0.75)
+
+	Center:
+		
+
+	East:
+		
+
+	Southwest:
+		
+
+	South:
+		
+
+	Southeast:
+		
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 17...
+?[0;39m?[33mTurn 17: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 2.50)
+?[0;39m?[33mFrodo rolled 3
+?[0;39m?[33mOgre(health: 2.50) rolled 1
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mTurn 17: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 17 turns.
+The adventurers won! Left standing are:
+Frodo(health: 0.25)
+
+?[0;39m?[33mPolymorphia testWithEverything after turn 0
+Live adventurers(9): Frodo,Sir Robin,Frodo,Sir Galahad,Chubs,Arwen,Sir Lancelot,Sir Robin,Sir Eats-a-lot
+Live creatures(10): Satan,Shelob,Beelzebub,Satan,Ogre,Dragon,Troll,Dragon,Orc,Evil Wizard
+	Swamp:
+		Frodo(health: 5.00)
+		Sir Robin(health: 5.00)
+		Satan(health: 15.00)
+
+	Crystal Palace:
+		Frodo(health: 5.00)
+		Sir Galahad(health: 8.00)
+		Shelob(health: 3.00)
+		Beelzebub(health: 15.00)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+		fries(1.0)
+
+	Pool of Lava:
+		Chubs(health: 5.00)
+		Satan(health: 15.00)
+
+	Stalactite Cave:
+		Arwen(health: 5.00)
+		Sir Lancelot(health: 8.00)
+		Ogre(health: 3.00)
+		cupcake(1.0)
+		cupcake(1.8)
+
+	Goblin's Fountain:
+		Sir Robin(health: 5.00)
+		Dragon(health: 3.00)
+
+	Dragon's Den:
+		Sir Eats-a-lot(health: 5.00)
+		Troll(health: 3.00)
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		banana(1.0)
+?[0;39m?[33mStarting play...
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mSir Robin moved from Swamp to Goblin's Fountain
+?[0;39m?[33mMoved: Sir Robin moved from Swamp to Goblin's Fountain
+?[0;39m?[33mTurn 1: Sir Robin executed MOVE
+?[0;39m?[33mChubs is fighting Satan(health: 15.00)
+?[0;39m?[33mChubs rolled 4
+?[0;39m?[33mSatan(health: 15.00) rolled 1
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 1: Chubs executed FIGHT
+?[0;39m?[33mFrodo is fighting Satan(health: 15.00)
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mSatan(health: 15.00) rolled 6
+?[0;39m?[33mFightOutcome: Satan won a battle against Frodo
+?[0;39m?[33mTurn 1: Frodo executed FIGHT
+?[0;39m?[33mArwen gained health: 6.00
+?[0;39m?[33mTurn 1: Arwen executed EAT
+?[0;39m?[33mSir Galahad is fighting Beelzebub(health: 15.00)
+?[0;39m?[33mSir Galahad rolled 2
+?[0;39m?[33mBeelzebub(health: 15.00) rolled 1
+?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Beelzebub
+?[0;39m?[33mTurn 1: Sir Galahad executed FIGHT
+?[0;39m?[33mBeelzebub is fighting Sir Galahad(health: 7.50)
+?[0;39m?[33mBeelzebub rolled 3
+?[0;39m?[33mSir Galahad(health: 7.50) rolled 3
+?[0;39m?[33mFightOutcome: Beelzebub tied a battle against Sir Galahad
+?[0;39m?[33mTurn 1: Beelzebub executed FIGHT
+?[0;39m?[33mTurn 1: Orc executed DO NOTHING
+?[0;39m?[33mTurn 1: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mSatan is fighting Frodo(health: 0.50)
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mFrodo(health: 0.50) rolled 2
+?[0;39m?[33mFightOutcome: Satan won a battle against Frodo
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mTurn 1: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mSir Lancelot is fighting Ogre(health: 3.00)
+?[0;39m?[33mSir Lancelot rolled 1
+?[0;39m?[33mOgre(health: 3.00) rolled 1
+?[0;39m?[33mFightOutcome: Sir Lancelot tied a battle against Ogre
+?[0;39m?[33mTurn 1: Sir Lancelot executed FIGHT
+?[0;39m?[33mSatan is fighting Chubs(health: 4.50)
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mChubs(health: 4.50) rolled 4
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mSir Robin moved from Goblin's Fountain to Dragon's Den
+?[0;39m?[33mMoved: Sir Robin moved from Goblin's Fountain to Dragon's Den
+?[0;39m?[33mTurn 1: Sir Robin executed MOVE
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 1: Troll executed DO NOTHING
+?[0;39m?[33mFrodo gained health: 6.00
+?[0;39m?[33mTurn 1: Frodo executed EAT
+?[0;39m?[33mSir Eats-a-lot is fighting Troll(health: 3.00)
+?[0;39m?[33mSir Eats-a-lot rolled 3
+?[0;39m?[33mTroll(health: 3.00) rolled 2
+?[0;39m?[33mFightOutcome: Sir Eats-a-lot won a battle against Troll
+?[0;39m?[33mTurn 1: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mPolymorphia testWithEverything after turn 1
+Live adventurers(8): Frodo,Sir Galahad,Chubs,Arwen,Sir Lancelot,Sir Robin,Sir Eats-a-lot,Sir Robin
+Live creatures(10): Satan,Shelob,Beelzebub,Satan,Ogre,Dragon,Troll,Dragon,Orc,Evil Wizard
+	Swamp:
+		Satan(health: 14.00)
+
+	Crystal Palace:
+		Frodo(health: 6.00)
+		Sir Galahad(health: 7.00)
+		Shelob(health: 3.00)
+		Beelzebub(health: 13.00)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+
+	Pool of Lava:
+		Chubs(health: 4.00)
+		Satan(health: 10.00)
+
+	Stalactite Cave:
+		Arwen(health: 6.00)
+		Sir Lancelot(health: 7.50)
+		Ogre(health: 2.50)
+		cupcake(1.8)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+		Sir Robin(health: 4.50)
+
+	Dragon's Den:
+		Sir Eats-a-lot(health: 4.50)
+		Troll(health: 1.50)
+		Sir Robin(health: 4.50)
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		banana(1.0)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mSir Eats-a-lot is fighting Troll(health: 1.50)
+?[0;39m?[33mSir Eats-a-lot rolled 6
+?[0;39m?[33mTroll(health: 1.50) rolled 2
+?[0;39m?[33mFightOutcome: Sir Eats-a-lot won a battle against Troll
+?[0;39m?[33mTroll just died!
+?[0;39m?[33mTurn 2: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mBeelzebub is fighting Sir Galahad(health: 7.00)
+?[0;39m?[33mBeelzebub rolled 2
+?[0;39m?[33mSir Galahad(health: 7.00) rolled 1
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Galahad
+?[0;39m?[33mTurn 2: Beelzebub executed FIGHT
+?[0;39m?[33mFrodo is fighting Beelzebub(health: 12.50)
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mBeelzebub(health: 12.50) rolled 5
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Frodo
+?[0;39m?[33mTurn 2: Frodo executed FIGHT
+?[0;39m?[33mTurn 2: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Dragon's Den to Goblin's Fountain
+?[0;39m?[33mMoved: Sir Robin moved from Dragon's Den to Goblin's Fountain
+?[0;39m?[33mTurn 2: Sir Robin executed MOVE
+?[0;39m?[33mSir Robin moved from Goblin's Fountain to Dragon's Den
+?[0;39m?[33mMoved: Sir Robin moved from Goblin's Fountain to Dragon's Den
+?[0;39m?[33mTurn 2: Sir Robin executed MOVE
+?[0;39m?[33mChubs is fighting Satan(health: 10.00)
+?[0;39m?[33mChubs rolled 5
+?[0;39m?[33mSatan(health: 10.00) rolled 4
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 2: Chubs executed FIGHT
+?[0;39m?[33mSatan is fighting Chubs(health: 3.50)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mChubs(health: 3.50) rolled 6
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 2: Satan executed FIGHT
+?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
+?[0;39m?[33mSatan moved from Swamp to Dragon's Den
+?[0;39m?[33mMoved: Satan moved from Swamp to Dragon's Den
+?[0;39m?[33mTurn 2: Satan executed MOVE
+?[0;39m?[33mTurn 2: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSir Lancelot is fighting Ogre(health: 2.50)
+?[0;39m?[33mSir Lancelot rolled 6
+?[0;39m?[33mOgre(health: 2.50) rolled 5
+?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Ogre
+?[0;39m?[33mTurn 2: Sir Lancelot executed FIGHT
+?[0;39m?[33mTurn 2: Orc executed DO NOTHING
+?[0;39m?[33mSir Galahad is fighting Beelzebub(health: 12.00)
+?[0;39m?[33mSir Galahad rolled 1
+?[0;39m?[33mBeelzebub(health: 12.00) rolled 5
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Galahad
+?[0;39m?[33mTurn 2: Sir Galahad executed FIGHT
+?[0;39m?[33mArwen gained health: 7.78
+?[0;39m?[33mTurn 2: Arwen executed EAT
+?[0;39m?[33mPolymorphia testWithEverything after turn 2
+Live adventurers(8): Sir Galahad,Frodo,Chubs,Sir Lancelot,Arwen,Sir Robin,Sir Eats-a-lot,Sir Robin
+Live creatures(9): Shelob,Beelzebub,Satan,Ogre,Dragon,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Frodo(health: 2.50)
+		Sir Galahad(health: 1.00)
+		Shelob(health: 3.00)
+		Beelzebub(health: 11.50)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+
+	Pool of Lava:
+		Chubs(health: 3.00)
+		Satan(health: 6.00)
+
+	Stalactite Cave:
+		Arwen(health: 7.78)
+		Sir Lancelot(health: 7.00)
+		Ogre(health: 1.00)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+		Sir Robin(health: 4.25)
+
+	Dragon's Den:
+		Sir Eats-a-lot(health: 4.00)
+		Sir Robin(health: 4.00)
+		Satan(health: 13.50)
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		banana(1.0)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 3...
+?[0;39m?[33mTurn 3: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 3: Shelob executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mMoved: Sir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mTurn 3: Sir Robin executed MOVE
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Beelzebub(health: 11.50)
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mBeelzebub(health: 11.50) rolled 5
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Frodo
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mTurn 3: Frodo executed FIGHT
+?[0;39m?[33mSir Robin moved from Dragon's Den to Goblin's Fountain
+?[0;39m?[33mMoved: Sir Robin moved from Dragon's Den to Goblin's Fountain
+?[0;39m?[33mTurn 3: Sir Robin executed MOVE
+?[0;39m?[33mTurn 3: Dragon executed DO NOTHING
+?[0;39m?[33mSir Galahad is fighting Beelzebub(health: 11.00)
+?[0;39m?[33mSir Galahad rolled 2
+?[0;39m?[33mBeelzebub(health: 11.00) rolled 6
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Galahad
+?[0;39m?[33mSir Galahad just died!
+?[0;39m?[33mTurn 3: Sir Galahad executed FIGHT
+?[0;39m?[33mTurn 3: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSir Eats-a-lot is fighting Satan(health: 13.50)
+?[0;39m?[33mSir Eats-a-lot rolled 2
+?[0;39m?[33mSatan(health: 13.50) rolled 5
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Eats-a-lot
+?[0;39m?[33mTurn 3: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mTurn 3: Orc executed DO NOTHING
+?[0;39m?[33mArwen is fighting Ogre(health: 1.00)
+?[0;39m?[33mArwen rolled 1
+?[0;39m?[33mOgre(health: 1.00) rolled 1
+?[0;39m?[33mFightOutcome: Arwen tied a battle against Ogre
+?[0;39m?[33mTurn 3: Arwen executed FIGHT
+?[0;39m?[33mSatan is fighting Sir Eats-a-lot(health: 0.50)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Eats-a-lot(health: 0.50) rolled 2
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Eats-a-lot
+?[0;39m?[33mSir Eats-a-lot just died!
+?[0;39m?[33mTurn 3: Satan executed FIGHT
+?[0;39m?[33mBeelzebub moved from Crystal Palace to Stalactite Cave
+?[0;39m?[33mMoved: Beelzebub moved from Crystal Palace to Stalactite Cave
+?[0;39m?[33mTurn 3: Beelzebub executed MOVE
+?[0;39m?[33mSir Lancelot is fighting Beelzebub(health: 10.00)
+?[0;39m?[33mSir Lancelot rolled 1
+?[0;39m?[33mBeelzebub(health: 10.00) rolled 5
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Lancelot
+?[0;39m?[33mTurn 3: Sir Lancelot executed FIGHT
+?[0;39m?[33mSatan is fighting Chubs(health: 3.00)
+?[0;39m?[33mSatan rolled 2
+?[0;39m?[33mChubs(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 3: Satan executed FIGHT
+?[0;39m?[33mChubs is fighting Satan(health: 4.50)
+?[0;39m?[33mChubs rolled 5
+?[0;39m?[33mSatan(health: 4.50) rolled 3
+?[0;39m?[33mFightOutcome: Chubs won a battle against Satan
+?[0;39m?[33mTurn 3: Chubs executed FIGHT
+?[0;39m?[33mPolymorphia testWithEverything after turn 3
+Live adventurers(5): Chubs,Sir Lancelot,Sir Robin,Arwen,Sir Robin
+Live creatures(9): Shelob,Satan,Ogre,Beelzebub,Dragon,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+
+	Pool of Lava:
+		Chubs(health: 2.00)
+		Satan(health: 2.00)
+
+	Stalactite Cave:
+		Arwen(health: 7.28)
+		Sir Lancelot(health: 2.50)
+		Ogre(health: 0.50)
+		Sir Robin(health: 3.75)
+		Beelzebub(health: 9.50)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+		Sir Robin(health: 3.50)
+
+	Dragon's Den:
+		Satan(health: 12.50)
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		banana(1.0)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mTurn 4: Orc executed DO NOTHING
+?[0;39m?[33mSatan moved from Dragon's Den to Crystal Palace
+?[0;39m?[33mMoved: Satan moved from Dragon's Den to Crystal Palace
+?[0;39m?[33mTurn 4: Satan executed MOVE
+?[0;39m?[33mChubs is fighting Satan(health: 2.00)
+?[0;39m?[33mChubs rolled 1
+?[0;39m?[33mSatan(health: 2.00) rolled 4
+?[0;39m?[33mFightOutcome: Satan won a battle against Chubs
+?[0;39m?[33mChubs just died!
+?[0;39m?[33mTurn 4: Chubs executed FIGHT
+?[0;39m?[33mSir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mMoved: Sir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mTurn 4: Sir Robin executed MOVE
+?[0;39m?[33mSir Robin moved from Stalactite Cave to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Stalactite Cave to Troll Bridge
+?[0;39m?[33mTurn 4: Sir Robin executed MOVE
+?[0;39m?[33mTurn 4: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
+?[0;39m?[33mArwen is fighting Beelzebub(health: 9.50)
+?[0;39m?[33mArwen rolled 5
+?[0;39m?[33mBeelzebub(health: 9.50) rolled 2
+?[0;39m?[33mFightOutcome: Arwen won a battle against Beelzebub
+?[0;39m?[33mTurn 4: Arwen executed FIGHT
+?[0;39m?[33mSatan moved from Pool of Lava to Troll Bridge
+?[0;39m?[33mMoved: Satan moved from Pool of Lava to Troll Bridge
+?[0;39m?[33mTurn 4: Satan executed MOVE
+?[0;39m?[33mSir Lancelot is fighting Beelzebub(health: 6.00)
+?[0;39m?[33mSir Lancelot rolled 2
+?[0;39m?[33mBeelzebub(health: 6.00) rolled 3
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Lancelot
+?[0;39m?[33mTurn 4: Sir Lancelot executed FIGHT
+?[0;39m?[33mTurn 4: Dragon executed DO NOTHING
+?[0;39m?[33mBeelzebub is fighting Arwen(health: 6.78)
+?[0;39m?[33mBeelzebub rolled 1
+?[0;39m?[33mArwen(health: 6.78) rolled 3
+?[0;39m?[33mFightOutcome: Arwen won a battle against Beelzebub
+?[0;39m?[33mTurn 4: Beelzebub executed FIGHT
+?[0;39m?[33mTurn 4: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 4: Evil Wizard executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 4
+Live adventurers(4): Sir Lancelot,Sir Robin,Arwen,Sir Robin
+Live creatures(9): Shelob,Satan,Ogre,Beelzebub,Dragon,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		Satan(health: 12.00)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		Arwen(health: 6.28)
+		Sir Lancelot(health: 1.00)
+		Ogre(health: 0.50)
+		Beelzebub(health: 3.00)
+		Sir Robin(health: 3.00)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		Sir Robin(health: 3.25)
+		Satan(health: 1.00)
+		banana(1.0)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 5...
+?[0;39m?[33mTurn 5: Orc executed DO NOTHING
+?[0;39m?[33mSir Lancelot is fighting Beelzebub(health: 3.00)
+?[0;39m?[33mSir Lancelot rolled 1
+?[0;39m?[33mBeelzebub(health: 3.00) rolled 6
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Lancelot
+?[0;39m?[33mSir Lancelot just died!
+?[0;39m?[33mTurn 5: Sir Lancelot executed FIGHT
+?[0;39m?[33mArwen is fighting Beelzebub(health: 2.50)
+?[0;39m?[33mArwen rolled 6
+?[0;39m?[33mBeelzebub(health: 2.50) rolled 2
+?[0;39m?[33mFightOutcome: Arwen won a battle against Beelzebub
+?[0;39m?[33mBeelzebub just died!
+?[0;39m?[33mTurn 5: Arwen executed FIGHT
+?[0;39m?[33mTurn 5: Dragon executed DO NOTHING
+?[0;39m?[33mSatan is fighting Sir Robin(health: 3.25)
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mSir Robin(health: 3.25) rolled 5
+?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
+?[0;39m?[33mSatan just died!
+?[0;39m?[33mTurn 5: Satan executed FIGHT
+?[0;39m?[33mTurn 5: Shelob executed DO NOTHING
+?[0;39m?[33mSir Robin gained health: 3.75
+?[0;39m?[33mTurn 5: Sir Robin executed EAT
+?[0;39m?[33mTurn 5: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 5: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Stalactite Cave to Crystal Palace
+?[0;39m?[33mMoved: Sir Robin moved from Stalactite Cave to Crystal Palace
+?[0;39m?[33mTurn 5: Sir Robin executed MOVE
+?[0;39m?[33mSatan is fighting Sir Robin(health: 2.50)
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mSir Robin(health: 2.50) rolled 4
+?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
+?[0;39m?[33mTurn 5: Satan executed FIGHT
+?[0;39m?[33mPolymorphia testWithEverything after turn 5
+Live adventurers(3): Sir Robin,Arwen,Sir Robin
+Live creatures(7): Shelob,Satan,Ogre,Dragon,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		Satan(health: 10.50)
+		Sir Robin(health: 2.00)
+		apple(1.0)
+		steak(1.0)
+		salad(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		Arwen(health: 5.78)
+		Ogre(health: 0.50)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		Sir Robin(health: 3.75)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 6...
+?[0;39m?[33mTurn 6: Shelob executed DO NOTHING
+?[0;39m?[33mSir Robin gained health: 3.00
+?[0;39m?[33mTurn 6: Sir Robin executed EAT
+?[0;39m?[33mSir Robin moved from Troll Bridge to Goblin's Fountain
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Goblin's Fountain
+?[0;39m?[33mTurn 6: Sir Robin executed MOVE
+?[0;39m?[33mTurn 6: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 6: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 6: Dragon executed DO NOTHING
+?[0;39m?[33mArwen is fighting Ogre(health: 0.50)
+?[0;39m?[33mArwen rolled 3
+?[0;39m?[33mOgre(health: 0.50) rolled 3
+?[0;39m?[33mFightOutcome: Arwen tied a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mTurn 6: Arwen executed FIGHT
+?[0;39m?[33mSatan is fighting Sir Robin(health: 3.00)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Robin(health: 3.00) rolled 1
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Robin
+?[0;39m?[33mSir Robin just died!
+?[0;39m?[33mTurn 6: Satan executed FIGHT
+?[0;39m?[33mTurn 6: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 6: Orc executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 6
+Live adventurers(2): Arwen,Sir Robin
+Live creatures(6): Shelob,Satan,Dragon,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		Satan(health: 10.00)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		Arwen(health: 5.28)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+		Sir Robin(health: 3.25)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 7...
+?[0;39m?[33mTurn 7: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 7: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mMoved: Sir Robin moved from Goblin's Fountain to Stalactite Cave
+?[0;39m?[33mTurn 7: Sir Robin executed MOVE
+?[0;39m?[33mTurn 7: Orc executed DO NOTHING
+?[0;39m?[33mSatan moved from Crystal Palace to Pool of Lava
+?[0;39m?[33mMoved: Satan moved from Crystal Palace to Pool of Lava
+?[0;39m?[33mTurn 7: Satan executed MOVE
+?[0;39m?[33mTurn 7: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 7: Dragon executed DO NOTHING
+?[0;39m?[33mArwen moved from Stalactite Cave to Goblin's Fountain
+?[0;39m?[33mMoved: Arwen moved from Stalactite Cave to Goblin's Fountain
+?[0;39m?[33mTurn 7: Arwen executed MOVE
+?[0;39m?[33mPolymorphia testWithEverything after turn 7
+Live adventurers(2): Sir Robin,Arwen
+Live creatures(6): Shelob,Satan,Dragon,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		Satan(health: 9.50)
+
+	Stalactite Cave:
+		Sir Robin(health: 2.75)
+
+	Goblin's Fountain:
+		Dragon(health: 3.00)
+		Arwen(health: 5.03)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 8...
+?[0;39m?[33mTurn 8: Orc executed DO NOTHING
+?[0;39m?[33mTurn 8: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Stalactite Cave to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Stalactite Cave to Troll Bridge
+?[0;39m?[33mTurn 8: Sir Robin executed MOVE
+?[0;39m?[33mTurn 8: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 8: Dragon executed DO NOTHING
+?[0;39m?[33mArwen is fighting Dragon(health: 3.00)
+?[0;39m?[33mArwen rolled 1
+?[0;39m?[33mDragon(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Dragon won a battle against Arwen
+?[0;39m?[33mTurn 8: Arwen executed FIGHT
+?[0;39m?[33mTurn 8: Shelob executed DO NOTHING
+?[0;39m?[33mSatan moved from Pool of Lava to Dragon's Den
+?[0;39m?[33mMoved: Satan moved from Pool of Lava to Dragon's Den
+?[0;39m?[33mTurn 8: Satan executed MOVE
+?[0;39m?[33mPolymorphia testWithEverything after turn 8
+Live adventurers(2): Arwen,Sir Robin
+Live creatures(6): Shelob,Dragon,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		
+
+	Goblin's Fountain:
+		Dragon(health: 2.50)
+		Arwen(health: 2.53)
+
+	Dragon's Den:
+		Satan(health: 9.00)
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		Sir Robin(health: 2.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 9...
+?[0;39m?[33mArwen is fighting Dragon(health: 2.50)
+?[0;39m?[33mArwen rolled 5
+?[0;39m?[33mDragon(health: 2.50) rolled 1
+?[0;39m?[33mFightOutcome: Arwen won a battle against Dragon
+?[0;39m?[33mDragon just died!
+?[0;39m?[33mTurn 9: Arwen executed FIGHT
+?[0;39m?[33mSir Robin moved from Troll Bridge to Pool of Lava
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Pool of Lava
+?[0;39m?[33mTurn 9: Sir Robin executed MOVE
+?[0;39m?[33mTurn 9: Orc executed DO NOTHING
+?[0;39m?[33mTurn 9: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 9: Shelob executed DO NOTHING
+?[0;39m?[33mSatan moved from Dragon's Den to Stalactite Cave
+?[0;39m?[33mMoved: Satan moved from Dragon's Den to Stalactite Cave
+?[0;39m?[33mTurn 9: Satan executed MOVE
+?[0;39m?[33mTurn 9: Dragon executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 9
+Live adventurers(2): Sir Robin,Arwen
+Live creatures(5): Shelob,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		Sir Robin(health: 2.00)
+
+	Stalactite Cave:
+		Satan(health: 8.50)
+
+	Goblin's Fountain:
+		Arwen(health: 2.03)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 10...
+?[0;39m?[33mTurn 10: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSatan moved from Stalactite Cave to Goblin's Fountain
+?[0;39m?[33mMoved: Satan moved from Stalactite Cave to Goblin's Fountain
+?[0;39m?[33mTurn 10: Satan executed MOVE
+?[0;39m?[33mSir Robin moved from Pool of Lava to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Pool of Lava to Troll Bridge
+?[0;39m?[33mTurn 10: Sir Robin executed MOVE
+?[0;39m?[33mTurn 10: Orc executed DO NOTHING
+?[0;39m?[33mTurn 10: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 10: Dragon executed DO NOTHING
+?[0;39m?[33mArwen is fighting Satan(health: 8.00)
+?[0;39m?[33mArwen rolled 3
+?[0;39m?[33mSatan(health: 8.00) rolled 1
+?[0;39m?[33mFightOutcome: Arwen won a battle against Satan
+?[0;39m?[33mTurn 10: Arwen executed FIGHT
+?[0;39m?[33mPolymorphia testWithEverything after turn 10
+Live adventurers(2): Arwen,Sir Robin
+Live creatures(5): Shelob,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		
+
+	Goblin's Fountain:
+		Arwen(health: 1.53)
+		Satan(health: 5.50)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+		Sir Robin(health: 1.75)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 11...
+?[0;39m?[33mTurn 11: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Troll Bridge to Crystal Palace
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Crystal Palace
+?[0;39m?[33mTurn 11: Sir Robin executed MOVE
+?[0;39m?[33mTurn 11: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 11: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 11: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSatan is fighting Arwen(health: 1.53)
+?[0;39m?[33mSatan rolled 5
+?[0;39m?[33mArwen(health: 1.53) rolled 4
+?[0;39m?[33mFightOutcome: Satan won a battle against Arwen
+?[0;39m?[33mTurn 11: Satan executed FIGHT
+?[0;39m?[33mArwen is fighting Satan(health: 5.00)
+?[0;39m?[33mArwen rolled 5
+?[0;39m?[33mSatan(health: 5.00) rolled 4
+?[0;39m?[33mFightOutcome: Arwen won a battle against Satan
+?[0;39m?[33mArwen just died!
+?[0;39m?[33mTurn 11: Arwen executed FIGHT
+?[0;39m?[33mPolymorphia testWithEverything after turn 11
+Live adventurers(1): Sir Robin
+Live creatures(5): Shelob,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		Sir Robin(health: 1.25)
+		apple(1.0)
+		steak(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		
+
+	Goblin's Fountain:
+		Satan(health: 3.50)
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 12...
+?[0;39m?[33mSatan moved from Goblin's Fountain to Crystal Palace
+?[0;39m?[33mMoved: Satan moved from Goblin's Fountain to Crystal Palace
+?[0;39m?[33mTurn 12: Satan executed MOVE
+?[0;39m?[33mTurn 12: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 12: Orc executed DO NOTHING
+?[0;39m?[33mTurn 12: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 12: Shelob executed DO NOTHING
+?[0;39m?[33mSir Robin gained health: 2.25
+?[0;39m?[33mTurn 12: Sir Robin executed EAT
+?[0;39m?[33mPolymorphia testWithEverything after turn 12
+Live adventurers(1): Sir Robin
+Live creatures(5): Shelob,Satan,Dragon,Orc,Evil Wizard
+	Swamp:
+		
+
+	Crystal Palace:
+		Shelob(health: 3.00)
+		Sir Robin(health: 2.25)
+		Satan(health: 3.00)
+		apple(1.0)
+
+	Pool of Lava:
+		
+
+	Stalactite Cave:
+		
+
+	Goblin's Fountain:
+		
+
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Dragon(health: 3.00)
+		Orc(health: 3.00)
+		Evil Wizard(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 13...
+?[0;39m?[33mSatan is fighting Sir Robin(health: 2.25)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Robin(health: 2.25) rolled 2
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Robin
+?[0;39m?[33mSir Robin just died!
+?[0;39m?[33mTurn 13: Satan executed FIGHT
+?[0;39m?[33mTurn 13: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 13: Evil Wizard executed DO NOTHING
+?[0;39m?[33mTurn 13: Orc executed DO NOTHING
+?[0;39m?[33mTurn 13: Shelob executed DO NOTHING
+?[0;39m?[33mThe game ended after 13 turns.
+The creatures won! Left standing are:
+Satan(health: 2.50)
+ Shelob(health: 3.00)
+ Dragon(health: 3.00)
+ Orc(health: 3.00)
+ Evil Wizard(health: 3.00)
+
+?[0;39m]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
