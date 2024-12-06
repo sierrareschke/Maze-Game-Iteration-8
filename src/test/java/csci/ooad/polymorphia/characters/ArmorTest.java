@@ -1,13 +1,10 @@
 package csci.ooad.polymorphia.characters;
 
-import csci.ooad.polymorphia.Armor;
-import csci.ooad.polymorphia.ArtifactFactory;
-import csci.ooad.polymorphia.Maze;
-import csci.ooad.polymorphia.NoSuchRoomException;
+import csci.ooad.polymorphia.*;
+import org.graalvm.nativeimage.Isolates;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ArmorTest {
     final CharacterFactory characterFactory = new CharacterFactory();
@@ -60,6 +57,56 @@ public class ArmorTest {
         // Now fight the Ogre with two sets of Armor
         Command fightCommand = new FightCommand(doublyArmoredBilbo, ogre);
         fightCommand.execute();
+    }
+
+    @Test
+    void testIAmHealthiestInRoom() throws NoSuchRoomException {
+        // Arrange - put creature in room with adventurer
+        Adventurer bilbo = characterFactory.createAdventurer("Bilbo");
+        Armor steelArmor = artifactFactory.createArmorSuit("Steel");
+        Character ted = characterFactory.createAdventurer("Ted");
+        Food food = artifactFactory.createFood("Steak");
+        Creature ogre = characterFactory.createCreature("Ogre");
+
+        Maze maze = Maze.getNewBuilder()
+                .createFullyConnectedRooms("Adventurer Room")
+                .addToRoom("Adventurer Room", bilbo)
+                .addToRoom("Adventurer Room", ted)
+                .addToRoom("Adventurer Room", steelArmor)
+                .addToRoom("Adventurer Room", food)
+                .addToRoom("Adventurer Room", ogre)
+                .build();
+
+        Command wearArmor = new WearCommand(bilbo, steelArmor);
+        wearArmor.execute();
+        Adventurer armoredBilbo = maze.getLivingAdventurers().getLast();
+
+        assertFalse(armoredBilbo.iAmHealthiestInRoom());
+        assertEquals(0, armoredBilbo.compareTo(ted));
+
+        // Test strategy
+        Strategy strategy = armoredBilbo.getStrategy();
+        assertNotNull(strategy);
+        System.out.println("strategy: " + strategy);
+
+        // Gain Health Test
+        Double previousHealth = armoredBilbo.getHealth();
+        maze.getRoom("Adventurer Room").add(food);
+        Command eatCommand = new EatCommand(armoredBilbo, food);
+        eatCommand.execute();
+        armoredBilbo.gainHealth(3);
+        assertTrue(armoredBilbo.getHealth() > previousHealth);
+        assertEquals(9.0, armoredBilbo.getHealth());
+
+        // Test ted
+        assertEquals(false, ted.iAmHealthiestInRoom());
+
+        // loseFightDamage test
+        armoredBilbo.loseFightDamage(3);
+        assertEquals( 7, armoredBilbo.getHealth());
+
+
+
     }
 
 }

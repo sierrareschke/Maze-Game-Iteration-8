@@ -20,6 +20,13 @@ public class CharacterFactory {
                 .toList();
     }
 
+    public List<Adventurer> createNumberOfAdventurers(Integer numAdventurers, Double health) {
+        return IntStream.range(0, numAdventurers)
+                .mapToObj(i -> createAdventurer(ADVENTURER_NAMES[i % ADVENTURER_NAMES.length], health))
+                .map(Adventurer.class::cast)
+                .toList();
+    }
+
     public List<Creature> createNumberOfCreatures(Integer numCreatures) {
         return IntStream.range(0, numCreatures)
                 .mapToObj(i -> createCreature(CREATURE_NAMES[i % CREATURE_NAMES.length]))
@@ -57,6 +64,10 @@ public class CharacterFactory {
 
     public Adventurer createAdventurer(String name) {
         return new Adventurer(name);
+    }
+
+    public Adventurer createAdventurer(String name, Double health){
+        return new Adventurer(name, health);
     }
 
     public Adventurer createHuman(String name) {

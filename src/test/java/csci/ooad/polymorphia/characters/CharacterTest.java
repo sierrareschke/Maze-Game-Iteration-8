@@ -59,6 +59,13 @@ class CharacterTest {
     }
 
     @Test
+    void testCreateAdventurerWithHealth() {
+        List<Adventurer> adventurer = characterFactory.createNumberOfAdventurers(1, 10.0);
+        assertEquals(adventurer.size(), 1);
+        assertEquals(adventurer.getFirst().getHealth(), 10);
+    }
+
+    @Test
     void testFightingMandatoryLossOfHealth() {
         Creature ogre = characterFactory.createCreature("Ogre");
         Command command = commandFactory.createFightCommand(knight, ogre);

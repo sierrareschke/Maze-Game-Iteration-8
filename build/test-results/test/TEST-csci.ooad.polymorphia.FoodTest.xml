@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="csci.ooad.polymorphia.FoodTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-06T21:58:23" hostname="UCB-HYFY92NCM6" time="0.005">
+  <properties/>
+  <testcase name="testToString()" classname="csci.ooad.polymorphia.FoodTest" time="0.003"/>
+  <testcase name="testSettingHealthValue()" classname="csci.ooad.polymorphia.FoodTest" time="0.0"/>
+  <testcase name="testFoodCreation()" classname="csci.ooad.polymorphia.FoodTest" time="0.001"/>
+  <system-out><![CDATA[Steak(1.0)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

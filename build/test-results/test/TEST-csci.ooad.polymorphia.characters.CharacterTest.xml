@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="csci.ooad.polymorphia.characters.CharacterTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2024-12-06T21:58:23" hostname="UCB-HYFY92NCM6" time="0.008">
+  <properties/>
+  <testcase name="testToString()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.001"/>
+  <testcase name="testMovingWithNoNeighbors()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.001"/>
+  <testcase name="testEatingFood()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <testcase name="testFighting()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.002"/>
+  <testcase name="testCreatureDoesNotDoAction()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <testcase name="testFightingMandatoryLossOfHealth()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <testcase name="testMovingRoomLossOfHealth()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.001"/>
+  <testcase name="testLoseHealthAndDeath()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <testcase name="testSorting()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.001"/>
+  <testcase name="testCreateAdventurerWithHealth()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <testcase name="isAlive()" classname="csci.ooad.polymorphia.characters.CharacterTest" time="0.0"/>
+  <system-out><![CDATA[Knight(health: 8.00)
+?[33mKnight gained health: 9.00
+?[0;39m?[33mAdventurer is fighting Creature(health: 3.00)
+?[0;39m?[33mAdventurer rolled 3
+?[0;39m?[33mCreature(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Adventurer tied a battle against Creature
+?[0;39m?[33mKnight is fighting Ogre(health: 3.00)
+?[0;39m?[33mKnight rolled 1
+?[0;39m?[33mOgre(health: 3.00) rolled 1
+?[0;39m?[33mFightOutcome: Knight tied a battle against Ogre
+?[0;39mAfter the fight, Joe's health is: 7.5
+?[33mKnight moved from mainRoom to neighbor
+?[0;39m?[33mMoved: Knight moved from mainRoom to neighbor
+?[0;39mAfter moving rooms, Joe's health is: 7.75
+?[33mKnight just died!
+?[0;39m[Ogre(health: 3.00), Frodo(health: 8.00), Arwen(health: 8.00)]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
