@@ -35,13 +35,13 @@ public abstract class Character implements Comparable<Character> {
         return currentLocation;
     }
 
-    public Character(String name) {
-        this(name, DEFAULT_INITIAL_HEALTH);
-    }
-
-    public Character(String name, Double initialHealth) {
-        this(name, initialHealth, new RandomStrategy());
-    }
+//    public Character(String name) {
+//        this(name, DEFAULT_INITIAL_HEALTH);
+//    }
+//
+//    public Character(String name, Double initialHealth) {
+//        this(name, initialHealth, new RandomStrategy());
+//    }
 
     public Character(String name, Double initialHealth, Strategy strategy) {
         this.name = name;

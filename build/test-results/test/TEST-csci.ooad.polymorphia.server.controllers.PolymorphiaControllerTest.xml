@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-06T21:58:25" hostname="UCB-HYFY92NCM6" time="0.517">
+<testsuite name="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:16:12" hostname="UCB-HYFY92NCM6" time="0.528">
   <properties/>
-  <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.485"/>
-  <testcase name="getGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.025"/>
+  <testcase name="playTurnWithNoHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.496"/>
+  <testcase name="getGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.024"/>
   <testcase name="contextLoads()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
   <testcase name="playTurnWithHumanPlayer()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
-  <testcase name="createGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.002"/>
+  <testcase name="createGame()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
   <testcase name="getGames()" classname="csci.ooad.polymorphia.server.controllers.PolymorphiaControllerTest" time="0.001"/>
   <system-out><![CDATA[ ___          _                                          _
 (  _`\       (_ )                                       ( )     _
@@ -17,31 +17,32 @@
                   `\___/'                        (_)
 Polymorphia: An Object-Oriented Adventure Game 0.1
 Powered by Spring Boot 3.3.5
-?[33mStarting PolymorphiaControllerTest using Java 21.0.5 with PID 59405 (started by nobr3541 in /Users/nobr3541/Library/CloudStorage/OneDrive-UCB-O365/Desktop/PhD/Courses/Fall-2024/OOP/homework_9)
+?[33mStarting PolymorphiaControllerTest using Java 21.0.5 with PID 61112 (started by nobr3541 in /Users/nobr3541/Library/CloudStorage/OneDrive-UCB-O365/Desktop/PhD/Courses/Fall-2024/OOP/homework_9)
 ?[0;39m?[33mNo active profile set, falling back to 1 default profile: "default"
 ?[0;39m?[33mInitializing default game...
 ?[0;39m?[33mDefault game initialized: Polymorphia DefaultGame after turn 0
-Live adventurers(4): Frodo,Arwen,Sir Robin,Sir Lancelot
-Live creatures(3): Ogre,Satan,Dragon
-	Sanctuary:
-		Ogre(health: 3.00)
-		Satan(health: 15.00)
-
-	Den of Souls:
-		Frodo(health: 5.00)
-		Arwen(health: 5.00)
+Live adventurers(4): Sir Robin,Frodo,Arwen,Sir Lancelot
+Live creatures(3): Dragon,Satan,Ogre
+	Fangorn Forest:
 		Dragon(health: 3.00)
-		Sir Lancelot(health: 8.00)
 		Sir Robin(health: 5.00)
+		apple(2.0)
+		banana(1.6)
 		leather-Armor
 
-	Map Room:
-		apple(1.4)
-		banana(1.4)
+	Room of Horrors:
+		Frodo(health: 5.00)
+		Arwen(health: 5.00)
+		Sir Lancelot(health: 8.00)
+		Satan(health: 15.00)
+		cupcake(1.1)
 
-	Fangorn Forest:
-		cupcake(1.2)
-?[0;39m?[33mStarted PolymorphiaControllerTest in 1.398 seconds (process running for 2.604)
+	Misty Mountains:
+		
+
+	Shire:
+		Ogre(health: 3.00)
+?[0;39m?[33mStarted PolymorphiaControllerTest in 1.263 seconds (process running for 2.489)
 ?[0;39m?[33mReceived request to create a game with parameters: PolymorphiaParameters[name=MyGame, playerName=getGameTestPlayer, numRooms=2, numAdventurers=2, numCreatures=7, numKnights=1, numCowards=2, numGluttons=2, numDemons=2, numFood=10, numArmor=2]
 ?[0;39m?[33mCreated new game: MyGame
 ?[0;39m?[33mGame not found

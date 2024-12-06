@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.PolymorphiaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-12-06T21:58:23" hostname="UCB-HYFY92NCM6" time="0.077">
+<testsuite name="csci.ooad.polymorphia.PolymorphiaTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:16:10" hostname="UCB-HYFY92NCM6" time="0.091">
   <properties/>
-  <testcase name="testUseOfFactories()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
-  <testcase name="testOneRoom()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.018"/>
-  <testcase name="test2x2Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.002"/>
+  <testcase name="testUseOfFactories()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.001"/>
+  <testcase name="testOneRoom()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.023"/>
+  <testcase name="test2x2Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.01"/>
   <testcase name="testSequentialDistribution()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
-  <testcase name="test3x3Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.014"/>
-  <testcase name="testRandomDistribution()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.001"/>
+  <testcase name="test3x3Game()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.01"/>
+  <testcase name="testRandomDistribution()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
   <testcase name="testCreationViaNumber()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
   <testcase name="testIndividualRoomCreation()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.0"/>
-  <testcase name="testWithEverything()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.036"/>
+  <testcase name="testWithEverything()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.043"/>
   <testcase name="testRoomsWithNConnections()" classname="csci.ooad.polymorphia.PolymorphiaTest" time="0.001"/>
   <system-out><![CDATA[?[33mPolymorphia testOneRoom after turn 0
 Live adventurers(1): Frodo
@@ -22,8 +22,8 @@ Live creatures(1): Ogre
 ?[0;39m?[33mStarting turn 1...
 ?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
 ?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
-?[0;39m?[33mFrodo rolled 3
-?[0;39m?[33mOgre(health: 3.00) rolled 6
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mOgre(health: 3.00) rolled 5
 ?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
 ?[0;39m?[33mTurn 1: Frodo executed FIGHT
 ?[0;39m?[33mPolymorphia testOneRoom after turn 1
@@ -35,8 +35,8 @@ Live creatures(1): Ogre
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 2...
 ?[0;39m?[33mFrodo is fighting Ogre(health: 2.50)
-?[0;39m?[33mFrodo rolled 1
-?[0;39m?[33mOgre(health: 2.50) rolled 1
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mOgre(health: 2.50) rolled 5
 ?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
 ?[0;39m?[33mTurn 2: Frodo executed FIGHT
 ?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
@@ -48,16 +48,29 @@ Live creatures(1): Ogre
 		Ogre(health: 2.00)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 3...
-?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
 ?[0;39m?[33mFrodo is fighting Ogre(health: 2.00)
-?[0;39m?[33mFrodo rolled 1
-?[0;39m?[33mOgre(health: 2.00) rolled 3
-?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
-?[0;39m?[33mFrodo just died!
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mOgre(health: 2.00) rolled 2
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
 ?[0;39m?[33mTurn 3: Frodo executed FIGHT
-?[0;39m?[33mThe game ended after 3 turns.
-The creatures won! Left standing are:
-Ogre(health: 1.50)
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia testOneRoom after turn 3
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Starting Room:
+		Frodo(health: 0.50)
+		Ogre(health: 1.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.50)
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mOgre(health: 1.50) rolled 1
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 4 turns.
+No team won! Everyone died!
 
 ?[0;39m?[33mPolymorphia test2x2Game after turn 0
 Live adventurers(1): Frodo
@@ -69,30 +82,113 @@ Live creatures(1): Ogre
 		
 
 	Southwest:
-		
+		Frodo(health: 5.00)
 
 	Southeast:
-		Frodo(health: 5.00)
 		Ogre(health: 3.00)
 ?[0;39m?[33mStarting play...
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 1...
+?[0;39m?[33mFrodo moved from Southwest to Northwest
+?[0;39m?[33mMoved: Frodo moved from Southwest to Northwest
+?[0;39m?[33mTurn 1: Frodo executed MOVE
 ?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test2x2Game after turn 1
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		Frodo(health: 4.75)
+
+	Northeast:
+		
+
+	Southwest:
+		
+
+	Southeast:
+		Ogre(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 2...
+?[0;39m?[33mFrodo moved from Northwest to Northeast
+?[0;39m?[33mMoved: Frodo moved from Northwest to Northeast
+?[0;39m?[33mTurn 2: Frodo executed MOVE
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test2x2Game after turn 2
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		Frodo(health: 4.50)
+
+	Southwest:
+		
+
+	Southeast:
+		Ogre(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 3...
+?[0;39m?[33mFrodo moved from Northeast to Southeast
+?[0;39m?[33mMoved: Frodo moved from Northeast to Southeast
+?[0;39m?[33mTurn 3: Frodo executed MOVE
+?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia test2x2Game after turn 3
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		
+
+	Southeast:
+		Ogre(health: 3.00)
+		Frodo(health: 4.25)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 4...
+?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
 ?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
 ?[0;39m?[33mFrodo rolled 5
-?[0;39m?[33mOgre(health: 3.00) rolled 2
+?[0;39m?[33mOgre(health: 3.00) rolled 4
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mPolymorphia test2x2Game after turn 4
+Live adventurers(1): Frodo
+Live creatures(1): Ogre
+	Northwest:
+		
+
+	Northeast:
+		
+
+	Southwest:
+		
+
+	Southeast:
+		Ogre(health: 1.50)
+		Frodo(health: 3.75)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 5...
+?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.50)
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mOgre(health: 1.50) rolled 1
 ?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
 ?[0;39m?[33mOgre just died!
-?[0;39m?[33mTurn 1: Frodo executed FIGHT
-?[0;39m?[33mThe game ended after 1 turns.
+?[0;39m?[33mTurn 5: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 5 turns.
 The adventurers won! Left standing are:
-Frodo(health: 4.50)
+Frodo(health: 3.25)
 
 ?[0;39m?[33mPolymorphia test3x3Game after turn 0
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
 	Northwest:
-		Frodo(health: 5.00)
+		
 
 	North:
 		
@@ -101,29 +197,29 @@ Live creatures(1): Ogre
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
 
 	South:
-		
+		Frodo(health: 5.00)
 
 	Southeast:
 		
 ?[0;39m?[33mStarting play...
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 1...
-?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo moved from Northwest to North
-?[0;39m?[33mMoved: Frodo moved from Northwest to North
+?[0;39m?[33mFrodo moved from South to Center
+?[0;39m?[33mMoved: Frodo moved from South to Center
 ?[0;39m?[33mTurn 1: Frodo executed MOVE
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
 ?[0;39m?[33mPolymorphia test3x3Game after turn 1
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -131,19 +227,19 @@ Live creatures(1): Ogre
 		
 
 	North:
-		Frodo(health: 4.75)
+		
 
 	Northeast:
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
-		
+		Frodo(health: 4.75)
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -155,10 +251,10 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 2...
-?[0;39m?[33mFrodo moved from North to Northeast
-?[0;39m?[33mMoved: Frodo moved from North to Northeast
-?[0;39m?[33mTurn 2: Frodo executed MOVE
 ?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from Center to West
+?[0;39m?[33mMoved: Frodo moved from Center to West
+?[0;39m?[33mTurn 2: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 2
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -169,16 +265,16 @@ Live creatures(1): Ogre
 		
 
 	Northeast:
-		Frodo(health: 4.50)
+		
 
 	West:
-		Ogre(health: 3.00)
+		Frodo(health: 4.50)
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -190,10 +286,10 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 3...
-?[0;39m?[33mFrodo moved from Northeast to East
-?[0;39m?[33mMoved: Frodo moved from Northeast to East
-?[0;39m?[33mTurn 3: Frodo executed MOVE
 ?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from West to Southwest
+?[0;39m?[33mMoved: Frodo moved from West to Southwest
+?[0;39m?[33mTurn 3: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 3
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -207,16 +303,16 @@ Live creatures(1): Ogre
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		Frodo(health: 4.25)
+		Ogre(health: 3.00)
 
 	Southwest:
-		
+		Frodo(health: 4.25)
 
 	South:
 		
@@ -226,8 +322,8 @@ Live creatures(1): Ogre
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 4...
 ?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo moved from East to Northeast
-?[0;39m?[33mMoved: Frodo moved from East to Northeast
+?[0;39m?[33mFrodo moved from Southwest to West
+?[0;39m?[33mMoved: Frodo moved from Southwest to West
 ?[0;39m?[33mTurn 4: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 4
 Live adventurers(1): Frodo
@@ -239,16 +335,16 @@ Live creatures(1): Ogre
 		
 
 	Northeast:
-		Frodo(health: 4.00)
+		
 
 	West:
-		Ogre(health: 3.00)
+		Frodo(health: 4.00)
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -261,29 +357,29 @@ Live creatures(1): Ogre
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 5...
 ?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo moved from Northeast to North
-?[0;39m?[33mMoved: Frodo moved from Northeast to North
+?[0;39m?[33mFrodo moved from West to Northwest
+?[0;39m?[33mMoved: Frodo moved from West to Northwest
 ?[0;39m?[33mTurn 5: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 5
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
 	Northwest:
-		
+		Frodo(health: 3.75)
 
 	North:
-		Frodo(health: 3.75)
+		
 
 	Northeast:
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -296,29 +392,29 @@ Live creatures(1): Ogre
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 6...
 ?[0;39m?[33mTurn 6: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo moved from North to Northwest
-?[0;39m?[33mMoved: Frodo moved from North to Northwest
+?[0;39m?[33mFrodo moved from Northwest to North
+?[0;39m?[33mMoved: Frodo moved from Northwest to North
 ?[0;39m?[33mTurn 6: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 6
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
 	Northwest:
-		Frodo(health: 3.50)
+		
 
 	North:
-		
+		Frodo(health: 3.50)
 
 	Northeast:
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -330,10 +426,10 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 7...
-?[0;39m?[33mFrodo moved from Northwest to North
-?[0;39m?[33mMoved: Frodo moved from Northwest to North
-?[0;39m?[33mTurn 7: Frodo executed MOVE
 ?[0;39m?[33mTurn 7: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from North to Northeast
+?[0;39m?[33mMoved: Frodo moved from North to Northeast
+?[0;39m?[33mTurn 7: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 7
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -341,19 +437,19 @@ Live creatures(1): Ogre
 		
 
 	North:
-		Frodo(health: 3.25)
-
-	Northeast:
 		
 
+	Northeast:
+		Frodo(health: 3.25)
+
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -365,8 +461,8 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 8...
-?[0;39m?[33mFrodo moved from North to Center
-?[0;39m?[33mMoved: Frodo moved from North to Center
+?[0;39m?[33mFrodo moved from Northeast to North
+?[0;39m?[33mMoved: Frodo moved from Northeast to North
 ?[0;39m?[33mTurn 8: Frodo executed MOVE
 ?[0;39m?[33mTurn 8: Ogre executed DO NOTHING
 ?[0;39m?[33mPolymorphia test3x3Game after turn 8
@@ -376,19 +472,19 @@ Live creatures(1): Ogre
 		
 
 	North:
-		
+		Frodo(health: 3.00)
 
 	Northeast:
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
-		Frodo(health: 3.00)
+		
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
@@ -400,10 +496,10 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 9...
-?[0;39m?[33mFrodo moved from Center to South
-?[0;39m?[33mMoved: Frodo moved from Center to South
-?[0;39m?[33mTurn 9: Frodo executed MOVE
 ?[0;39m?[33mTurn 9: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from North to Center
+?[0;39m?[33mMoved: Frodo moved from North to Center
+?[0;39m?[33mTurn 9: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 9
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -417,28 +513,28 @@ Live creatures(1): Ogre
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
-		
+		Frodo(health: 2.75)
 
 	East:
-		
+		Ogre(health: 3.00)
 
 	Southwest:
 		
 
 	South:
-		Frodo(health: 2.75)
+		
 
 	Southeast:
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 10...
-?[0;39m?[33mFrodo moved from South to Center
-?[0;39m?[33mMoved: Frodo moved from South to Center
-?[0;39m?[33mTurn 10: Frodo executed MOVE
 ?[0;39m?[33mTurn 10: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo moved from Center to East
+?[0;39m?[33mMoved: Frodo moved from Center to East
+?[0;39m?[33mTurn 10: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia test3x3Game after turn 10
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -452,13 +548,14 @@ Live creatures(1): Ogre
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
-		Frodo(health: 2.50)
+		
 
 	East:
-		
+		Ogre(health: 3.00)
+		Frodo(health: 2.50)
 
 	Southwest:
 		
@@ -470,10 +567,12 @@ Live creatures(1): Ogre
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 11...
-?[0;39m?[33mFrodo moved from Center to South
-?[0;39m?[33mMoved: Frodo moved from Center to South
-?[0;39m?[33mTurn 11: Frodo executed MOVE
 ?[0;39m?[33mTurn 11: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
+?[0;39m?[33mFrodo rolled 4
+?[0;39m?[33mOgre(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mTurn 11: Frodo executed FIGHT
 ?[0;39m?[33mPolymorphia test3x3Game after turn 11
 Live adventurers(1): Frodo
 Live creatures(1): Ogre
@@ -487,1143 +586,1233 @@ Live creatures(1): Ogre
 		
 
 	West:
-		Ogre(health: 3.00)
+		
 
 	Center:
 		
 
 	East:
-		
+		Ogre(health: 1.50)
+		Frodo(health: 2.00)
 
 	Southwest:
 		
 
 	South:
-		Frodo(health: 2.25)
+		
 
 	Southeast:
 		
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 12...
 ?[0;39m?[33mTurn 12: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo moved from South to Center
-?[0;39m?[33mMoved: Frodo moved from South to Center
-?[0;39m?[33mTurn 12: Frodo executed MOVE
-?[0;39m?[33mPolymorphia test3x3Game after turn 12
-Live adventurers(1): Frodo
-Live creatures(1): Ogre
-	Northwest:
-		
-
-	North:
-		
-
-	Northeast:
-		
-
-	West:
-		Ogre(health: 3.00)
-
-	Center:
-		Frodo(health: 2.00)
-
-	East:
-		
-
-	Southwest:
-		
-
-	South:
-		
-
-	Southeast:
-		
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 13...
-?[0;39m?[33mFrodo moved from Center to West
-?[0;39m?[33mMoved: Frodo moved from Center to West
-?[0;39m?[33mTurn 13: Frodo executed MOVE
-?[0;39m?[33mTurn 13: Ogre executed DO NOTHING
-?[0;39m?[33mPolymorphia test3x3Game after turn 13
-Live adventurers(1): Frodo
-Live creatures(1): Ogre
-	Northwest:
-		
-
-	North:
-		
-
-	Northeast:
-		
-
-	West:
-		Ogre(health: 3.00)
-		Frodo(health: 1.75)
-
-	Center:
-		
-
-	East:
-		
-
-	Southwest:
-		
-
-	South:
-		
-
-	Southeast:
-		
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 14...
-?[0;39m?[33mTurn 14: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
-?[0;39m?[33mFrodo rolled 4
-?[0;39m?[33mOgre(health: 3.00) rolled 4
-?[0;39m?[33mFightOutcome: Frodo tied a battle against Ogre
-?[0;39m?[33mTurn 14: Frodo executed FIGHT
-?[0;39m?[33mPolymorphia test3x3Game after turn 14
-Live adventurers(1): Frodo
-Live creatures(1): Ogre
-	Northwest:
-		
-
-	North:
-		
-
-	Northeast:
-		
-
-	West:
-		Ogre(health: 2.50)
-		Frodo(health: 1.25)
-
-	Center:
-		
-
-	East:
-		
-
-	Southwest:
-		
-
-	South:
-		
-
-	Southeast:
-		
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 15...
-?[0;39m?[33mTurn 15: Ogre executed DO NOTHING
-?[0;39m?[33mFrodo is fighting Ogre(health: 2.50)
-?[0;39m?[33mFrodo rolled 1
-?[0;39m?[33mOgre(health: 2.50) rolled 4
-?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
-?[0;39m?[33mFrodo just died!
-?[0;39m?[33mTurn 15: Frodo executed FIGHT
-?[0;39m?[33mThe game ended after 15 turns.
-The creatures won! Left standing are:
-Ogre(health: 2.00)
+?[0;39m?[33mFrodo is fighting Ogre(health: 1.50)
+?[0;39m?[33mFrodo rolled 6
+?[0;39m?[33mOgre(health: 1.50) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
+?[0;39m?[33mOgre just died!
+?[0;39m?[33mTurn 12: Frodo executed FIGHT
+?[0;39m?[33mThe game ended after 12 turns.
+The adventurers won! Left standing are:
+Frodo(health: 1.50)
 
 ?[0;39m?[33mPolymorphia testWithEverything after turn 0
-Live adventurers(9): Sir Lancelot,Sir Eats-a-lot,Sir Galahad,Sir Robin,Chubs,Frodo,Arwen,Frodo,Sir Robin
-Live creatures(10): Beelzebub,Satan,Troll,Dragon,Satan,Shelob,Evil Wizard,Dragon,Ogre,Orc
-	Misty Mountains:
-		Beelzebub(health: 15.00)
-		Satan(health: 15.00)
-		steak(1.0)
-		cupcake(1.5)
-
-	Shire:
-		Sir Lancelot(health: 8.00)
-		Troll(health: 3.00)
-		apple(1.0)
-
-	Hobbiton:
-		Sir Galahad(health: 8.00)
-		Sir Eats-a-lot(health: 5.00)
-		Dragon(health: 3.00)
-		Satan(health: 15.00)
-
-	Gondor:
-		cupcake(1.0)
-
-	Chamber of Secrets:
-		Sir Robin(health: 5.00)
-		Shelob(health: 3.00)
-		Evil Wizard(health: 3.00)
-		salad(1.0)
-
-	Room of Doom:
-		Chubs(health: 5.00)
-		Dragon(health: 3.00)
-		fries(1.0)
-
-	Room of Gloom:
-		Frodo(health: 5.00)
+Live adventurers(9): Arwen,Frodo,Sir Robin,Chubs,Frodo,Sir Robin,Sir Eats-a-lot,Sir Galahad,Sir Lancelot
+Live creatures(10): Evil Wizard,Dragon,Beelzebub,Orc,Dragon,Shelob,Satan,Ogre,Troll,Satan
+	Dragon's Den:
 		Arwen(health: 5.00)
 		Frodo(health: 5.00)
+		apple(1.0)
+
+	Troll Bridge:
 		Sir Robin(health: 5.00)
-		Ogre(health: 3.00)
+		Chubs(health: 5.00)
+		Evil Wizard(health: 3.00)
+
+	Dungeon:
+		Dragon(health: 3.00)
+		Beelzebub(health: 15.00)
+
+	Pit of Despair:
 		Orc(health: 3.00)
+		Dragon(health: 3.00)
+		cupcake(1.0)
+
+	Sanctuary:
+		Frodo(health: 5.00)
+		Sir Robin(health: 5.00)
+		Sir Eats-a-lot(health: 5.00)
+		Shelob(health: 3.00)
+
+	Den of Souls:
+		Sir Galahad(health: 8.00)
+		Satan(health: 15.00)
 		banana(1.0)
+		steak(1.0)
+		fries(1.0)
+		cupcake(1.3)
+
+	Map Room:
+		Sir Lancelot(health: 8.00)
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Satan(health: 15.00)
+		salad(1.0)
 ?[0;39m?[33mStarting play...
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 1...
-?[0;39m?[33mSir Eats-a-lot is fighting Satan(health: 15.00)
-?[0;39m?[33mSir Eats-a-lot rolled 2
-?[0;39m?[33mSatan(health: 15.00) rolled 3
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Eats-a-lot
-?[0;39m?[33mTurn 1: Sir Eats-a-lot executed FIGHT
-?[0;39m?[33mTurn 1: Troll executed DO NOTHING
-?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
-?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
-?[0;39m?[33mChubs gained health: 6.00
-?[0;39m?[33mTurn 1: Chubs executed EAT
-?[0;39m?[33mTurn 1: Orc executed DO NOTHING
-?[0;39m?[33mTurn 1: Shelob executed DO NOTHING
-?[0;39m?[33mFrodo is fighting Ogre(health: 3.00)
-?[0;39m?[33mFrodo rolled 6
-?[0;39m?[33mOgre(health: 3.00) rolled 5
-?[0;39m?[33mFightOutcome: Frodo won a battle against Ogre
-?[0;39m?[33mTurn 1: Frodo executed FIGHT
-?[0;39m?[33mSir Galahad is fighting Satan(health: 14.50)
-?[0;39m?[33mSir Galahad rolled 2
-?[0;39m?[33mSatan(health: 14.50) rolled 1
+?[0;39m?[33mSir Galahad is fighting Satan(health: 15.00)
+?[0;39m?[33mSir Galahad rolled 4
+?[0;39m?[33mSatan(health: 15.00) rolled 1
 ?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
 ?[0;39m?[33mTurn 1: Sir Galahad executed FIGHT
-?[0;39m?[33mSatan moved from Misty Mountains to Shire
-?[0;39m?[33mMoved: Satan moved from Misty Mountains to Shire
-?[0;39m?[33mTurn 1: Satan executed MOVE
-?[0;39m?[33mSir Robin gained health: 6.00
-?[0;39m?[33mTurn 1: Sir Robin executed EAT
-?[0;39m?[33mArwen is fighting Orc(health: 3.00)
-?[0;39m?[33mArwen rolled 1
-?[0;39m?[33mOrc(health: 3.00) rolled 1
-?[0;39m?[33mFightOutcome: Arwen tied a battle against Orc
-?[0;39m?[33mTurn 1: Arwen executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Galahad(health: 7.50)
-?[0;39m?[33mSatan rolled 1
-?[0;39m?[33mSir Galahad(health: 7.50) rolled 5
-?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
-?[0;39m?[33mTurn 1: Satan executed FIGHT
-?[0;39m?[33mTurn 1: Evil Wizard executed DO NOTHING
-?[0;39m?[33mBeelzebub moved from Misty Mountains to Chamber of Secrets
-?[0;39m?[33mMoved: Beelzebub moved from Misty Mountains to Chamber of Secrets
-?[0;39m?[33mTurn 1: Beelzebub executed MOVE
-?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
-?[0;39m?[33mSir Lancelot is fighting Satan(health: 14.50)
-?[0;39m?[33mSir Lancelot rolled 1
-?[0;39m?[33mSatan(health: 14.50) rolled 2
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
-?[0;39m?[33mTurn 1: Sir Lancelot executed FIGHT
-?[0;39m?[33mFrodo is fighting Orc(health: 2.50)
-?[0;39m?[33mFrodo rolled 4
-?[0;39m?[33mOrc(health: 2.50) rolled 1
-?[0;39m?[33mFightOutcome: Frodo won a battle against Orc
-?[0;39m?[33mOrc just died!
+?[0;39m?[33mChubs is fighting Evil Wizard(health: 3.00)
+?[0;39m?[33mChubs rolled 4
+?[0;39m?[33mEvil Wizard(health: 3.00) rolled 4
+?[0;39m?[33mFightOutcome: Chubs tied a battle against Evil Wizard
+?[0;39m?[33mTurn 1: Chubs executed FIGHT
+?[0;39m?[33mSir Robin moved from Sanctuary to Pit of Despair
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Pit of Despair
+?[0;39m?[33mTurn 1: Sir Robin executed MOVE
+?[0;39m?[33mFrodo is fighting Shelob(health: 3.00)
+?[0;39m?[33mFrodo rolled 5
+?[0;39m?[33mShelob(health: 3.00) rolled 5
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Shelob
 ?[0;39m?[33mTurn 1: Frodo executed FIGHT
-?[0;39m?[33mSir Robin gained health: 6.00
-?[0;39m?[33mTurn 1: Sir Robin executed EAT
+?[0;39m?[33mTurn 1: Troll executed DO NOTHING
+?[0;39m?[33mFrodo gained health: 6.00
+?[0;39m?[33mTurn 1: Frodo executed EAT
+?[0;39m?[33mSatan is fighting Sir Lancelot(health: 8.00)
+?[0;39m?[33mSatan rolled 2
+?[0;39m?[33mSir Lancelot(health: 8.00) rolled 4
+?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Satan
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mSir Eats-a-lot is fighting Shelob(health: 2.50)
+?[0;39m?[33mSir Eats-a-lot rolled 4
+?[0;39m?[33mShelob(health: 2.50) rolled 6
+?[0;39m?[33mFightOutcome: Shelob won a battle against Sir Eats-a-lot
+?[0;39m?[33mTurn 1: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mTurn 1: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 1: Orc executed DO NOTHING
+?[0;39m?[33mSir Lancelot is fighting Satan(health: 12.50)
+?[0;39m?[33mSir Lancelot rolled 6
+?[0;39m?[33mSatan(health: 12.50) rolled 6
+?[0;39m?[33mFightOutcome: Sir Lancelot tied a battle against Satan
+?[0;39m?[33mTurn 1: Sir Lancelot executed FIGHT
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mBeelzebub moved from Dungeon to Sanctuary
+?[0;39m?[33mMoved: Beelzebub moved from Dungeon to Sanctuary
+?[0;39m?[33mTurn 1: Beelzebub executed MOVE
+?[0;39m?[33mSir Robin moved from Troll Bridge to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Map Room
+?[0;39m?[33mTurn 1: Sir Robin executed MOVE
+?[0;39m?[33mSatan is fighting Sir Galahad(health: 7.50)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Galahad(health: 7.50) rolled 4
+?[0;39m?[33mFightOutcome: Satan tied a battle against Sir Galahad
+?[0;39m?[33mTurn 1: Satan executed FIGHT
+?[0;39m?[33mTurn 1: Shelob executed DO NOTHING
+?[0;39m?[33mArwen moved from Dragon's Den to Den of Souls
+?[0;39m?[33mMoved: Arwen moved from Dragon's Den to Den of Souls
+?[0;39m?[33mTurn 1: Arwen executed MOVE
+?[0;39m?[33mTurn 1: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 1: Evil Wizard executed DO NOTHING
 ?[0;39m?[33mPolymorphia testWithEverything after turn 1
-Live adventurers(9): Sir Lancelot,Sir Eats-a-lot,Sir Galahad,Sir Robin,Chubs,Frodo,Arwen,Frodo,Sir Robin
-Live creatures(9): Troll,Satan,Dragon,Satan,Shelob,Evil Wizard,Beelzebub,Dragon,Ogre
-	Misty Mountains:
-		steak(1.0)
-		cupcake(1.5)
+Live adventurers(9): Frodo,Chubs,Sir Robin,Sir Eats-a-lot,Frodo,Arwen,Sir Galahad,Sir Robin,Sir Lancelot
+Live creatures(10): Evil Wizard,Dragon,Orc,Dragon,Shelob,Beelzebub,Satan,Ogre,Troll,Satan
+	Dragon's Den:
+		Frodo(health: 6.00)
 
-	Shire:
-		Sir Lancelot(health: 6.50)
-		Troll(health: 3.00)
-		Satan(health: 14.00)
-		apple(1.0)
+	Troll Bridge:
+		Chubs(health: 4.50)
+		Evil Wizard(health: 2.50)
 
-	Hobbiton:
-		Sir Galahad(health: 7.00)
-		Sir Eats-a-lot(health: 3.50)
+	Dungeon:
 		Dragon(health: 3.00)
-		Satan(health: 8.50)
 
-	Gondor:
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+		Sir Robin(health: 4.50)
 		cupcake(1.0)
 
-	Chamber of Secrets:
-		Sir Robin(health: 6.00)
-		Shelob(health: 3.00)
-		Evil Wizard(health: 3.00)
+	Sanctuary:
+		Frodo(health: 4.50)
+		Sir Eats-a-lot(health: 2.50)
+		Shelob(health: 2.00)
 		Beelzebub(health: 14.50)
 
-	Room of Doom:
-		Chubs(health: 6.00)
-		Dragon(health: 3.00)
+	Den of Souls:
+		Sir Galahad(health: 7.00)
+		Satan(health: 11.00)
+		Arwen(health: 4.75)
+		banana(1.0)
+		steak(1.0)
+		fries(1.0)
+		cupcake(1.3)
 
-	Room of Gloom:
-		Frodo(health: 4.50)
-		Arwen(health: 4.50)
-		Frodo(health: 4.50)
-		Sir Robin(health: 6.00)
-		Ogre(health: 1.50)
+	Map Room:
+		Sir Lancelot(health: 7.00)
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Satan(health: 12.00)
+		Sir Robin(health: 4.50)
+		salad(1.0)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 2...
-?[0;39m?[33mBeelzebub is fighting Sir Robin(health: 6.00)
-?[0;39m?[33mBeelzebub rolled 4
-?[0;39m?[33mSir Robin(health: 6.00) rolled 3
-?[0;39m?[33mFightOutcome: Beelzebub won a battle against Sir Robin
-?[0;39m?[33mTurn 2: Beelzebub executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Galahad(health: 7.00)
-?[0;39m?[33mSatan rolled 5
-?[0;39m?[33mSir Galahad(health: 7.00) rolled 4
+?[0;39m?[33mArwen gained health: 5.75
+?[0;39m?[33mTurn 2: Arwen executed EAT
+?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin gained health: 5.50
+?[0;39m?[33mTurn 2: Sir Robin executed EAT
+?[0;39m?[33mChubs is fighting Evil Wizard(health: 2.50)
+?[0;39m?[33mChubs rolled 6
+?[0;39m?[33mEvil Wizard(health: 2.50) rolled 5
+?[0;39m?[33mFightOutcome: Chubs won a battle against Evil Wizard
+?[0;39m?[33mTurn 2: Chubs executed FIGHT
+?[0;39m?[33mSir Galahad is fighting Satan(health: 11.00)
+?[0;39m?[33mSir Galahad rolled 3
+?[0;39m?[33mSatan(health: 11.00) rolled 6
 ?[0;39m?[33mFightOutcome: Satan won a battle against Sir Galahad
+?[0;39m?[33mTurn 2: Sir Galahad executed FIGHT
+?[0;39m?[33mFrodo is fighting Beelzebub(health: 14.50)
+?[0;39m?[33mFrodo rolled 4
+?[0;39m?[33mBeelzebub(health: 14.50) rolled 2
+?[0;39m?[33mFightOutcome: Frodo won a battle against Beelzebub
+?[0;39m?[33mTurn 2: Frodo executed FIGHT
+?[0;39m?[33mTurn 2: Orc executed DO NOTHING
+?[0;39m?[33mBeelzebub is fighting Frodo(health: 4.00)
+?[0;39m?[33mBeelzebub rolled 4
+?[0;39m?[33mFrodo(health: 4.00) rolled 4
+?[0;39m?[33mFightOutcome: Beelzebub tied a battle against Frodo
+?[0;39m?[33mTurn 2: Beelzebub executed FIGHT
+?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
+?[0;39m?[33mSatan is fighting Arwen(health: 5.75)
+?[0;39m?[33mSatan rolled 1
+?[0;39m?[33mArwen(health: 5.75) rolled 2
+?[0;39m?[33mFightOutcome: Arwen won a battle against Satan
 ?[0;39m?[33mTurn 2: Satan executed FIGHT
-?[0;39m?[33mFrodo moved from Room of Gloom to Chamber of Secrets
-?[0;39m?[33mMoved: Frodo moved from Room of Gloom to Chamber of Secrets
-?[0;39m?[33mTurn 2: Frodo executed MOVE
-?[0;39m?[33mSir Eats-a-lot is fighting Satan(health: 8.00)
-?[0;39m?[33mSir Eats-a-lot rolled 5
-?[0;39m?[33mSatan(health: 8.00) rolled 6
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Eats-a-lot
+?[0;39m?[33mTurn 2: Evil Wizard executed DO NOTHING
+?[0;39m?[33mSir Eats-a-lot is fighting Beelzebub(health: 11.50)
+?[0;39m?[33mSir Eats-a-lot rolled 6
+?[0;39m?[33mBeelzebub(health: 11.50) rolled 4
+?[0;39m?[33mFightOutcome: Sir Eats-a-lot won a battle against Beelzebub
 ?[0;39m?[33mTurn 2: Sir Eats-a-lot executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Lancelot(health: 6.50)
+?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
+?[0;39m?[33mSatan is fighting Sir Lancelot(health: 7.00)
 ?[0;39m?[33mSatan rolled 3
-?[0;39m?[33mSir Lancelot(health: 6.50) rolled 3
-?[0;39m?[33mFightOutcome: Satan tied a battle against Sir Lancelot
+?[0;39m?[33mSir Lancelot(health: 7.00) rolled 1
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
 ?[0;39m?[33mTurn 2: Satan executed FIGHT
 ?[0;39m?[33mTurn 2: Shelob executed DO NOTHING
+?[0;39m?[33mFrodo moved from Dragon's Den to Dungeon
+?[0;39m?[33mMoved: Frodo moved from Dragon's Den to Dungeon
+?[0;39m?[33mTurn 2: Frodo executed MOVE
+?[0;39m?[33mSir Robin gained health: 5.50
+?[0;39m?[33mTurn 2: Sir Robin executed EAT
 ?[0;39m?[33mTurn 2: Troll executed DO NOTHING
-?[0;39m?[33mArwen moved from Room of Gloom to Room of Doom
-?[0;39m?[33mMoved: Arwen moved from Room of Gloom to Room of Doom
-?[0;39m?[33mTurn 2: Arwen executed MOVE
-?[0;39m?[33mSir Robin moved from Chamber of Secrets to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Chamber of Secrets to Room of Gloom
-?[0;39m?[33mTurn 2: Sir Robin executed MOVE
-?[0;39m?[33mSir Galahad is fighting Satan(health: 7.50)
-?[0;39m?[33mSir Galahad rolled 6
-?[0;39m?[33mSatan(health: 7.50) rolled 2
-?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
-?[0;39m?[33mTurn 2: Sir Galahad executed FIGHT
-?[0;39m?[33mSir Robin moved from Room of Gloom to Hobbiton
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Hobbiton
-?[0;39m?[33mTurn 2: Sir Robin executed MOVE
-?[0;39m?[33mSir Lancelot is fighting Satan(health: 13.50)
-?[0;39m?[33mSir Lancelot rolled 3
-?[0;39m?[33mSatan(health: 13.50) rolled 4
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
+?[0;39m?[33mSir Lancelot is fighting Satan(health: 11.50)
+?[0;39m?[33mSir Lancelot rolled 4
+?[0;39m?[33mSatan(health: 11.50) rolled 2
+?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Satan
 ?[0;39m?[33mTurn 2: Sir Lancelot executed FIGHT
-?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
-?[0;39m?[33mFrodo is fighting Ogre(health: 1.50)
-?[0;39m?[33mFrodo rolled 1
-?[0;39m?[33mOgre(health: 1.50) rolled 6
-?[0;39m?[33mFightOutcome: Ogre won a battle against Frodo
-?[0;39m?[33mFrodo just died!
-?[0;39m?[33mTurn 2: Frodo executed FIGHT
-?[0;39m?[33mTurn 2: Dragon executed DO NOTHING
-?[0;39m?[33mTurn 2: Evil Wizard executed DO NOTHING
-?[0;39m?[33mTurn 2: Ogre executed DO NOTHING
-?[0;39m?[33mChubs is fighting Dragon(health: 3.00)
-?[0;39m?[33mChubs rolled 4
-?[0;39m?[33mDragon(health: 3.00) rolled 2
-?[0;39m?[33mFightOutcome: Chubs won a battle against Dragon
-?[0;39m?[33mTurn 2: Chubs executed FIGHT
 ?[0;39m?[33mPolymorphia testWithEverything after turn 2
-Live adventurers(8): Sir Lancelot,Sir Eats-a-lot,Sir Galahad,Sir Robin,Frodo,Arwen,Chubs,Sir Robin
-Live creatures(9): Troll,Satan,Dragon,Satan,Shelob,Evil Wizard,Beelzebub,Dragon,Ogre
-	Misty Mountains:
-		steak(1.0)
-		cupcake(1.5)
+Live adventurers(9): Chubs,Frodo,Sir Robin,Sir Eats-a-lot,Frodo,Sir Galahad,Arwen,Sir Lancelot,Sir Robin
+Live creatures(10): Evil Wizard,Dragon,Orc,Dragon,Shelob,Beelzebub,Satan,Ogre,Troll,Satan
+	Dragon's Den:
+		
 
-	Shire:
-		Sir Lancelot(health: 4.50)
-		Troll(health: 3.00)
-		Satan(health: 13.00)
-		apple(1.0)
+	Troll Bridge:
+		Chubs(health: 4.00)
+		Evil Wizard(health: 1.00)
 
-	Hobbiton:
-		Sir Galahad(health: 5.00)
-		Sir Eats-a-lot(health: 2.00)
+	Dungeon:
 		Dragon(health: 3.00)
-		Satan(health: 3.00)
+		Frodo(health: 5.75)
+
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
 		Sir Robin(health: 5.50)
 
-	Gondor:
-		cupcake(1.0)
+	Sanctuary:
+		Frodo(health: 3.50)
+		Sir Eats-a-lot(health: 2.00)
+		Shelob(health: 2.00)
+		Beelzebub(health: 9.00)
 
-	Chamber of Secrets:
-		Shelob(health: 3.00)
-		Evil Wizard(health: 3.00)
-		Beelzebub(health: 14.00)
-		Frodo(health: 4.00)
+	Den of Souls:
+		Sir Galahad(health: 3.50)
+		Satan(health: 9.00)
+		Arwen(health: 5.25)
+		banana(1.0)
+		fries(1.0)
+		cupcake(1.3)
 
-	Room of Doom:
-		Chubs(health: 5.50)
-		Dragon(health: 0.50)
-		Arwen(health: 4.00)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Sir Robin(health: 4.00)
+	Map Room:
+		Sir Lancelot(health: 4.00)
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Satan(health: 9.00)
+		Sir Robin(health: 5.50)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 3...
-?[0;39m?[33mSatan is fighting Sir Robin(health: 5.50)
-?[0;39m?[33mSatan rolled 5
-?[0;39m?[33mSir Robin(health: 5.50) rolled 5
-?[0;39m?[33mFightOutcome: Satan tied a battle against Sir Robin
-?[0;39m?[33mTurn 3: Satan executed FIGHT
-?[0;39m?[33mChubs is fighting Dragon(health: 0.50)
-?[0;39m?[33mChubs rolled 5
-?[0;39m?[33mDragon(health: 0.50) rolled 3
-?[0;39m?[33mFightOutcome: Chubs won a battle against Dragon
-?[0;39m?[33mDragon just died!
+?[0;39m?[33mChubs is fighting Evil Wizard(health: 1.00)
+?[0;39m?[33mChubs rolled 3
+?[0;39m?[33mEvil Wizard(health: 1.00) rolled 5
+?[0;39m?[33mFightOutcome: Evil Wizard won a battle against Chubs
 ?[0;39m?[33mTurn 3: Chubs executed FIGHT
-?[0;39m?[33mSir Robin moved from Room of Gloom to Misty Mountains
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Misty Mountains
-?[0;39m?[33mTurn 3: Sir Robin executed MOVE
-?[0;39m?[33mFrodo is fighting Beelzebub(health: 14.00)
-?[0;39m?[33mFrodo rolled 6
-?[0;39m?[33mBeelzebub(health: 14.00) rolled 6
-?[0;39m?[33mFightOutcome: Frodo tied a battle against Beelzebub
-?[0;39m?[33mTurn 3: Frodo executed FIGHT
-?[0;39m?[33mSir Eats-a-lot is fighting Dragon(health: 3.00)
-?[0;39m?[33mSir Eats-a-lot rolled 2
-?[0;39m?[33mDragon(health: 3.00) rolled 3
-?[0;39m?[33mFightOutcome: Dragon won a battle against Sir Eats-a-lot
-?[0;39m?[33mTurn 3: Sir Eats-a-lot executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Lancelot(health: 4.50)
-?[0;39m?[33mSatan rolled 4
-?[0;39m?[33mSir Lancelot(health: 4.50) rolled 6
-?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Satan
-?[0;39m?[33mTurn 3: Satan executed FIGHT
-?[0;39m?[33mTurn 3: Dragon executed DO NOTHING
-?[0;39m?[33mArwen moved from Room of Doom to Gondor
-?[0;39m?[33mMoved: Arwen moved from Room of Doom to Gondor
-?[0;39m?[33mTurn 3: Arwen executed MOVE
 ?[0;39m?[33mTurn 3: Ogre executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Hobbiton to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Hobbiton to Room of Doom
-?[0;39m?[33mTurn 3: Sir Robin executed MOVE
-?[0;39m?[33mTurn 3: Shelob executed DO NOTHING
 ?[0;39m?[33mBeelzebub is fighting Frodo(health: 3.50)
-?[0;39m?[33mBeelzebub rolled 4
-?[0;39m?[33mFrodo(health: 3.50) rolled 5
-?[0;39m?[33mFightOutcome: Frodo won a battle against Beelzebub
+?[0;39m?[33mBeelzebub rolled 2
+?[0;39m?[33mFrodo(health: 3.50) rolled 1
+?[0;39m?[33mFightOutcome: Beelzebub won a battle against Frodo
 ?[0;39m?[33mTurn 3: Beelzebub executed FIGHT
 ?[0;39m?[33mTurn 3: Evil Wizard executed DO NOTHING
-?[0;39m?[33mTurn 3: Troll executed DO NOTHING
-?[0;39m?[33mSir Lancelot is fighting Satan(health: 10.50)
-?[0;39m?[33mSir Lancelot rolled 3
-?[0;39m?[33mSatan(health: 10.50) rolled 3
-?[0;39m?[33mFightOutcome: Sir Lancelot tied a battle against Satan
-?[0;39m?[33mTurn 3: Sir Lancelot executed FIGHT
-?[0;39m?[33mSir Galahad is fighting Dragon(health: 2.50)
-?[0;39m?[33mSir Galahad rolled 4
-?[0;39m?[33mDragon(health: 2.50) rolled 3
-?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Dragon
+?[0;39m?[33mSatan is fighting Sir Robin(health: 5.50)
+?[0;39m?[33mSatan rolled 5
+?[0;39m?[33mSir Robin(health: 5.50) rolled 6
+?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
+?[0;39m?[33mTurn 3: Satan executed FIGHT
+?[0;39m?[33mTurn 3: Orc executed DO NOTHING
+?[0;39m?[33mSir Eats-a-lot is fighting Beelzebub(health: 8.50)
+?[0;39m?[33mSir Eats-a-lot rolled 5
+?[0;39m?[33mBeelzebub(health: 8.50) rolled 2
+?[0;39m?[33mFightOutcome: Sir Eats-a-lot won a battle against Beelzebub
+?[0;39m?[33mTurn 3: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mSir Robin moved from Map Room to Dungeon
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Dungeon
+?[0;39m?[33mTurn 3: Sir Robin executed MOVE
+?[0;39m?[33mTurn 3: Dragon executed DO NOTHING
+?[0;39m?[33mSir Galahad is fighting Satan(health: 9.00)
+?[0;39m?[33mSir Galahad rolled 1
+?[0;39m?[33mSatan(health: 9.00) rolled 1
+?[0;39m?[33mFightOutcome: Sir Galahad tied a battle against Satan
 ?[0;39m?[33mTurn 3: Sir Galahad executed FIGHT
+?[0;39m?[33mTurn 3: Shelob executed DO NOTHING
+?[0;39m?[33mTurn 3: Troll executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Pit of Despair to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Pit of Despair to Den of Souls
+?[0;39m?[33mTurn 3: Sir Robin executed MOVE
+?[0;39m?[33mSir Lancelot is fighting Satan(health: 7.50)
+?[0;39m?[33mSir Lancelot rolled 2
+?[0;39m?[33mSatan(health: 7.50) rolled 6
+?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
+?[0;39m?[33mSir Lancelot just died!
+?[0;39m?[33mTurn 3: Sir Lancelot executed FIGHT
+?[0;39m?[33mFrodo is fighting Dragon(health: 3.00)
+?[0;39m?[33mFrodo rolled 3
+?[0;39m?[33mDragon(health: 3.00) rolled 5
+?[0;39m?[33mFightOutcome: Dragon won a battle against Frodo
+?[0;39m?[33mTurn 3: Frodo executed FIGHT
+?[0;39m?[33mArwen is fighting Satan(health: 8.50)
+?[0;39m?[33mArwen rolled 4
+?[0;39m?[33mSatan(health: 8.50) rolled 1
+?[0;39m?[33mFightOutcome: Arwen won a battle against Satan
+?[0;39m?[33mTurn 3: Arwen executed FIGHT
+?[0;39m?[33mFrodo is fighting Beelzebub(health: 5.00)
+?[0;39m?[33mFrodo rolled 3
+?[0;39m?[33mBeelzebub(health: 5.00) rolled 1
+?[0;39m?[33mFightOutcome: Frodo won a battle against Beelzebub
+?[0;39m?[33mTurn 3: Frodo executed FIGHT
+?[0;39m?[33mSatan is fighting Sir Robin(health: 5.00)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Robin(health: 5.00) rolled 6
+?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
+?[0;39m?[33mTurn 3: Satan executed FIGHT
+?[0;39m?[33mTurn 3: Dragon executed DO NOTHING
 ?[0;39m?[33mPolymorphia testWithEverything after turn 3
-Live adventurers(8): Sir Robin,Sir Lancelot,Sir Eats-a-lot,Sir Galahad,Arwen,Frodo,Sir Robin,Chubs
-Live creatures(8): Troll,Satan,Dragon,Satan,Shelob,Evil Wizard,Beelzebub,Ogre
-	Misty Mountains:
-		Sir Robin(health: 3.50)
-		steak(1.0)
-		cupcake(1.5)
+Live adventurers(8): Chubs,Frodo,Sir Robin,Frodo,Sir Eats-a-lot,Sir Galahad,Sir Robin,Arwen
+Live creatures(10): Evil Wizard,Dragon,Orc,Dragon,Shelob,Beelzebub,Satan,Ogre,Troll,Satan
+	Dragon's Den:
+		
 
-	Shire:
-		Sir Lancelot(health: 3.50)
-		Troll(health: 3.00)
-		Satan(health: 10.00)
-		apple(1.0)
+	Troll Bridge:
+		Chubs(health: 1.50)
+		Evil Wizard(health: 0.50)
 
-	Hobbiton:
-		Sir Galahad(health: 4.50)
-		Sir Eats-a-lot(health: 0.50)
-		Dragon(health: 1.00)
-		Satan(health: 2.50)
-
-	Gondor:
-		Arwen(health: 3.75)
-		cupcake(1.0)
-
-	Chamber of Secrets:
-		Shelob(health: 3.00)
-		Evil Wizard(health: 3.00)
-		Beelzebub(health: 12.00)
-		Frodo(health: 3.00)
-
-	Room of Doom:
-		Chubs(health: 5.00)
+	Dungeon:
+		Dragon(health: 2.50)
+		Frodo(health: 3.25)
 		Sir Robin(health: 4.50)
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+
+	Sanctuary:
+		Frodo(health: 1.50)
+		Sir Eats-a-lot(health: 1.50)
+		Shelob(health: 2.00)
+		Beelzebub(health: 2.50)
+
+	Den of Souls:
+		Sir Galahad(health: 3.00)
+		Satan(health: 2.50)
+		Arwen(health: 4.75)
+		Sir Robin(health: 4.50)
+		banana(1.0)
+		fries(1.0)
+		cupcake(1.3)
+
+	Map Room:
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Satan(health: 7.00)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 4...
-?[0;39m?[33mArwen gained health: 4.75
-?[0;39m?[33mTurn 4: Arwen executed EAT
+?[0;39m?[33mSir Eats-a-lot is fighting Beelzebub(health: 2.50)
+?[0;39m?[33mSir Eats-a-lot rolled 6
+?[0;39m?[33mBeelzebub(health: 2.50) rolled 5
+?[0;39m?[33mFightOutcome: Sir Eats-a-lot won a battle against Beelzebub
+?[0;39m?[33mTurn 4: Sir Eats-a-lot executed FIGHT
 ?[0;39m?[33mSir Galahad is fighting Satan(health: 2.50)
 ?[0;39m?[33mSir Galahad rolled 6
-?[0;39m?[33mSatan(health: 2.50) rolled 3
+?[0;39m?[33mSatan(health: 2.50) rolled 1
 ?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
 ?[0;39m?[33mSatan just died!
 ?[0;39m?[33mTurn 4: Sir Galahad executed FIGHT
-?[0;39m?[33mTurn 4: Troll executed DO NOTHING
-?[0;39m?[33mTurn 4: Evil Wizard executed DO NOTHING
-?[0;39m?[33mSir Lancelot is fighting Satan(health: 10.00)
-?[0;39m?[33mSir Lancelot rolled 3
-?[0;39m?[33mSatan(health: 10.00) rolled 1
-?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Satan
-?[0;39m?[33mTurn 4: Sir Lancelot executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Lancelot(health: 3.00)
-?[0;39m?[33mSatan rolled 2
-?[0;39m?[33mSir Lancelot(health: 3.00) rolled 1
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
-?[0;39m?[33mTurn 4: Satan executed FIGHT
-?[0;39m?[33mTurn 4: Shelob executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Room of Doom to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Room of Doom to Room of Gloom
-?[0;39m?[33mTurn 4: Sir Robin executed MOVE
-?[0;39m?[33mTurn 4: Dragon executed DO NOTHING
-?[0;39m?[33mChubs moved from Room of Doom to Chamber of Secrets
-?[0;39m?[33mMoved: Chubs moved from Room of Doom to Chamber of Secrets
-?[0;39m?[33mTurn 4: Chubs executed MOVE
-?[0;39m?[33mBeelzebub is fighting Chubs(health: 4.75)
-?[0;39m?[33mBeelzebub rolled 2
-?[0;39m?[33mChubs(health: 4.75) rolled 6
-?[0;39m?[33mFightOutcome: Chubs won a battle against Beelzebub
-?[0;39m?[33mTurn 4: Beelzebub executed FIGHT
-?[0;39m?[33mSir Eats-a-lot is fighting Dragon(health: 1.00)
-?[0;39m?[33mSir Eats-a-lot rolled 1
-?[0;39m?[33mDragon(health: 1.00) rolled 4
-?[0;39m?[33mFightOutcome: Dragon won a battle against Sir Eats-a-lot
-?[0;39m?[33mSir Eats-a-lot just died!
-?[0;39m?[33mTurn 4: Sir Eats-a-lot executed FIGHT
-?[0;39m?[33mFrodo moved from Chamber of Secrets to Misty Mountains
-?[0;39m?[33mMoved: Frodo moved from Chamber of Secrets to Misty Mountains
-?[0;39m?[33mTurn 4: Frodo executed MOVE
-?[0;39m?[33mSir Robin gained health: 4.50
+?[0;39m?[33mSir Robin gained health: 5.78
 ?[0;39m?[33mTurn 4: Sir Robin executed EAT
-?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
-?[0;39m?[33mPolymorphia testWithEverything after turn 4
-Live adventurers(7): Frodo,Sir Robin,Sir Lancelot,Sir Galahad,Arwen,Chubs,Sir Robin
-Live creatures(7): Troll,Satan,Dragon,Shelob,Evil Wizard,Beelzebub,Ogre
-	Misty Mountains:
-		Sir Robin(health: 4.50)
-		Frodo(health: 2.50)
-		cupcake(1.5)
-
-	Shire:
-		Sir Lancelot(health: 1.50)
-		Troll(health: 3.00)
-		Satan(health: 7.00)
-		apple(1.0)
-
-	Hobbiton:
-		Sir Galahad(health: 4.00)
-		Dragon(health: 0.50)
-
-	Gondor:
-		Arwen(health: 4.75)
-
-	Chamber of Secrets:
-		Shelob(health: 3.00)
-		Evil Wizard(health: 3.00)
-		Beelzebub(health: 7.50)
-		Chubs(health: 4.25)
-
-	Room of Doom:
-		
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Sir Robin(health: 4.25)
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 5...
-?[0;39m?[33mTurn 5: Evil Wizard executed DO NOTHING
-?[0;39m?[33mSir Galahad is fighting Dragon(health: 0.50)
-?[0;39m?[33mSir Galahad rolled 3
-?[0;39m?[33mDragon(health: 0.50) rolled 2
-?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Dragon
-?[0;39m?[33mDragon just died!
-?[0;39m?[33mTurn 5: Sir Galahad executed FIGHT
-?[0;39m?[33mSir Lancelot is fighting Satan(health: 7.00)
-?[0;39m?[33mSir Lancelot rolled 6
-?[0;39m?[33mSatan(health: 7.00) rolled 4
-?[0;39m?[33mFightOutcome: Sir Lancelot won a battle against Satan
-?[0;39m?[33mTurn 5: Sir Lancelot executed FIGHT
-?[0;39m?[33mArwen moved from Gondor to Room of Doom
-?[0;39m?[33mMoved: Arwen moved from Gondor to Room of Doom
-?[0;39m?[33mTurn 5: Arwen executed MOVE
-?[0;39m?[33mSir Robin gained health: 6.03
-?[0;39m?[33mTurn 5: Sir Robin executed EAT
-?[0;39m?[33mFrodo moved from Misty Mountains to Hobbiton
-?[0;39m?[33mMoved: Frodo moved from Misty Mountains to Hobbiton
-?[0;39m?[33mTurn 5: Frodo executed MOVE
-?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
-?[0;39m?[33mBeelzebub is fighting Chubs(health: 4.25)
-?[0;39m?[33mBeelzebub rolled 1
-?[0;39m?[33mChubs(health: 4.25) rolled 5
-?[0;39m?[33mFightOutcome: Chubs won a battle against Beelzebub
-?[0;39m?[33mTurn 5: Beelzebub executed FIGHT
-?[0;39m?[33mSatan is fighting Sir Lancelot(health: 1.00)
-?[0;39m?[33mSatan rolled 5
-?[0;39m?[33mSir Lancelot(health: 1.00) rolled 3
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Lancelot
-?[0;39m?[33mSir Lancelot just died!
-?[0;39m?[33mTurn 5: Satan executed FIGHT
-?[0;39m?[33mTurn 5: Troll executed DO NOTHING
-?[0;39m?[33mTurn 5: Shelob executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Room of Gloom to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Shire
-?[0;39m?[33mTurn 5: Sir Robin executed MOVE
-?[0;39m?[33mChubs is fighting Shelob(health: 3.00)
-?[0;39m?[33mChubs rolled 6
-?[0;39m?[33mShelob(health: 3.00) rolled 4
-?[0;39m?[33mFightOutcome: Chubs won a battle against Shelob
-?[0;39m?[33mTurn 5: Chubs executed FIGHT
-?[0;39m?[33mPolymorphia testWithEverything after turn 5
-Live adventurers(6): Sir Robin,Sir Robin,Frodo,Sir Galahad,Chubs,Arwen
-Live creatures(6): Troll,Satan,Shelob,Evil Wizard,Beelzebub,Ogre
-	Misty Mountains:
-		Sir Robin(health: 6.03)
-
-	Shire:
-		Troll(health: 3.00)
-		Satan(health: 4.00)
-		Sir Robin(health: 3.75)
-		apple(1.0)
-
-	Hobbiton:
-		Sir Galahad(health: 3.50)
-		Frodo(health: 2.25)
-
-	Gondor:
-		
-
-	Chamber of Secrets:
-		Shelob(health: 0.50)
-		Evil Wizard(health: 3.00)
-		Beelzebub(health: 3.00)
-		Chubs(health: 3.25)
-
-	Room of Doom:
-		Arwen(health: 4.50)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 6...
-?[0;39m?[33mSir Robin gained health: 4.75
-?[0;39m?[33mTurn 6: Sir Robin executed EAT
-?[0;39m?[33mTurn 6: Ogre executed DO NOTHING
-?[0;39m?[33mTurn 6: Evil Wizard executed DO NOTHING
-?[0;39m?[33mSatan is fighting Sir Robin(health: 4.75)
-?[0;39m?[33mSatan rolled 1
-?[0;39m?[33mSir Robin(health: 4.75) rolled 1
-?[0;39m?[33mFightOutcome: Satan tied a battle against Sir Robin
-?[0;39m?[33mTurn 6: Satan executed FIGHT
-?[0;39m?[33mSir Robin moved from Misty Mountains to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Misty Mountains to Shire
-?[0;39m?[33mTurn 6: Sir Robin executed MOVE
-?[0;39m?[33mTurn 6: Shelob executed DO NOTHING
-?[0;39m?[33mTurn 6: Troll executed DO NOTHING
-?[0;39m?[33mSir Galahad moved from Hobbiton to Chamber of Secrets
-?[0;39m?[33mMoved: Sir Galahad moved from Hobbiton to Chamber of Secrets
-?[0;39m?[33mTurn 6: Sir Galahad executed MOVE
-?[0;39m?[33mFrodo moved from Hobbiton to Room of Doom
-?[0;39m?[33mMoved: Frodo moved from Hobbiton to Room of Doom
-?[0;39m?[33mTurn 6: Frodo executed MOVE
-?[0;39m?[33mArwen moved from Room of Doom to Gondor
-?[0;39m?[33mMoved: Arwen moved from Room of Doom to Gondor
-?[0;39m?[33mTurn 6: Arwen executed MOVE
-?[0;39m?[33mBeelzebub is fighting Chubs(health: 3.25)
-?[0;39m?[33mBeelzebub rolled 1
-?[0;39m?[33mChubs(health: 3.25) rolled 5
-?[0;39m?[33mFightOutcome: Chubs won a battle against Beelzebub
-?[0;39m?[33mBeelzebub just died!
-?[0;39m?[33mTurn 6: Beelzebub executed FIGHT
-?[0;39m?[33mChubs is fighting Evil Wizard(health: 3.00)
+?[0;39m?[33mChubs is fighting Evil Wizard(health: 0.50)
 ?[0;39m?[33mChubs rolled 1
-?[0;39m?[33mEvil Wizard(health: 3.00) rolled 4
+?[0;39m?[33mEvil Wizard(health: 0.50) rolled 3
 ?[0;39m?[33mFightOutcome: Evil Wizard won a battle against Chubs
 ?[0;39m?[33mChubs just died!
-?[0;39m?[33mTurn 6: Chubs executed FIGHT
-?[0;39m?[33mPolymorphia testWithEverything after turn 6
-Live adventurers(5): Sir Robin,Sir Robin,Arwen,Sir Galahad,Frodo
-Live creatures(5): Troll,Satan,Shelob,Evil Wizard,Ogre
-	Misty Mountains:
+?[0;39m?[33mEvil Wizard just died!
+?[0;39m?[33mTurn 4: Chubs executed FIGHT
+?[0;39m?[33mBeelzebub is fighting Frodo(health: 1.50)
+?[0;39m?[33mBeelzebub rolled 2
+?[0;39m?[33mFrodo(health: 1.50) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Beelzebub
+?[0;39m?[33mBeelzebub just died!
+?[0;39m?[33mTurn 4: Beelzebub executed FIGHT
+?[0;39m?[33mTurn 4: Dragon executed DO NOTHING
+?[0;39m?[33mSatan moved from Map Room to Dragon's Den
+?[0;39m?[33mMoved: Satan moved from Map Room to Dragon's Den
+?[0;39m?[33mTurn 4: Satan executed MOVE
+?[0;39m?[33mTurn 4: Orc executed DO NOTHING
+?[0;39m?[33mTurn 4: Ogre executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Shelob(health: 2.00)
+?[0;39m?[33mFrodo rolled 2
+?[0;39m?[33mShelob(health: 2.00) rolled 2
+?[0;39m?[33mFightOutcome: Frodo tied a battle against Shelob
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mTurn 4: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 4: Shelob executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Dungeon to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Dungeon to Sanctuary
+?[0;39m?[33mTurn 4: Sir Robin executed MOVE
+?[0;39m?[33mFrodo is fighting Dragon(health: 2.50)
+?[0;39m?[33mFrodo rolled 4
+?[0;39m?[33mDragon(health: 2.50) rolled 3
+?[0;39m?[33mFightOutcome: Frodo won a battle against Dragon
+?[0;39m?[33mTurn 4: Frodo executed FIGHT
+?[0;39m?[33mArwen gained health: 5.75
+?[0;39m?[33mTurn 4: Arwen executed EAT
+?[0;39m?[33mTurn 4: Troll executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 4
+Live adventurers(7): Frodo,Frodo,Sir Eats-a-lot,Sir Robin,Sir Galahad,Arwen,Sir Robin
+Live creatures(7): Satan,Dragon,Orc,Dragon,Shelob,Ogre,Troll
+	Dragon's Den:
+		Satan(health: 6.50)
+
+	Troll Bridge:
 		
 
-	Shire:
-		Troll(health: 3.00)
-		Satan(health: 3.50)
-		Sir Robin(health: 4.25)
+	Dungeon:
+		Dragon(health: 1.00)
+		Frodo(health: 2.75)
+
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+
+	Sanctuary:
+		Frodo(health: 0.50)
+		Sir Eats-a-lot(health: 1.00)
+		Shelob(health: 1.50)
+		Sir Robin(health: 4.00)
+
+	Den of Souls:
+		Sir Galahad(health: 2.50)
+		Arwen(health: 5.75)
 		Sir Robin(health: 5.78)
+		fries(1.0)
 
-	Hobbiton:
+	Map Room:
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 5...
+?[0;39m?[33mSir Galahad gained health: 3.50
+?[0;39m?[33mTurn 5: Sir Galahad executed EAT
+?[0;39m?[33mTurn 5: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Map Room
+?[0;39m?[33mTurn 5: Sir Robin executed MOVE
+?[0;39m?[33mArwen moved from Den of Souls to Sanctuary
+?[0;39m?[33mMoved: Arwen moved from Den of Souls to Sanctuary
+?[0;39m?[33mTurn 5: Arwen executed MOVE
+?[0;39m?[33mSir Robin moved from Den of Souls to Pit of Despair
+?[0;39m?[33mMoved: Sir Robin moved from Den of Souls to Pit of Despair
+?[0;39m?[33mTurn 5: Sir Robin executed MOVE
+?[0;39m?[33mTurn 5: Shelob executed DO NOTHING
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mFrodo moved from Sanctuary to Pit of Despair
+?[0;39m?[33mMoved: Frodo moved from Sanctuary to Pit of Despair
+?[0;39m?[33mTurn 5: Frodo executed MOVE
+?[0;39m?[33mTurn 5: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 5: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 5: Troll executed DO NOTHING
+?[0;39m?[33mFrodo is fighting Dragon(health: 1.00)
+?[0;39m?[33mFrodo rolled 3
+?[0;39m?[33mDragon(health: 1.00) rolled 2
+?[0;39m?[33mFightOutcome: Frodo won a battle against Dragon
+?[0;39m?[33mDragon just died!
+?[0;39m?[33mTurn 5: Frodo executed FIGHT
+?[0;39m?[33mSatan moved from Dragon's Den to Map Room
+?[0;39m?[33mMoved: Satan moved from Dragon's Den to Map Room
+?[0;39m?[33mTurn 5: Satan executed MOVE
+?[0;39m?[33mSir Eats-a-lot is fighting Shelob(health: 1.50)
+?[0;39m?[33mSir Eats-a-lot rolled 3
+?[0;39m?[33mShelob(health: 1.50) rolled 5
+?[0;39m?[33mFightOutcome: Shelob won a battle against Sir Eats-a-lot
+?[0;39m?[33mSir Eats-a-lot just died!
+?[0;39m?[33mTurn 5: Sir Eats-a-lot executed FIGHT
+?[0;39m?[33mTurn 5: Orc executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 5
+Live adventurers(5): Frodo,Sir Robin,Arwen,Sir Galahad,Sir Robin
+Live creatures(6): Orc,Dragon,Shelob,Ogre,Troll,Satan
+	Dragon's Den:
 		
 
-	Gondor:
-		Arwen(health: 4.25)
+	Troll Bridge:
+		
 
-	Chamber of Secrets:
-		Shelob(health: 0.50)
-		Evil Wizard(health: 2.50)
-		Sir Galahad(health: 3.25)
+	Dungeon:
+		Frodo(health: 2.25)
 
-	Room of Doom:
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+		Sir Robin(health: 5.53)
+
+	Sanctuary:
+		Shelob(health: 1.00)
+		Arwen(health: 5.50)
+
+	Den of Souls:
+		Sir Galahad(health: 3.50)
+
+	Map Room:
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Sir Robin(health: 3.50)
+		Satan(health: 6.00)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 6...
+?[0;39m?[33mSir Galahad moved from Den of Souls to Map Room
+?[0;39m?[33mMoved: Sir Galahad moved from Den of Souls to Map Room
+?[0;39m?[33mTurn 6: Sir Galahad executed MOVE
+?[0;39m?[33mTurn 6: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 6: Troll executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Pit of Despair to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Pit of Despair to Map Room
+?[0;39m?[33mTurn 6: Sir Robin executed MOVE
+?[0;39m?[33mTurn 6: Orc executed DO NOTHING
+?[0;39m?[33mFrodo moved from Dungeon to Troll Bridge
+?[0;39m?[33mMoved: Frodo moved from Dungeon to Troll Bridge
+?[0;39m?[33mTurn 6: Frodo executed MOVE
+?[0;39m?[33mSatan is fighting Sir Robin(health: 5.03)
+?[0;39m?[33mSatan rolled 3
+?[0;39m?[33mSir Robin(health: 5.03) rolled 6
+?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
+?[0;39m?[33mTurn 6: Satan executed FIGHT
+?[0;39m?[33mTurn 6: Ogre executed DO NOTHING
+?[0;39m?[33mArwen is fighting Shelob(health: 1.00)
+?[0;39m?[33mArwen rolled 5
+?[0;39m?[33mShelob(health: 1.00) rolled 2
+?[0;39m?[33mFightOutcome: Arwen won a battle against Shelob
+?[0;39m?[33mShelob just died!
+?[0;39m?[33mTurn 6: Arwen executed FIGHT
+?[0;39m?[33mSir Robin moved from Map Room to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Troll Bridge
+?[0;39m?[33mTurn 6: Sir Robin executed MOVE
+?[0;39m?[33mPolymorphia testWithEverything after turn 6
+Live adventurers(5): Frodo,Sir Robin,Arwen,Sir Galahad,Sir Robin
+Live creatures(5): Orc,Dragon,Satan,Ogre,Troll
+	Dragon's Den:
+		
+
+	Troll Bridge:
 		Frodo(health: 2.00)
+		Sir Robin(health: 3.00)
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+
+	Sanctuary:
+		Arwen(health: 5.00)
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 3.00)
+		Troll(health: 3.00)
+		Satan(health: 2.50)
+		Sir Galahad(health: 3.25)
+		Sir Robin(health: 4.53)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 7...
-?[0;39m?[33mTurn 7: Evil Wizard executed DO NOTHING
-?[0;39m?[33mSatan is fighting Sir Robin(health: 5.78)
-?[0;39m?[33mSatan rolled 3
-?[0;39m?[33mSir Robin(health: 5.78) rolled 2
-?[0;39m?[33mFightOutcome: Satan won a battle against Sir Robin
-?[0;39m?[33mTurn 7: Satan executed FIGHT
+?[0;39m?[33mTurn 7: Dragon executed DO NOTHING
 ?[0;39m?[33mTurn 7: Troll executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Shire to Gondor
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Gondor
+?[0;39m?[33mSir Robin moved from Map Room to Dungeon
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Dungeon
 ?[0;39m?[33mTurn 7: Sir Robin executed MOVE
-?[0;39m?[33mSir Robin moved from Shire to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Room of Doom
-?[0;39m?[33mTurn 7: Sir Robin executed MOVE
-?[0;39m?[33mFrodo moved from Room of Doom to Misty Mountains
-?[0;39m?[33mMoved: Frodo moved from Room of Doom to Misty Mountains
-?[0;39m?[33mTurn 7: Frodo executed MOVE
-?[0;39m?[33mSir Galahad is fighting Evil Wizard(health: 2.50)
+?[0;39m?[33mSir Galahad is fighting Ogre(health: 3.00)
 ?[0;39m?[33mSir Galahad rolled 4
-?[0;39m?[33mEvil Wizard(health: 2.50) rolled 5
-?[0;39m?[33mFightOutcome: Evil Wizard won a battle against Sir Galahad
+?[0;39m?[33mOgre(health: 3.00) rolled 4
+?[0;39m?[33mFightOutcome: Sir Galahad tied a battle against Ogre
 ?[0;39m?[33mTurn 7: Sir Galahad executed FIGHT
-?[0;39m?[33mTurn 7: Shelob executed DO NOTHING
-?[0;39m?[33mTurn 7: Ogre executed DO NOTHING
-?[0;39m?[33mArwen moved from Gondor to Room of Doom
-?[0;39m?[33mMoved: Arwen moved from Gondor to Room of Doom
+?[0;39m?[33mTurn 7: Orc executed DO NOTHING
+?[0;39m?[33mSatan is fighting Sir Galahad(health: 2.75)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Galahad(health: 2.75) rolled 5
+?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
+?[0;39m?[33mTurn 7: Satan executed FIGHT
+?[0;39m?[33mArwen moved from Sanctuary to Troll Bridge
+?[0;39m?[33mMoved: Arwen moved from Sanctuary to Troll Bridge
 ?[0;39m?[33mTurn 7: Arwen executed MOVE
+?[0;39m?[33mFrodo moved from Troll Bridge to Dungeon
+?[0;39m?[33mMoved: Frodo moved from Troll Bridge to Dungeon
+?[0;39m?[33mTurn 7: Frodo executed MOVE
+?[0;39m?[33mSir Robin moved from Troll Bridge to Dragon's Den
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Dragon's Den
+?[0;39m?[33mTurn 7: Sir Robin executed MOVE
+?[0;39m?[33mTurn 7: Ogre executed DO NOTHING
 ?[0;39m?[33mPolymorphia testWithEverything after turn 7
-Live adventurers(5): Frodo,Sir Robin,Sir Galahad,Sir Robin,Arwen
-Live creatures(5): Troll,Satan,Shelob,Evil Wizard,Ogre
-	Misty Mountains:
-		Frodo(health: 1.75)
-
-	Shire:
-		Troll(health: 3.00)
-		Satan(health: 3.00)
-
-	Hobbiton:
-		
-
-	Gondor:
-		Sir Robin(health: 3.78)
-
-	Chamber of Secrets:
-		Shelob(health: 0.50)
-		Evil Wizard(health: 2.00)
-		Sir Galahad(health: 1.75)
-
-	Room of Doom:
-		Sir Robin(health: 3.75)
-		Arwen(health: 4.00)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 8...
-?[0;39m?[33mTurn 8: Troll executed DO NOTHING
-?[0;39m?[33mSir Galahad is fighting Evil Wizard(health: 2.00)
-?[0;39m?[33mSir Galahad rolled 3
-?[0;39m?[33mEvil Wizard(health: 2.00) rolled 1
-?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Evil Wizard
-?[0;39m?[33mEvil Wizard just died!
-?[0;39m?[33mTurn 8: Sir Galahad executed FIGHT
-?[0;39m?[33mSir Robin moved from Room of Doom to Hobbiton
-?[0;39m?[33mMoved: Sir Robin moved from Room of Doom to Hobbiton
-?[0;39m?[33mTurn 8: Sir Robin executed MOVE
-?[0;39m?[33mArwen moved from Room of Doom to Chamber of Secrets
-?[0;39m?[33mMoved: Arwen moved from Room of Doom to Chamber of Secrets
-?[0;39m?[33mTurn 8: Arwen executed MOVE
-?[0;39m?[33mFrodo moved from Misty Mountains to Room of Doom
-?[0;39m?[33mMoved: Frodo moved from Misty Mountains to Room of Doom
-?[0;39m?[33mTurn 8: Frodo executed MOVE
-?[0;39m?[33mTurn 8: Shelob executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Gondor to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Gondor to Shire
-?[0;39m?[33mTurn 8: Sir Robin executed MOVE
-?[0;39m?[33mSatan is fighting Sir Robin(health: 3.53)
-?[0;39m?[33mSatan rolled 3
-?[0;39m?[33mSir Robin(health: 3.53) rolled 6
-?[0;39m?[33mFightOutcome: Sir Robin won a battle against Satan
-?[0;39m?[33mSatan just died!
-?[0;39m?[33mTurn 8: Satan executed FIGHT
-?[0;39m?[33mTurn 8: Ogre executed DO NOTHING
-?[0;39m?[33mPolymorphia testWithEverything after turn 8
-Live adventurers(5): Sir Robin,Sir Robin,Sir Galahad,Arwen,Frodo
-Live creatures(3): Troll,Shelob,Ogre
-	Misty Mountains:
-		
-
-	Shire:
-		Troll(health: 3.00)
-		Sir Robin(health: 3.03)
-
-	Hobbiton:
-		Sir Robin(health: 3.50)
-
-	Gondor:
-		
-
-	Chamber of Secrets:
-		Shelob(health: 0.50)
-		Sir Galahad(health: 1.25)
-		Arwen(health: 3.75)
-
-	Room of Doom:
-		Frodo(health: 1.50)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 9...
-?[0;39m?[33mTurn 9: Troll executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Hobbiton to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Hobbiton to Room of Gloom
-?[0;39m?[33mTurn 9: Sir Robin executed MOVE
-?[0;39m?[33mTurn 9: Ogre executed DO NOTHING
-?[0;39m?[33mArwen is fighting Shelob(health: 0.50)
-?[0;39m?[33mArwen rolled 3
-?[0;39m?[33mShelob(health: 0.50) rolled 3
-?[0;39m?[33mFightOutcome: Arwen tied a battle against Shelob
-?[0;39m?[33mShelob just died!
-?[0;39m?[33mTurn 9: Arwen executed FIGHT
-?[0;39m?[33mSir Galahad moved from Chamber of Secrets to Shire
-?[0;39m?[33mMoved: Sir Galahad moved from Chamber of Secrets to Shire
-?[0;39m?[33mTurn 9: Sir Galahad executed MOVE
-?[0;39m?[33mFrodo moved from Room of Doom to Shire
-?[0;39m?[33mMoved: Frodo moved from Room of Doom to Shire
-?[0;39m?[33mTurn 9: Frodo executed MOVE
-?[0;39m?[33mSir Robin moved from Shire to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Room of Doom
-?[0;39m?[33mTurn 9: Sir Robin executed MOVE
-?[0;39m?[33mPolymorphia testWithEverything after turn 9
-Live adventurers(5): Sir Galahad,Frodo,Arwen,Sir Robin,Sir Robin
-Live creatures(2): Troll,Ogre
-	Misty Mountains:
-		
-
-	Shire:
-		Troll(health: 3.00)
-		Sir Galahad(health: 1.00)
-		Frodo(health: 1.25)
-
-	Hobbiton:
-		
-
-	Gondor:
-		
-
-	Chamber of Secrets:
-		Arwen(health: 3.25)
-
-	Room of Doom:
-		Sir Robin(health: 2.53)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Sir Robin(health: 3.25)
-?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 10...
-?[0;39m?[33mTurn 10: Ogre executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Room of Gloom to Gondor
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Gondor
-?[0;39m?[33mTurn 10: Sir Robin executed MOVE
-?[0;39m?[33mFrodo is fighting Troll(health: 3.00)
-?[0;39m?[33mFrodo rolled 2
-?[0;39m?[33mTroll(health: 3.00) rolled 5
-?[0;39m?[33mFightOutcome: Troll won a battle against Frodo
-?[0;39m?[33mFrodo just died!
-?[0;39m?[33mTurn 10: Frodo executed FIGHT
-?[0;39m?[33mSir Galahad is fighting Troll(health: 2.50)
-?[0;39m?[33mSir Galahad rolled 1
-?[0;39m?[33mTroll(health: 2.50) rolled 3
-?[0;39m?[33mFightOutcome: Troll won a battle against Sir Galahad
-?[0;39m?[33mSir Galahad just died!
-?[0;39m?[33mTurn 10: Sir Galahad executed FIGHT
-?[0;39m?[33mSir Robin moved from Room of Doom to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Room of Doom to Shire
-?[0;39m?[33mTurn 10: Sir Robin executed MOVE
-?[0;39m?[33mTurn 10: Troll executed DO NOTHING
-?[0;39m?[33mArwen moved from Chamber of Secrets to Misty Mountains
-?[0;39m?[33mMoved: Arwen moved from Chamber of Secrets to Misty Mountains
-?[0;39m?[33mTurn 10: Arwen executed MOVE
-?[0;39m?[33mPolymorphia testWithEverything after turn 10
-Live adventurers(3): Arwen,Sir Robin,Sir Robin
-Live creatures(2): Troll,Ogre
-	Misty Mountains:
-		Arwen(health: 3.00)
-
-	Shire:
-		Troll(health: 2.00)
-		Sir Robin(health: 2.28)
-
-	Hobbiton:
-		
-
-	Gondor:
+Live adventurers(5): Sir Robin,Arwen,Frodo,Sir Robin,Sir Galahad
+Live creatures(5): Orc,Dragon,Satan,Ogre,Troll
+	Dragon's Den:
 		Sir Robin(health: 2.75)
 
-	Chamber of Secrets:
+	Troll Bridge:
+		Arwen(health: 4.75)
+
+	Dungeon:
+		Sir Robin(health: 4.03)
+		Frodo(health: 1.75)
+
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+
+	Sanctuary:
 		
 
-	Room of Doom:
+	Den of Souls:
 		
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Map Room:
+		Ogre(health: 2.50)
+		Troll(health: 3.00)
+		Satan(health: 1.00)
+		Sir Galahad(health: 2.25)
 ?[0;39m?[33mplay turn called
-?[0;39m?[33mStarting turn 11...
-?[0;39m?[33mArwen moved from Misty Mountains to Room of Doom
-?[0;39m?[33mMoved: Arwen moved from Misty Mountains to Room of Doom
-?[0;39m?[33mTurn 11: Arwen executed MOVE
-?[0;39m?[33mSir Robin moved from Shire to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Room of Doom
-?[0;39m?[33mTurn 11: Sir Robin executed MOVE
-?[0;39m?[33mSir Robin moved from Gondor to Misty Mountains
-?[0;39m?[33mMoved: Sir Robin moved from Gondor to Misty Mountains
-?[0;39m?[33mTurn 11: Sir Robin executed MOVE
-?[0;39m?[33mTurn 11: Ogre executed DO NOTHING
-?[0;39m?[33mTurn 11: Troll executed DO NOTHING
-?[0;39m?[33mPolymorphia testWithEverything after turn 11
-Live adventurers(3): Sir Robin,Sir Robin,Arwen
-Live creatures(2): Troll,Ogre
-	Misty Mountains:
+?[0;39m?[33mStarting turn 8...
+?[0;39m?[33mSir Galahad is fighting Troll(health: 3.00)
+?[0;39m?[33mSir Galahad rolled 6
+?[0;39m?[33mTroll(health: 3.00) rolled 4
+?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Troll
+?[0;39m?[33mTurn 8: Sir Galahad executed FIGHT
+?[0;39m?[33mSir Robin moved from Dungeon to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Dungeon to Sanctuary
+?[0;39m?[33mTurn 8: Sir Robin executed MOVE
+?[0;39m?[33mTurn 8: Orc executed DO NOTHING
+?[0;39m?[33mArwen moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mMoved: Arwen moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mTurn 8: Arwen executed MOVE
+?[0;39m?[33mTurn 8: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 8: Troll executed DO NOTHING
+?[0;39m?[33mFrodo moved from Dungeon to Troll Bridge
+?[0;39m?[33mMoved: Frodo moved from Dungeon to Troll Bridge
+?[0;39m?[33mTurn 8: Frodo executed MOVE
+?[0;39m?[33mSir Robin moved from Dragon's Den to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Dragon's Den to Troll Bridge
+?[0;39m?[33mTurn 8: Sir Robin executed MOVE
+?[0;39m?[33mSatan is fighting Sir Galahad(health: 1.75)
+?[0;39m?[33mSatan rolled 4
+?[0;39m?[33mSir Galahad(health: 1.75) rolled 6
+?[0;39m?[33mFightOutcome: Sir Galahad won a battle against Satan
+?[0;39m?[33mSatan just died!
+?[0;39m?[33mTurn 8: Satan executed FIGHT
+?[0;39m?[33mTurn 8: Dragon executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 8
+Live adventurers(5): Frodo,Sir Robin,Arwen,Sir Robin,Sir Galahad
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Frodo(health: 1.50)
 		Sir Robin(health: 2.50)
 
-	Shire:
-		Troll(health: 2.00)
-
-	Hobbiton:
+	Dungeon:
 		
 
-	Gondor:
+	Pit of Despair:
+		Orc(health: 3.00)
+		Dragon(health: 3.00)
+		Arwen(health: 4.50)
+
+	Sanctuary:
+		Sir Robin(health: 3.78)
+
+	Den of Souls:
 		
 
-	Chamber of Secrets:
+	Map Room:
+		Ogre(health: 2.50)
+		Troll(health: 0.50)
+		Sir Galahad(health: 1.25)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 9...
+?[0;39m?[33mTurn 9: Orc executed DO NOTHING
+?[0;39m?[33mSir Galahad is fighting Ogre(health: 2.50)
+?[0;39m?[33mSir Galahad rolled 1
+?[0;39m?[33mOgre(health: 2.50) rolled 3
+?[0;39m?[33mFightOutcome: Ogre won a battle against Sir Galahad
+?[0;39m?[33mSir Galahad just died!
+?[0;39m?[33mTurn 9: Sir Galahad executed FIGHT
+?[0;39m?[33mArwen is fighting Orc(health: 3.00)
+?[0;39m?[33mArwen rolled 5
+?[0;39m?[33mOrc(health: 3.00) rolled 3
+?[0;39m?[33mFightOutcome: Arwen won a battle against Orc
+?[0;39m?[33mTurn 9: Arwen executed FIGHT
+?[0;39m?[33mTurn 9: Troll executed DO NOTHING
+?[0;39m?[33mFrodo moved from Troll Bridge to Sanctuary
+?[0;39m?[33mMoved: Frodo moved from Troll Bridge to Sanctuary
+?[0;39m?[33mTurn 9: Frodo executed MOVE
+?[0;39m?[33mTurn 9: Ogre executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Troll Bridge
+?[0;39m?[33mTurn 9: Sir Robin executed MOVE
+?[0;39m?[33mTurn 9: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Troll Bridge to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Den of Souls
+?[0;39m?[33mTurn 9: Sir Robin executed MOVE
+?[0;39m?[33mPolymorphia testWithEverything after turn 9
+Live adventurers(4): Sir Robin,Arwen,Frodo,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Room of Doom:
-		Arwen(health: 2.75)
-		Sir Robin(health: 1.78)
+	Troll Bridge:
+		Sir Robin(health: 3.53)
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 3.00)
+		Arwen(health: 4.00)
+
+	Sanctuary:
+		Frodo(health: 1.25)
+
+	Den of Souls:
+		Sir Robin(health: 2.25)
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 10...
+?[0;39m?[33mArwen is fighting Dragon(health: 3.00)
+?[0;39m?[33mArwen rolled 6
+?[0;39m?[33mDragon(health: 3.00) rolled 5
+?[0;39m?[33mFightOutcome: Arwen won a battle against Dragon
+?[0;39m?[33mTurn 10: Arwen executed FIGHT
+?[0;39m?[33mFrodo moved from Sanctuary to Troll Bridge
+?[0;39m?[33mMoved: Frodo moved from Sanctuary to Troll Bridge
+?[0;39m?[33mTurn 10: Frodo executed MOVE
+?[0;39m?[33mSir Robin moved from Troll Bridge to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Den of Souls
+?[0;39m?[33mTurn 10: Sir Robin executed MOVE
+?[0;39m?[33mSir Robin moved from Den of Souls to Pit of Despair
+?[0;39m?[33mMoved: Sir Robin moved from Den of Souls to Pit of Despair
+?[0;39m?[33mTurn 10: Sir Robin executed MOVE
+?[0;39m?[33mTurn 10: Orc executed DO NOTHING
+?[0;39m?[33mTurn 10: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 10: Troll executed DO NOTHING
+?[0;39m?[33mTurn 10: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 10
+Live adventurers(4): Frodo,Sir Robin,Arwen,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Frodo(health: 1.00)
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.50)
+		Arwen(health: 3.50)
+		Sir Robin(health: 2.00)
+
+	Sanctuary:
+		
+
+	Den of Souls:
+		Sir Robin(health: 3.28)
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 11...
+?[0;39m?[33mArwen is fighting Dragon(health: 1.50)
+?[0;39m?[33mArwen rolled 3
+?[0;39m?[33mDragon(health: 1.50) rolled 6
+?[0;39m?[33mFightOutcome: Dragon won a battle against Arwen
+?[0;39m?[33mArwen just died!
+?[0;39m?[33mTurn 11: Arwen executed FIGHT
+?[0;39m?[33mTurn 11: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 11: Troll executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Pit of Despair to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Pit of Despair to Troll Bridge
+?[0;39m?[33mTurn 11: Sir Robin executed MOVE
+?[0;39m?[33mFrodo moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mMoved: Frodo moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mTurn 11: Frodo executed MOVE
+?[0;39m?[33mSir Robin moved from Den of Souls to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Den of Souls to Troll Bridge
+?[0;39m?[33mTurn 11: Sir Robin executed MOVE
+?[0;39m?[33mTurn 11: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 11: Orc executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 11
+Live adventurers(3): Sir Robin,Sir Robin,Frodo
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Sir Robin(health: 1.50)
+		Sir Robin(health: 3.03)
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+		Frodo(health: 0.75)
+
+	Sanctuary:
+		
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 12...
-?[0;39m?[33mSir Robin moved from Misty Mountains to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Misty Mountains to Room of Gloom
+?[0;39m?[33mSir Robin moved from Troll Bridge to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Map Room
 ?[0;39m?[33mTurn 12: Sir Robin executed MOVE
-?[0;39m?[33mArwen moved from Room of Doom to Hobbiton
-?[0;39m?[33mMoved: Arwen moved from Room of Doom to Hobbiton
-?[0;39m?[33mTurn 12: Arwen executed MOVE
-?[0;39m?[33mTurn 12: Troll executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Pit of Despair
+?[0;39m?[33mTurn 12: Sir Robin executed MOVE
 ?[0;39m?[33mTurn 12: Ogre executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Room of Doom to Misty Mountains
-?[0;39m?[33mMoved: Sir Robin moved from Room of Doom to Misty Mountains
-?[0;39m?[33mTurn 12: Sir Robin executed MOVE
+?[0;39m?[33mTurn 12: Dragon executed DO NOTHING
+?[0;39m?[33mFrodo moved from Pit of Despair to Dungeon
+?[0;39m?[33mMoved: Frodo moved from Pit of Despair to Dungeon
+?[0;39m?[33mTurn 12: Frodo executed MOVE
+?[0;39m?[33mTurn 12: Orc executed DO NOTHING
+?[0;39m?[33mTurn 12: Troll executed DO NOTHING
 ?[0;39m?[33mPolymorphia testWithEverything after turn 12
-Live adventurers(3): Sir Robin,Arwen,Sir Robin
-Live creatures(2): Troll,Ogre
-	Misty Mountains:
-		Sir Robin(health: 1.53)
-
-	Shire:
-		Troll(health: 2.00)
-
-	Hobbiton:
-		Arwen(health: 2.50)
-
-	Gondor:
+Live adventurers(3): Frodo,Sir Robin,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Chamber of Secrets:
+	Troll Bridge:
 		
 
-	Room of Doom:
+	Dungeon:
+		Frodo(health: 0.25)
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+		Sir Robin(health: 1.25)
+
+	Sanctuary:
 		
 
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Sir Robin(health: 2.25)
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+		Sir Robin(health: 2.78)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 13...
-?[0;39m?[33mTurn 13: Troll executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Room of Gloom to Gondor
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Gondor
-?[0;39m?[33mTurn 13: Sir Robin executed MOVE
 ?[0;39m?[33mTurn 13: Ogre executed DO NOTHING
-?[0;39m?[33mArwen moved from Hobbiton to Shire
-?[0;39m?[33mMoved: Arwen moved from Hobbiton to Shire
-?[0;39m?[33mTurn 13: Arwen executed MOVE
-?[0;39m?[33mSir Robin moved from Misty Mountains to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Misty Mountains to Shire
+?[0;39m?[33mTurn 13: Troll executed DO NOTHING
+?[0;39m?[33mTurn 13: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Map Room to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Sanctuary
 ?[0;39m?[33mTurn 13: Sir Robin executed MOVE
+?[0;39m?[33mTurn 13: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Pit of Despair to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Pit of Despair to Den of Souls
+?[0;39m?[33mTurn 13: Sir Robin executed MOVE
+?[0;39m?[33mFrodo just died!
+?[0;39m?[33mFrodo moved from Dungeon to Den of Souls
+?[0;39m?[33mMoved: Frodo moved from Dungeon to Den of Souls
+?[0;39m?[33mTurn 13: Frodo executed MOVE
 ?[0;39m?[33mPolymorphia testWithEverything after turn 13
-Live adventurers(3): Sir Robin,Arwen,Sir Robin
-Live creatures(2): Troll,Ogre
-	Misty Mountains:
+Live adventurers(2): Sir Robin,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Shire:
-		Troll(health: 2.00)
-		Arwen(health: 2.25)
-		Sir Robin(health: 1.28)
-
-	Hobbiton:
+	Troll Bridge:
 		
 
-	Gondor:
-		Sir Robin(health: 1.75)
-
-	Chamber of Secrets:
+	Dungeon:
 		
 
-	Room of Doom:
-		
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Sanctuary:
+		Sir Robin(health: 2.28)
+
+	Den of Souls:
+		Sir Robin(health: 0.75)
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 14...
+?[0;39m?[33mTurn 14: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Dungeon
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Dungeon
+?[0;39m?[33mTurn 14: Sir Robin executed MOVE
+?[0;39m?[33mTurn 14: Dragon executed DO NOTHING
 ?[0;39m?[33mTurn 14: Troll executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Gondor to Misty Mountains
-?[0;39m?[33mMoved: Sir Robin moved from Gondor to Misty Mountains
+?[0;39m?[33mSir Robin moved from Den of Souls to Dungeon
+?[0;39m?[33mMoved: Sir Robin moved from Den of Souls to Dungeon
 ?[0;39m?[33mTurn 14: Sir Robin executed MOVE
 ?[0;39m?[33mTurn 14: Ogre executed DO NOTHING
-?[0;39m?[33mSir Robin moved from Shire to Misty Mountains
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Misty Mountains
-?[0;39m?[33mTurn 14: Sir Robin executed MOVE
-?[0;39m?[33mArwen is fighting Troll(health: 2.00)
-?[0;39m?[33mArwen rolled 6
-?[0;39m?[33mTroll(health: 2.00) rolled 3
-?[0;39m?[33mFightOutcome: Arwen won a battle against Troll
-?[0;39m?[33mTroll just died!
-?[0;39m?[33mTurn 14: Arwen executed FIGHT
 ?[0;39m?[33mPolymorphia testWithEverything after turn 14
-Live adventurers(3): Sir Robin,Sir Robin,Arwen
-Live creatures(1): Ogre
-	Misty Mountains:
-		Sir Robin(health: 1.50)
-		Sir Robin(health: 0.78)
-
-	Shire:
-		Arwen(health: 1.75)
-
-	Hobbiton:
+Live adventurers(2): Sir Robin,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Gondor:
+	Troll Bridge:
 		
 
-	Chamber of Secrets:
+	Dungeon:
+		Sir Robin(health: 2.03)
+		Sir Robin(health: 0.50)
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
 		
 
-	Room of Doom:
+	Den of Souls:
 		
 
-	Room of Gloom:
-		Ogre(health: 1.00)
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 15...
-?[0;39m?[33mSir Robin moved from Misty Mountains to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Misty Mountains to Room of Gloom
-?[0;39m?[33mTurn 15: Sir Robin executed MOVE
+?[0;39m?[33mTurn 15: Troll executed DO NOTHING
 ?[0;39m?[33mTurn 15: Ogre executed DO NOTHING
-?[0;39m?[33mArwen moved from Shire to Misty Mountains
-?[0;39m?[33mMoved: Arwen moved from Shire to Misty Mountains
-?[0;39m?[33mTurn 15: Arwen executed MOVE
-?[0;39m?[33mSir Robin moved from Misty Mountains to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Misty Mountains to Room of Doom
+?[0;39m?[33mTurn 15: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Dungeon to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Dungeon to Map Room
+?[0;39m?[33mTurn 15: Sir Robin executed MOVE
+?[0;39m?[33mTurn 15: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Dungeon to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Dungeon to Sanctuary
 ?[0;39m?[33mTurn 15: Sir Robin executed MOVE
 ?[0;39m?[33mPolymorphia testWithEverything after turn 15
-Live adventurers(3): Arwen,Sir Robin,Sir Robin
-Live creatures(1): Ogre
-	Misty Mountains:
-		Arwen(health: 1.50)
-
-	Shire:
+Live adventurers(2): Sir Robin,Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Hobbiton:
+	Troll Bridge:
 		
 
-	Gondor:
+	Dungeon:
 		
 
-	Chamber of Secrets:
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
+		Sir Robin(health: 1.78)
+
+	Den of Souls:
 		
 
-	Room of Doom:
-		Sir Robin(health: 0.53)
-
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Sir Robin(health: 1.25)
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+		Sir Robin(health: 0.25)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 16...
-?[0;39m?[33mArwen moved from Misty Mountains to Room of Gloom
-?[0;39m?[33mMoved: Arwen moved from Misty Mountains to Room of Gloom
-?[0;39m?[33mTurn 16: Arwen executed MOVE
-?[0;39m?[33mSir Robin moved from Room of Gloom to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Room of Gloom to Shire
-?[0;39m?[33mTurn 16: Sir Robin executed MOVE
-?[0;39m?[33mSir Robin moved from Room of Doom to Shire
-?[0;39m?[33mMoved: Sir Robin moved from Room of Doom to Shire
-?[0;39m?[33mTurn 16: Sir Robin executed MOVE
+?[0;39m?[33mTurn 16: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 16: Orc executed DO NOTHING
 ?[0;39m?[33mTurn 16: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 16: Troll executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Den of Souls
+?[0;39m?[33mTurn 16: Sir Robin executed MOVE
+?[0;39m?[33mSir Robin just died!
+?[0;39m?[33mSir Robin moved from Map Room to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Den of Souls
+?[0;39m?[33mTurn 16: Sir Robin executed MOVE
 ?[0;39m?[33mPolymorphia testWithEverything after turn 16
-Live adventurers(3): Sir Robin,Sir Robin,Arwen
-Live creatures(1): Ogre
-	Misty Mountains:
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
 		
 
-	Shire:
-		Sir Robin(health: 0.75)
-		Sir Robin(health: 0.28)
-
-	Hobbiton:
+	Troll Bridge:
 		
 
-	Gondor:
+	Dungeon:
 		
 
-	Chamber of Secrets:
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
 		
 
-	Room of Doom:
-		
+	Den of Souls:
+		Sir Robin(health: 1.53)
 
-	Room of Gloom:
-		Ogre(health: 1.00)
-		Arwen(health: 1.25)
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
 ?[0;39m?[33mplay turn called
 ?[0;39m?[33mStarting turn 17...
-?[0;39m?[33mArwen is fighting Ogre(health: 1.00)
-?[0;39m?[33mArwen rolled 4
-?[0;39m?[33mOgre(health: 1.00) rolled 1
-?[0;39m?[33mFightOutcome: Arwen won a battle against Ogre
-?[0;39m?[33mOgre just died!
-?[0;39m?[33mTurn 17: Arwen executed FIGHT
-?[0;39m?[33mSir Robin moved from Shire to Room of Doom
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Room of Doom
+?[0;39m?[33mTurn 17: Troll executed DO NOTHING
+?[0;39m?[33mTurn 17: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Den of Souls to Pit of Despair
+?[0;39m?[33mMoved: Sir Robin moved from Den of Souls to Pit of Despair
 ?[0;39m?[33mTurn 17: Sir Robin executed MOVE
-?[0;39m?[33mSir Robin moved from Shire to Room of Gloom
-?[0;39m?[33mMoved: Sir Robin moved from Shire to Room of Gloom
-?[0;39m?[33mTurn 17: Sir Robin executed MOVE
-?[0;39m?[33mThe game ended after 17 turns.
-The adventurers won! Left standing are:
-Sir Robin(health: 0.50)
- Arwen(health: 0.75)
- Sir Robin(health: 0.03)
+?[0;39m?[33mTurn 17: Orc executed DO NOTHING
+?[0;39m?[33mTurn 17: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 17
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+		Sir Robin(health: 1.28)
+
+	Sanctuary:
+		
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 18...
+?[0;39m?[33mTurn 18: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 18: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Pit of Despair to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Pit of Despair to Sanctuary
+?[0;39m?[33mTurn 18: Sir Robin executed MOVE
+?[0;39m?[33mTurn 18: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 18: Troll executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 18
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
+		Sir Robin(health: 0.78)
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 19...
+?[0;39m?[33mTurn 19: Troll executed DO NOTHING
+?[0;39m?[33mTurn 19: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 19: Orc executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Troll Bridge
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Troll Bridge
+?[0;39m?[33mTurn 19: Sir Robin executed MOVE
+?[0;39m?[33mTurn 19: Ogre executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 19
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		Sir Robin(health: 0.53)
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
+		
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 20...
+?[0;39m?[33mTurn 20: Troll executed DO NOTHING
+?[0;39m?[33mTurn 20: Ogre executed DO NOTHING
+?[0;39m?[33mTurn 20: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Troll Bridge to Sanctuary
+?[0;39m?[33mMoved: Sir Robin moved from Troll Bridge to Sanctuary
+?[0;39m?[33mTurn 20: Sir Robin executed MOVE
+?[0;39m?[33mTurn 20: Orc executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 20
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
+		Sir Robin(health: 0.28)
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 21...
+?[0;39m?[33mTurn 21: Dragon executed DO NOTHING
+?[0;39m?[33mTurn 21: Ogre executed DO NOTHING
+?[0;39m?[33mSir Robin moved from Sanctuary to Map Room
+?[0;39m?[33mMoved: Sir Robin moved from Sanctuary to Map Room
+?[0;39m?[33mTurn 21: Sir Robin executed MOVE
+?[0;39m?[33mTurn 21: Orc executed DO NOTHING
+?[0;39m?[33mTurn 21: Troll executed DO NOTHING
+?[0;39m?[33mPolymorphia testWithEverything after turn 21
+Live adventurers(1): Sir Robin
+Live creatures(4): Orc,Dragon,Troll,Ogre
+	Dragon's Den:
+		
+
+	Troll Bridge:
+		
+
+	Dungeon:
+		
+
+	Pit of Despair:
+		Orc(health: 0.50)
+		Dragon(health: 1.00)
+
+	Sanctuary:
+		
+
+	Den of Souls:
+		
+
+	Map Room:
+		Ogre(health: 2.00)
+		Troll(health: 0.50)
+		Sir Robin(health: 0.03)
+?[0;39m?[33mplay turn called
+?[0;39m?[33mStarting turn 22...
+?[0;39m?[33mTurn 22: Orc executed DO NOTHING
+?[0;39m?[33mTurn 22: Troll executed DO NOTHING
+?[0;39m?[33mTurn 22: Dragon executed DO NOTHING
+?[0;39m?[33mSir Robin just died!
+?[0;39m?[33mSir Robin moved from Map Room to Den of Souls
+?[0;39m?[33mMoved: Sir Robin moved from Map Room to Den of Souls
+?[0;39m?[33mTurn 22: Sir Robin executed MOVE
+?[0;39m?[33mTurn 22: Ogre executed DO NOTHING
+?[0;39m?[33mThe game ended after 22 turns.
+The creatures won! Left standing are:
+Orc(health: 0.50)
+ Dragon(health: 1.00)
+ Troll(health: 0.50)
+ Ogre(health: 2.00)
 
 ?[0;39m]]></system-out>
   <system-err><![CDATA[]]></system-err>

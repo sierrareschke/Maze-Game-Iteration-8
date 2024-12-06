@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="csci.ooad.polymorphia.characters.CommandTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T21:58:23" hostname="UCB-HYFY92NCM6" time="0.001">
+<testsuite name="csci.ooad.polymorphia.characters.CommandTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-06T22:16:10" hostname="UCB-HYFY92NCM6" time="0.0">
   <properties/>
-  <testcase name="testMoveCommandCreation()" classname="csci.ooad.polymorphia.characters.CommandTest" time="0.001"/>
+  <testcase name="testMoveCommandCreation()" classname="csci.ooad.polymorphia.characters.CommandTest" time="0.0"/>
   <testcase name="testMoveCommand()" classname="csci.ooad.polymorphia.characters.CommandTest" time="0.0"/>
   <system-out><![CDATA[?[33mAdventurer moved from initial to final
 ?[0;39m?[33mMoved: Adventurer moved from initial to final

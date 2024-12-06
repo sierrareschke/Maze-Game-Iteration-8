@@ -1,9 +1,6 @@
 package csci.ooad.polymorphia.characters;
 
-import csci.ooad.polymorphia.ArtifactFactory;
-import csci.ooad.polymorphia.Food;
-import csci.ooad.polymorphia.Maze;
-import csci.ooad.polymorphia.NoSuchRoomException;
+import csci.ooad.polymorphia.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -139,6 +136,35 @@ class CharacterTest {
     void testCreatureDoesNotDoAction() {
         Creature creature = characterFactory.createCreature("Creature");
         creature.getAction().execute();
+    }
+
+    @Test
+    void testIsHealthiestInRoom() throws NoSuchRoomException {
+        Adventurer ted = characterFactory.createAdventurer("Ted");
+        Adventurer charlie = characterFactory.createAdventurer("Charlie");
+        Armor steelArmor = artifactFactory.createArmorSuit("Steel Armor");
+        Maze maze = Maze.getNewBuilder()
+                .createFullyConnectedRooms("onlyRoom")
+                .addToRoom("onlyRoom", ted)
+                .addToRoom("onlyRoom", charlie)
+                .addToRoom("onlyRoom", steelArmor)
+                .build();
+        Command command = commandFactory.createDoNothingCommand();
+        command.execute();
+        System.out.println("Command" + command);
+        assertNotNull(command);
+
+        // Test armor
+        Command wearArmor = commandFactory.wearArmor(ted, steelArmor);
+        wearArmor.execute();
+        Adventurer armoredTed = maze.getRoom("onlyRoom").getLivingAdventurers().getFirst();
+
+        boolean hasArmor = maze.getRoom("onlyRoom").hasArmor();
+        assertFalse(hasArmor);
+
+
+        charlie.loseFightDamage(2);
+        assertFalse(ted.iAmHealthiestInRoom());
     }
 
 }
