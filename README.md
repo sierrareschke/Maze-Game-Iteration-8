@@ -1,56 +1,24 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/G64ubjiL)
-# OOAD Homework 9:
 ## Turning Polymorphia Into a Service
-
-#### (45 points)
-
-NOTE: Expect some minor edits/updates
 
 Introduction
 Team Members: Grace Ohlsen, Sierra Reschke and Nolan Brady
 Java Version: 21
 Comments/Assumptions: None
 
-IMPORTANT: You will submit this assignment via a link to your GIT repository. If you are re-using a repository from a previous homework, create a branch called "Homework_6" and commit all changes
-for this assignment into that branch. And turn in a link to this branch.
+
 
 ## Code Coverage
 ![](./code_coverage.png)
 
-## Grading Rubric:
+## Implemented Capabilities
+* Implement the Get Games Endpoint 
+* Implement the Create Game Endpoint
+* Implement the Get Game Endpoint
+* Implement the Play Turn Endpoint for No-Human-Player games
+* Implement the Play Turn Endpoint for APIPlayer games
+* Complete the tests in the PolymorphiaControllerTest class
 
-### Deductions
-
-    NOTE: for this assignment you do NOT need to worry about method coverage and you do NOT need to submit a screenshot of the coverage
-
-* Meaningful names for everything: variables, methods, classes, interfaces, etc. (1% off for each bad name, up to 10% total)
-* No "magic" numbers or strings (1% off for each one, up to 10%)
-* No System.out.println() calls anywhere in your main code – replace with logging (see below) or eliminate outright. 1% off for each System.out.println statement in src/main/java code.
-* 1% deduction for each missing required addition to the README.md (game outputs, screenshots, diagrams)
-
-### Method Construction Possible Deductions
-
-#### (max is listed under Required Capabilities)
-
-Methods should be:
-* "short" -- with very few exceptions all methods should fit on a screen using a readable font.
-* well named (duh).
-* properly denoted as instance methods vs. static methods (static methods don't reference the _this_ pointer).
-* limited complexity (level of indentation due to control structures).
-* not have comments that could be turned into just as readable code.
-
-All of this can be achieved through functional decomposition of more complicated methods (see lecture on October 2nd).
-
-## Required Capabilities
-
-* Implement the Get Games Endpoint (5 points)
-* Implement the Create Game Endpoint (5 points)
-* Implement the Get Game Endpoint (10 points)
-* Implement the Play Turn Endpoint for No-Human-Player games (5 points)
-* Implement the Play Turn Endpoint for APIPlayer games (15 points)
-* Complete the tests in the PolymorphiaControllerTest class (5 points)
-
-### Hints
+### Notes
 * A turn ends when all players have executed their turn
 * but a turn will **pause** when the game needs human input (if there is a human player in the game).
 * Create a new subclass of Adventurer called APIPlayer. This player will have a strategy that will be called to
@@ -572,7 +540,7 @@ Once that is working, you're off to the races.
 Some tests are provided for you. You should run these tests and see that they fail. Then you should
 implement the endpoints and the game logic to make the tests pass.
 
-### Changes will be made to these classes:
+### Changes were made to these classes:
 
 * CharacterFactory (to create the APIPlayer)
 * Maze (to add the APIPlayer)
@@ -607,7 +575,7 @@ CSCI-4448-Homework-9> lsof -i :9090
 CSCI-4448-Homework-9> 
 ```
 
-First, I use the lsof command to find the process using port 9090. Then I kill that process using the process id (PID).
+First, use the lsof command to find the process using port 9090. Then kill that process using the process id (PID).
 
 
 
